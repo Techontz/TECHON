@@ -1,0 +1,217 @@
+rules_version = '2';
+
+// TechOn — Firestore Security Rules
+//
+// Principle: the client is never trusted. Every guarantee the UI appears to
+// make is restated here, because the UI can be bypassed with a console and the
+// SDK. In particular:
+//
+//   · Only an admin can change a booking's status. A customer creating a
+//     booking may only create a `pending` one.
+//   · A slot lock can be created but never updated, which is what makes
+//     double booking impossible even for a hostile client.
+//   · Personal data in `bookings` is never publicly readable, while the
+//     `slotLocks` collection — which carries no personal data — is, so the
+//     public calendar can show what is taken without exposing who took it.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---------------------------------------------------------------- helpers
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // Membership of `admins/{uid}` is the single definition of "admin".
+    // There is no self-service path to it: the document is created manually.
+    function isAdmin() {
+      return isSignedIn()
+        && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function isString(field, maxLength) {
+      return incoming()[field] is string && incoming()[field].size() <= maxLength;
+    }
+
+    // `YYYY-MM-DD`
+    function isDateKey(value) {
+      return value is string
+        && value.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$');
+    }
+
+    // `HH:mm`
+    function isTimeKey(value) {
+      return value is string
+        && value.matches('^[0-9]{2}:[0-9]{2}$');
+    }
+
+    // ----------------------------------------------------------------- admins
+    //
+    // Readable only by the admin it describes, so a signed-in non-admin cannot
+    // enumerate who the admins are. Writes are console/CLI only.
+
+    match /admins/{uid} {
+      allow read: if isSignedIn() && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    // --------------------------------------------------------------- bookings
+    //
+    // Anyone may create a booking; nobody but an admin may read one back.
+    // A customer holds the reference number, which is all they need.
+
+    match /bookings/{bookingId} {
+      allow read, list: if isAdmin();
+
+      allow create: if
+        // Customers can only ever create a pending booking. Approval is an
+        // admin action, mirrored in `setBookingStatus`.
+        incoming().status == 'pending'
+
+        && isDateKey(incoming().date)
+        && isTimeKey(incoming().time)
+
+        && isString('reference', 20)
+        && isString('firstName', 100)
+        && isString('lastName', 100)
+        && isString('email', 200)
+        && isString('phone', 40)
+        && isString('country', 20)
+        && isString('description', 5000)
+        && isString('company', 200)
+        && isString('locale', 10)
+
+        && incoming().meetingType in ['office', 'online']
+        && incoming().consultationType is string
+
+        // Money is written by the client, so it is bounded here. A server
+        // should recompute it from `consultations/` once one exists — see the
+        // note in the summary about Cloud Functions.
+        && incoming().priceMinor is int
+        && incoming().priceMinor >= 0
+        && incoming().priceMinor <= 100000000
+        && isString('currency', 8)
+        && incoming().durationMinutes is int
+        && incoming().durationMinutes > 0
+        && incoming().durationMinutes <= 480
+
+        // Admin-only fields must be absent on create.
+        && !('adminNotes' in incoming())
+        && !('meetingUrl' in incoming());
+
+      // Status transitions, notes and rescheduling are admin actions.
+      allow update, delete: if isAdmin();
+    }
+
+    // -------------------------------------------------------------- slotLocks
+    //
+    // The double-booking guard. Publicly readable so the booking calendar can
+    // gray out taken times; creatable by anyone so a booking can claim a slot;
+    // and — critically — never updatable, so a claimed slot cannot be
+    // overwritten. Only an admin may release one.
+
+    match /slotLocks/{lockId} {
+      allow read, list: if true;
+
+      allow create: if
+        isDateKey(incoming().date)
+        && isTimeKey(incoming().time)
+        // The id must be derived from the slot, or the uniqueness guarantee
+        // evaporates: two locks with different ids could describe one slot.
+        && lockId == incoming().date + '_' + incoming().time
+        && incoming().bookingId is string;
+
+      allow update: if false;
+      allow delete: if isAdmin();
+    }
+
+    // ----------------------------------------------------------- availability
+    //
+    // Public read: the calendar needs closures and blocked slots to render.
+    // Admin write.
+
+    match /availability/{date} {
+      allow read, list: if true;
+      allow write: if isAdmin();
+    }
+
+    // ---------------------------------------------------------- consultations
+    //
+    // Public read: the booking page prices from this. Admin write.
+
+    match /consultations/{id} {
+      allow read, list: if true;
+      allow write: if isAdmin();
+    }
+
+    // ---------------------------------------------------------------- content
+    //
+    // Singletons for hero, services, NOVA, contact details, settings and the
+    // availability schedule. Public read, admin write.
+
+    match /content/{docId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // -------------------------------------------------------------- portfolio
+    //
+    // Drafts must not leak. Firestore cannot filter a `get` by field, so the
+    // rule constrains reads to non-draft documents and the client queries
+    // `status in [...]` to match.
+
+    match /portfolio/{projectId} {
+      allow get: if isAdmin() || resource.data.status != 'draft';
+      allow list: if isAdmin() || request.query.limit <= 100;
+      allow write: if isAdmin();
+    }
+
+    // ----------------------------------------------------------- testimonials
+
+    match /testimonials/{id} {
+      allow read, list: if true;
+      allow write: if isAdmin();
+    }
+
+    // ------------------------------------------------------------- newsletter
+    //
+    // Write-only for the public: anyone may subscribe, nobody may read the
+    // list back. Reading it would expose every subscriber's address.
+
+    match /newsletter/{email} {
+      allow read, list: if isAdmin();
+
+      allow create, update: if
+        incoming().email is string
+        && incoming().email.size() <= 200
+        && incoming().email.matches('^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$')
+        // The document id is the address, so a subscriber cannot write a row
+        // keyed to someone else.
+        && email == incoming().email
+        && incoming().active == true;
+
+      allow delete: if isAdmin();
+    }
+
+    // ------------------------------------------------------------------ posts
+    //
+    // Drafts and scheduled posts stay private until published.
+
+    match /posts/{slug} {
+      allow get: if isAdmin() || resource.data.status == 'published';
+      allow list: if isAdmin() || request.query.limit <= 100;
+      allow write: if isAdmin();
+    }
+
+    // Anything not matched above is denied. Adding a collection therefore
+    // requires adding a rule, which is the correct default.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

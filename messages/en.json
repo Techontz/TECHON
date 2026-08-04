@@ -1,0 +1,671 @@
+{
+  "meta": {
+    "title": "TechOn — Software, AI and Digital Transformation",
+    "description": "TechOn designs and builds AI platforms, mobile applications and enterprise systems for companies that care how things work.",
+    "portfolioTitle": "Work"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "nova": "NOVA AI",
+    "contact": "Contact",
+    "book": "Book a session",
+    "cta": "Start a project",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "language": "Language"
+  },
+  "hero": {
+    "badge": "NOVA AI",
+    "badgeText": "Our AI platform is live",
+    "title": "We build the software your business runs on.",
+    "lead": "AI platforms, mobile applications and enterprise systems — designed, engineered and supported by one senior team.",
+    "primary": "Start a project",
+    "secondary": "View our work",
+    "stat1": "Projects delivered",
+    "stat2": "Clients worldwide",
+    "stat3": "Client satisfaction"
+  },
+  "logos": {
+    "title": "Trusted by teams building across Africa, Europe and North America"
+  },
+  "aboutPreview": {
+    "eyebrow": "About TechOn",
+    "title": "A small team, deliberately.",
+    "body": "TechOn was founded in 2019 to build software properly — the kind that still runs, and still makes sense, years after the launch party. We stay small on purpose: the engineers you meet at kickoff are the ones who write your code, and they stay with it long after it ships.",
+    "ceoRole": "Founder & Chief Executive Officer",
+    "cta": "Learn more"
+  },
+  "nova": {
+    "eyebrow": "NOVA AI",
+    "title": "A workforce that never sleeps.",
+    "lead": "NOVA answers the phone, replies to your messages, books the meeting and updates the CRM. It works at three in the morning, in every language your customers speak.",
+    "cta": "Talk to us about NOVA",
+    "secondary": "Book a demo",
+    "panelStatus": "Active",
+    "metric1": "Resolved without a human",
+    "metric2": "Average first response",
+    "metric3": "Languages supported",
+    "capabilitiesTitle": "Everything NOVA does.",
+    "capabilitiesLead": "Twenty-two capabilities, one platform. Turn on what you need and leave the rest.",
+    "scene": {
+      "incoming": "Incoming call",
+      "answering": "NOVA is answering",
+      "listening": "Listening",
+      "thinking": "Thinking",
+      "chat": "Live chat"
+    },
+    "groups": {
+      "voice": "Voice & calls",
+      "channels": "Messaging & channels",
+      "intelligence": "Intelligence",
+      "operations": "Operations"
+    },
+    "capabilities": {
+      "aiVoiceCalling": "AI Voice Calling",
+      "receivesCalls": "Receives calls automatically",
+      "makesCalls": "Makes calls automatically",
+      "naturalConversations": "Natural voice conversations",
+      "humanHandoff": "Human handoff",
+      "customerSupport": "AI customer support",
+      "whatsapp": "WhatsApp automation",
+      "instagram": "Instagram automation",
+      "facebook": "Facebook automation",
+      "email": "Email automation",
+      "knowledgeBase": "Knowledge base",
+      "documentSearch": "Document search",
+      "multilingual": "Multilingual support",
+      "analytics": "Business analytics",
+      "customEmployees": "Custom AI employees",
+      "appointmentBooking": "Appointment booking",
+      "leadQualification": "Lead qualification",
+      "crmIntegration": "CRM integration",
+      "calendarIntegration": "Calendar integration",
+      "workflowAutomation": "Workflow automation",
+      "apiIntegration": "API integration",
+      "availability": "24/7 availability"
+    }
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Everything we do, done properly.",
+    "lead": "One partner from the first sketch to production scale, so nothing is lost in the handoff between strategy, design and code.",
+    "items": {
+      "aiSolutions": {
+        "title": "AI Solutions",
+        "description": "Custom models and intelligence layers built into the products you already run."
+      },
+      "aiAgents": {
+        "title": "AI Agents",
+        "description": "Autonomous agents that handle calls, conversations and multi-step work."
+      },
+      "customSoftware": {
+        "title": "Custom Software",
+        "description": "Platforms built around how your business actually works, not a template."
+      },
+      "mobileApps": {
+        "title": "Mobile Applications",
+        "description": "Native-feeling iOS and Android products built with Flutter and React Native."
+      },
+      "enterpriseSystems": {
+        "title": "Enterprise Systems",
+        "description": "ERP, CRM and operational platforms that hold up under real organisational weight."
+      },
+      "cloudSolutions": {
+        "title": "Cloud Solutions",
+        "description": "Architecture and infrastructure that stays fast and predictable as you grow."
+      },
+      "automation": {
+        "title": "Automation",
+        "description": "Workflow engines that remove the repetitive work draining your team."
+      },
+      "webDevelopment": {
+        "title": "Web Development",
+        "description": "Fast, accessible, search-ready platforms engineered on Next.js and React."
+      },
+      "uiuxDesign": {
+        "title": "UI/UX Design",
+        "description": "Interface and product design with the craft of a consumer-grade app."
+      },
+      "paymentIntegrations": {
+        "title": "Payment Integrations",
+        "description": "Mobile money, cards and cross-border rails wired in securely and reconciled."
+      },
+      "apiDevelopment": {
+        "title": "API Development",
+        "description": "Documented, versioned, resilient APIs your partners will thank you for."
+      },
+      "digitalTransformation": {
+        "title": "Digital Transformation",
+        "description": "Strategy and execution to move an operation from manual to measurable."
+      }
+    }
+  },
+  "portfolio": {
+    "eyebrow": "Work",
+    "title": "Selected projects.",
+    "lead": "Platforms, applications and systems built for founders, institutions and enterprises.",
+    "viewAll": "View all work",
+    "view": "View project",
+    "code": "Source",
+    "empty": "No projects in this category yet.",
+    "showing": "Showing {count} of {total}",
+    "categories": {
+      "all": "All",
+      "mobile": "Mobile Apps",
+      "ai": "AI Solutions",
+      "web": "Web Platforms",
+      "business": "Business Systems",
+      "games": "Games"
+    },
+    "status": {
+      "live": "Live",
+      "comingSoon": "Coming soon",
+      "template": "Template — replace later"
+    },
+    "items": {
+      "taxiApp": "Ride-hailing platform with live dispatch, fare estimation and driver payouts.",
+      "deliveryApp": "Last-mile delivery app with route optimisation and real-time tracking.",
+      "tradingApp": "Trading terminal with live charts, watchlists and instant order execution.",
+      "restaurantApp": "Ordering and table-booking app with kitchen sync and loyalty rewards.",
+      "fitnessApp": "Training companion with adaptive programmes, streaks and wearable sync.",
+      "musicApp": "Streaming app with offline playback, playlists and personalised discovery.",
+      "educationApp": "Learning platform with video lessons, graded quizzes and progress tracking.",
+      "healthcareApp": "Patient app for appointments, teleconsultation and prescription history.",
+      "novaAi": "Our flagship AI platform for automated communication, support and workflows.",
+      "aiCallingAgent": "Voice agent that places and answers real phone calls in natural language.",
+      "aiCustomerSupport": "Support layer that resolves tickets autonomously and escalates with context.",
+      "aiChatAssistant": "Embedded assistant trained on your documentation, products and tone.",
+      "documentIntelligence": "Extracts structured data from invoices, contracts and scanned records.",
+      "workflowAutomation": "Connects internal tools and runs multi-step processes without handoffs.",
+      "pbzBank": "Corporate banking website with product discovery and secure service journeys.",
+      "techonWebsite": "The site you are reading — our own design system, in production.",
+      "corporateWebsite": "Institutional site with multilingual content and investor-grade polish.",
+      "realEstate": "Property marketplace with map search, virtual tours and agent dashboards.",
+      "restaurantWebsite": "Restaurant site with live menu, reservations and delivery integration.",
+      "ecommerce": "Storefront with multi-vendor catalogue, checkout and payment orchestration.",
+      "portfolioWebsite": "Personal brand site with case studies and a content-managed journal.",
+      "hospital": "Hospital system covering records, wards, billing, pharmacy and laboratory.",
+      "school": "School platform for admissions, timetables, grading and parent communication.",
+      "inventory": "Multi-warehouse stock control with barcode scanning and reorder forecasting.",
+      "hotel": "Hotel system for reservations, housekeeping, folio billing and channel sync.",
+      "pos": "Point-of-sale with offline mode, shift reconciliation and multi-branch reporting.",
+      "hrManagement": "HR suite for recruitment, onboarding, leave, appraisals and records.",
+      "payroll": "Payroll engine with statutory deductions, payslips and bank file export.",
+      "loanManagement": "Lending system for origination, scoring, disbursement and collections.",
+      "erp": "Enterprise resource planning across finance, supply chain and operations.",
+      "crm": "Sales CRM with pipeline management, activity tracking and revenue forecasting.",
+      "puzzleGame": "Tile-matching puzzle game with daily challenges and progressive difficulty.",
+      "adventureGame": "Story-driven adventure with hand-drawn worlds and branching outcomes.",
+      "strategyGame": "Turn-based strategy with resource management and online multiplayer.",
+      "arcadeGame": "Fast-paced arcade runner with leaderboards and unlockable characters."
+    }
+  },
+  "why": {
+    "eyebrow": "Why TechOn",
+    "title": "Built by engineers who ship.",
+    "lead": "Not a marketplace of freelancers. One senior team, accountable from kickoff to the years after launch.",
+    "stats": {
+      "projects": "Projects delivered",
+      "clients": "Clients worldwide",
+      "satisfaction": "Client satisfaction",
+      "support": "Support coverage"
+    },
+    "points": {
+      "senior": {
+        "title": "Senior-only teams",
+        "description": "The engineers in your kickoff call are the engineers writing your code. No handover to juniors."
+      },
+      "speed": {
+        "title": "Shipped, not scoped",
+        "description": "Working software in weeks. You review something real every sprint instead of a status document."
+      },
+      "ownership": {
+        "title": "You own everything",
+        "description": "Source code, infrastructure, credentials and documentation are yours from day one."
+      },
+      "longevity": {
+        "title": "Built to outlast us",
+        "description": "Tested, documented and architected so any competent team can pick it up years later."
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "Seven steps. No surprises.",
+    "lead": "Each stage ends with something you can see and sign off, so you always know exactly where your project stands.",
+    "steps": {
+      "discovery": {
+        "title": "Discovery",
+        "description": "We map the business, the users and the constraints before a single decision gets locked in."
+      },
+      "planning": {
+        "title": "Planning",
+        "description": "Scope, architecture, timeline and budget agreed in writing — no moving targets later."
+      },
+      "design": {
+        "title": "Design",
+        "description": "Interactive prototypes you can click through and correct long before code exists."
+      },
+      "development": {
+        "title": "Development",
+        "description": "Two-week sprints, each ending with working software deployed for you to try."
+      },
+      "testing": {
+        "title": "Testing",
+        "description": "Automated coverage, load testing, security review and real devices in real conditions."
+      },
+      "deployment": {
+        "title": "Deployment",
+        "description": "Zero-downtime release with monitoring, backups and rollback ready before we go live."
+      },
+      "support": {
+        "title": "Support",
+        "description": "Ongoing maintenance, performance tuning and a roadmap for what comes next."
+      }
+    }
+  },
+  "stack": {
+    "eyebrow": "Technology",
+    "title": "Proven tools, chosen deliberately.",
+    "lead": "We pick the boring, well-understood option unless there is a real reason not to — and we can tell you exactly what that reason is."
+  },
+  "testimonials": {
+    "eyebrow": "Clients",
+    "title": "What it is like to work with us.",
+    "lead": "Results from the teams who trusted us with something that mattered.",
+    "prev": "Previous",
+    "next": "Next",
+    "items": {
+      "amina": {
+        "quote": "They replaced a system three other vendors had failed to finish. Eleven weeks later it was live and our support load had halved.",
+        "name": "Amina Rashid",
+        "role": "Chief Operating Officer",
+        "company": "Zanzi Logistics"
+      },
+      "daniel": {
+        "quote": "NOVA handles the first response on every enquiry we get. Our team stopped drowning in email and started closing deals again.",
+        "name": "Daniel Mwakalinga",
+        "role": "Founder",
+        "company": "Serengeti Retail Group"
+      },
+      "claire": {
+        "quote": "The design work alone changed how our investors saw the company. We raised our next round on the back of that demo.",
+        "name": "Claire Dubois",
+        "role": "Head of Product",
+        "company": "Meridian Health"
+      },
+      "thomas": {
+        "quote": "Honest estimates, no theatre, and they told us when a feature was not worth building. That is rarer than good code.",
+        "name": "Thomas Weber",
+        "role": "Chief Technology Officer",
+        "company": "Halden Systems"
+      },
+      "grace": {
+        "quote": "Two years on, the platform still runs exactly as delivered. The documentation was good enough that our own team took it over.",
+        "name": "Grace Otieno",
+        "role": "Managing Director",
+        "company": "Tembo Financial"
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's build something together.",
+    "lead": "Tell us what you are trying to build. We will tell you honestly whether we are the right team for it, usually within one business day.",
+    "whatsapp": "WhatsApp",
+    "whatsappHint": "Fastest reply",
+    "email": "Email",
+    "emailHint": "Detailed briefs",
+    "book": "Book a consultation",
+    "bookHint": "30 minutes, free",
+    "response": "Average response time: under 6 hours",
+    "callUs": "Call us",
+    "regions": {
+      "tanzania": "Tanzania",
+      "unitedStates": "United States"
+    }
+  },
+  "footer": {
+    "tagline": "We design and build software that businesses depend on.",
+    "navigation": "Navigation",
+    "company": "Company",
+    "connect": "Connect",
+    "contact": "Contact",
+    "newsletter": "Newsletter",
+    "newsletterHint": "Occasional notes on AI, engineering and what we are shipping.",
+    "placeholder": "you@company.com",
+    "subscribe": "Subscribe",
+    "subscribed": "You are on the list.",
+    "invalid": "Enter a valid email address.",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "top": "Back to top"
+  },
+  "portfolioPage": {
+    "eyebrow": "Work",
+    "title": "Everything we have built.",
+    "lead": "Mobile applications, AI platforms, web products, business systems and games.",
+    "back": "Back to home",
+    "ctaTitle": "Have something like this in mind?",
+    "ctaLead": "Tell us about it. You will get a real answer, not a brochure.",
+    "ctaButton": "Start a project"
+  },
+  "booking": {
+    "meta": {
+      "title": "Book a Discovery Session",
+      "description": "Schedule a consultation with TechOn to discuss AI solutions, software development, websites, mobile applications and enterprise systems."
+    },
+    "eyebrow": "Consultation",
+    "title": "Schedule Your Discovery Session",
+    "subtitle": "Let's discuss your project and discover the best technology solution for your business.",
+    "free": "Free",
+    "recommended": "Most popular",
+    "minutes": "{count, plural, =1 {# minute} other {# minutes}}",
+    "stepLabel": "Step {step}",
+    "continue": "Continue",
+    "back": "Back",
+    "submit": "Schedule My Session",
+    "submitting": "Scheduling…",
+    "backHome": "Back to home",
+    "seeWork": "See our work",
+    "feeCredit": "If you proceed with TechOn to develop your project, your consultation fee will be deducted from the final project cost.",
+    "stages": {
+      "label": "Booking progress",
+      "consultation": "Consultation",
+      "schedule": "Schedule",
+      "details": "Details",
+      "review": "Review"
+    },
+    "steps": {
+      "consultation": "Choose your consultation",
+      "date": "Choose a date",
+      "time": "Choose a time",
+      "meeting": "How would you like to meet?",
+      "personal": "Your details",
+      "project": "About your project",
+      "review": "Review and confirm"
+    },
+    "hints": {
+      "consultation": "Select a consultation to continue.",
+      "schedule": "Choose a date, a time and a meeting type to continue."
+    },
+    "consultations": {
+      "discovery": {
+        "title": "Free Discovery Call",
+        "description": "A short introductory meeting to understand your project and determine how TechOn can help."
+      },
+      "aiStrategy": {
+        "title": "AI Strategy Consultation",
+        "description": "Ideal for startups seeking AI systems, automation or digital transformation."
+      },
+      "businessStrategy": {
+        "title": "Business Strategy Consultation",
+        "description": "For established companies requiring software architecture, enterprise systems and long-term digital strategy."
+      }
+    },
+    "calendar": {
+      "previousMonth": "Previous month",
+      "nextMonth": "Next month",
+      "loading": "Checking availability…",
+      "legendOpen": "Slots available",
+      "legendFilling": "Filling up",
+      "legendFull": "Fully booked",
+      "closed": "Closed",
+      "slotsLeft": "{count} slots available"
+    },
+    "time": {
+      "label": "Available times",
+      "pickDateFirst": "Choose a date to see available times.",
+      "fullyBooked": "Fully booked",
+      "fullyBookedHint": "Every slot on this day is taken. Please choose another date.",
+      "loading": "Checking availability…",
+      "closed": "Closed",
+      "closedHint": "We are not open on this day. Please choose another date.",
+      "remaining": "{available} of {total} times available",
+      "lunchBreak": "Lunch break",
+      "reason": {
+        "booked": "Booked",
+        "blocked": "Unavailable",
+        "past": "Past",
+        "tooLate": "Not enough time left"
+      }
+    },
+    "meeting": {
+      "office": {
+        "title": "Office visit",
+        "description": "Meet us in person at our Dar es Salaam headquarters."
+      },
+      "online": {
+        "title": "Online meeting",
+        "description": "Join from anywhere by video call."
+      },
+      "officeLabel": "Location",
+      "onlineLabel": "Platform",
+      "directions": "Get directions",
+      "mapPlaceholder": "Map preview",
+      "linkAfterConfirmation": "Your meeting link is generated after confirmation."
+    },
+    "contact": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone number",
+      "country": "Country",
+      "countryPlaceholder": "Select your country",
+      "optional": "(optional)"
+    },
+    "project": {
+      "category": "Consultation category",
+      "categoryPlaceholder": "Select a category",
+      "budget": "Project budget",
+      "budgetPlaceholder": "Select a budget range",
+      "description": "Project description",
+      "descriptionPlaceholder": "Please describe your project, business goals and any specific requirements.",
+      "optional": "(optional)"
+    },
+    "categories": {
+      "aiSolutions": "AI Solutions",
+      "novaAi": "NOVA AI",
+      "customSoftware": "Custom Software",
+      "website": "Website Development",
+      "mobileApp": "Mobile Application",
+      "businessSystems": "Business Systems",
+      "erp": "Enterprise ERP",
+      "cloud": "Cloud Solutions",
+      "automation": "Automation",
+      "cyberSecurity": "Cyber Security",
+      "other": "Other"
+    },
+    "budgets": {
+      "under2m": "Less than TZS 2 Million",
+      "from2to5m": "TZS 2M – 5M",
+      "from5to10m": "TZS 5M – 10M",
+      "from10to20m": "TZS 10M – 20M",
+      "above20m": "Above TZS 20 Million",
+      "unsure": "Not sure yet"
+    },
+    "summary": {
+      "title": "Booking summary",
+      "consultation": "Consultation",
+      "price": "Price",
+      "duration": "Duration",
+      "meetingType": "Meeting type",
+      "date": "Date",
+      "time": "Time",
+      "location": "Location",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "errors": {
+      "summary": "Please check the highlighted fields and try again.",
+      "firstName": {
+        "required": "Enter your first name."
+      },
+      "lastName": {
+        "required": "Enter your last name."
+      },
+      "email": {
+        "required": "Enter your email address.",
+        "invalid": "Enter a valid email address."
+      },
+      "phone": {
+        "required": "Enter your phone number.",
+        "invalid": "Enter a valid phone number."
+      },
+      "country": {
+        "required": "Select your country."
+      },
+      "category": {
+        "required": "Select a category."
+      },
+      "budget": {
+        "required": "Select a budget range."
+      }
+    },
+    "success": {
+      "title": "Your Discovery Session Has Been Scheduled",
+      "lead": "A confirmation is on its way to your inbox. We look forward to speaking with you.",
+      "reference": "Booking ID",
+      "copyReference": "Copy booking ID",
+      "meetingLink": "Meeting link",
+      "linkPending": "Generating…",
+      "linkNote": "A calendar invitation with this link has been sent to your email address.",
+      "addToCalendar": "Add to calendar",
+      "google": "Google Calendar",
+      "outlook": "Outlook Calendar",
+      "apple": "Apple Calendar",
+      "questions": "Need to reschedule or have a question before we meet?",
+      "eventTitle": "Discovery Session",
+      "eventDescription": "Your consultation with the TechOn team."
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About Us",
+      "description": "TechOn is a software company building AI platforms, mobile applications and enterprise systems from Dar es Salaam, Nairobi and Houston."
+    },
+    "hero": {
+      "eyebrow": "About Us",
+      "title": "We build software the way it should be built.",
+      "lead": "Founded in 2019. Small on purpose, senior by design, and still supporting the first systems we shipped."
+    },
+    "who": {
+      "eyebrow": "Who we are",
+      "title": "A software company, not an agency.",
+      "body1": "TechOn is a team of engineers and designers working out of Dar es Salaam, Nairobi and Houston. We build AI platforms, mobile applications and the enterprise systems that businesses run their day on.",
+      "body2": "We do not subcontract, and we do not staff projects with whoever is free. The people in your first meeting are the people who build the thing — and who answer the phone two years later when you want to extend it."
+    },
+    "mission": {
+      "eyebrow": "Mission",
+      "title": "Make good software ordinary.",
+      "body": "Too many businesses have been sold systems that are slow, fragile or already abandoned. We exist to change what people expect from the software they pay for: fast, documented, owned by them, and still standing years later."
+    },
+    "vision": {
+      "eyebrow": "Vision",
+      "title": "African engineering, held to a world standard.",
+      "body": "We want TechOn to be proof that software built in Dar es Salaam competes with software built anywhere — measured on craft, reliability and the quality of the thinking behind it, not on price."
+    },
+    "values": {
+      "eyebrow": "Values",
+      "title": "What we hold ourselves to.",
+      "lead": "Six commitments that decide how we work when nobody is watching.",
+      "items": {
+        "craft": {
+          "title": "Craft over volume",
+          "description": "We would rather ship fewer things properly than many things adequately."
+        },
+        "candour": {
+          "title": "Say the hard thing",
+          "description": "If a feature is not worth building or a deadline is not real, you hear it from us first."
+        },
+        "ownership": {
+          "title": "Own the outcome",
+          "description": "The job is not done at handover. It is done when the thing works in production."
+        },
+        "speed": {
+          "title": "Move at a real pace",
+          "description": "Working software every sprint. Momentum is a feature, not a nice-to-have."
+        },
+        "security": {
+          "title": "Secure by default",
+          "description": "Encryption, least privilege and audit trails are decisions we make on day one."
+        },
+        "curiosity": {
+          "title": "Stay curious",
+          "description": "We read the papers, run the experiments, and adopt the new thing only once it earns it."
+        }
+      }
+    },
+    "leadership": {
+      "eyebrow": "Leadership",
+      "title": "The person behind the work.",
+      "lead": "TechOn is led by an engineer, which is why the engineering comes first.",
+      "role": "Founder & Chief Executive Officer",
+      "bio": "Conrad founded TechOn in 2019 after a decade of building systems for banks, hospitals and logistics operators across East Africa. He still reviews architecture on every project the company takes on.",
+      "educationLabel": "Education",
+      "readProfile": "Read full profile",
+      "portraitPending": "Portrait coming soon",
+      "qualifications": {
+        "bachelor": "BSc Computer Engineering",
+        "masters": "MSc Cyber Security"
+      }
+    },
+    "stack": {
+      "eyebrow": "Technology",
+      "title": "What we build with.",
+      "lead": "A deliberately small, well-understood toolkit. We add to it slowly and remove from it often."
+    },
+    "timeline": {
+      "eyebrow": "Timeline",
+      "title": "How we got here.",
+      "lead": "Seven years, one direction.",
+      "items": {
+        "founded": {
+          "title": "TechOn is founded",
+          "description": "Two engineers, one room in Dar es Salaam, and a first contract to rebuild a logistics back office."
+        },
+        "firstEnterprise": {
+          "title": "First enterprise system",
+          "description": "A hospital management platform that is still in daily use six years later."
+        },
+        "mobile": {
+          "title": "Mobile practice opens",
+          "description": "Flutter and React Native become a core capability rather than a side offering."
+        },
+        "regional": {
+          "title": "Nairobi and Houston",
+          "description": "Clients across three countries, and the team grows to support them properly."
+        },
+        "ai": {
+          "title": "AI becomes a discipline",
+          "description": "Retrieval systems, document intelligence and the first production voice agents."
+        },
+        "nova": {
+          "title": "NOVA AI launches",
+          "description": "Everything we learned about AI in production, assembled into one platform."
+        },
+        "today": {
+          "title": "Today",
+          "description": "Fifty projects delivered, twenty clients, and the first systems we built still running."
+        }
+      }
+    },
+    "cta": {
+      "title": "Work with us.",
+      "lead": "Tell us what you are building. We will tell you honestly whether we are the right team for it.",
+      "primary": "Start a project",
+      "secondary": "See our work"
+    }
+  },
+  "notFound": {
+    "title": "This page does not exist.",
+    "lead": "The link may be outdated, or the page has moved somewhere better.",
+    "home": "Back to home",
+    "work": "See our work"
+  }
+}

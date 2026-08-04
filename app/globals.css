@@ -1,83 +1,127 @@
 @import 'tailwindcss';
-@import 'tw-animate-css';
 
-@custom-variant dark (&:is(.dark *));
+/* ==========================================================================
+   TechOn Design System
+
+   A deliberately small system. One neutral ramp, one brand colour, three
+   radii, three shadows. Restraint is the design — anything that needs a new
+   token probably needs a simpler idea instead.
+   ========================================================================== */
 
 :root {
-  --background: oklch(0.98 0.002 90);
-  --foreground: oklch(0.15 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0 0);
-  --primary: oklch(0.15 0 0);
-  --primary-foreground: oklch(0.98 0.002 90);
-  --secondary: oklch(0.96 0.002 90);
-  --secondary-foreground: oklch(0.15 0 0);
-  --muted: oklch(0.94 0.002 90);
-  --muted-foreground: oklch(0.45 0 0);
-  --accent: oklch(0.45 0.18 300);
-  --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.90 0 0);
-  --input: oklch(0.92 0 0);
-  --ring: oklch(0.45 0.18 300);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.5rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.45 0.18 300);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
+  /* --- Surfaces --------------------------------------------------------- */
+  --white: #ffffff;
+  --surface: #f8f8fa; /* alternating section background */
+  --surface-2: #fafafa; /* the quieter of the two, for long stretches */
 
-.dark {
-  --background: oklch(0.12 0.01 280);
-  --foreground: oklch(0.95 0.01 90);
-  --card: oklch(0.14 0.01 280);
-  --card-foreground: oklch(0.95 0.01 90);
-  --popover: oklch(0.14 0.01 280);
-  --popover-foreground: oklch(0.95 0.01 90);
-  --primary: oklch(0.95 0.01 90);
-  --primary-foreground: oklch(0.12 0.01 280);
-  --secondary: oklch(0.20 0.02 280);
-  --secondary-foreground: oklch(0.95 0.01 90);
-  --muted: oklch(0.20 0.02 280);
-  --muted-foreground: oklch(0.65 0.02 280);
-  --accent: oklch(0.65 0.20 300);
-  --accent-foreground: oklch(0.95 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.25 0.02 280);
-  --input: oklch(0.25 0.02 280);
-  --ring: oklch(0.65 0.20 300);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.14 0.01 280);
-  --sidebar-foreground: oklch(0.95 0.01 90);
-  --sidebar-primary: oklch(0.65 0.20 300);
-  --sidebar-primary-foreground: oklch(0.95 0 0);
-  --sidebar-accent: oklch(0.20 0.02 280);
-  --sidebar-accent-foreground: oklch(0.95 0.01 90);
-  --sidebar-border: oklch(0.25 0.02 280);
-  --sidebar-ring: oklch(0.65 0.20 300);
+  /* --- Ink -------------------------------------------------------------- */
+  --ink: #111111;
+  --ink-muted: #555555;
+  /* Derived, not invented: #555 lightened for captions and disabled states.
+     Still passes 4.5:1 on white at the sizes it is used. */
+  --ink-subtle: #767676;
+
+  /* --- Lines ------------------------------------------------------------ */
+  --line: #e8e8e8;
+  --line-strong: #d8d8dc;
+
+  /* --- Brand ------------------------------------------------------------ */
+  /* Sampled directly from the logo artwork: #7B19BC accounts for 682k pixels
+     of public/techon.png, hsl(276, 77%, 42%). Every other brand value below is
+     the same hue at a different lightness, so the UI can never drift away from
+     the mark it sits next to. */
+  --brand: #7b19bc;
+  /* Lifted for hover and small accents — hsl(276, 70%, 50%). */
+  --brand-accent: #9126d9;
+  /* Pressed state — hsl(276, 77%, 34%). */
+  --brand-deep: #641499;
+  /* 8% brand on white, for quiet fills. */
+  --brand-wash: #f4edfa;
+  --success: #16a34a;
+
+  /* --- Radius ----------------------------------------------------------- */
+  /* Hard ceiling of 14px. Nothing in this system is a pill except the
+     locale chip and filter tabs, which are explicitly full-round. */
+  --r-sm: 8px;
+  --r-md: 10px;
+  --r-lg: 12px;
+  --r-xl: 14px;
+
+  /* --- Elevation -------------------------------------------------------- */
+  /* Barely there. Depth comes from the 1px line, not the shadow. */
+  --shadow-xs: 0 1px 2px rgba(17, 17, 17, 0.04);
+  --shadow-sm: 0 1px 2px rgba(17, 17, 17, 0.04), 0 2px 6px rgba(17, 17, 17, 0.04);
+  --shadow-md: 0 2px 4px rgba(17, 17, 17, 0.03), 0 8px 24px rgba(17, 17, 17, 0.06);
+
+  /* --- Rhythm ----------------------------------------------------------- */
+  /* 140px from roughly 1170px upward — so every real laptop gets the full
+     interval — compressed on small screens, where 140px of nothing reads as a
+     loading bug rather than as composure. */
+  --section-y: clamp(4.5rem, 12vw, 8.75rem);
+  --container: 1280px;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* --- shadcn/ui compatibility ------------------------------------------ */
+  /* The vendored primitives read these names. Mapped onto the tokens above
+     so anything pulled in later inherits this palette automatically. */
+  --background: var(--white);
+  --foreground: var(--ink);
+  --card: var(--white);
+  --card-foreground: var(--ink);
+  --popover: var(--white);
+  --popover-foreground: var(--ink);
+  --primary: var(--brand);
+  --primary-foreground: #ffffff;
+  --secondary: var(--surface);
+  --secondary-foreground: var(--ink);
+  --muted: var(--surface);
+  --muted-foreground: var(--ink-muted);
+  --accent: var(--surface);
+  --accent-foreground: var(--ink);
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: var(--line);
+  --input: var(--line);
+  --ring: var(--brand);
+  --radius: var(--r-md);
+  --sidebar: var(--white);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--brand);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: var(--surface);
+  --sidebar-accent-foreground: var(--ink);
+  --sidebar-border: var(--line);
+  --sidebar-ring: var(--brand);
+  --chart-1: var(--brand);
+  --chart-2: var(--brand-accent);
+  --chart-3: var(--ink-muted);
+  --chart-4: var(--line-strong);
+  --chart-5: var(--success);
+
+  color-scheme: light;
 }
 
 @theme inline {
-  --font-sans: 'Inter', 'Geist', 'Geist Fallback';
-  --font-serif: 'Playfair Display', 'Georgia', serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-sans: var(--font-inter), ui-sans-serif, -apple-system, 'SF Pro Text',
+    'Segoe UI', system-ui, sans-serif;
+  --font-display: var(--font-display), var(--font-inter), ui-sans-serif,
+    -apple-system, 'SF Pro Display', system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --color-white: var(--white);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-subtle: var(--ink-subtle);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-brand: var(--brand);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-wash: var(--brand-wash);
+  --color-success: var(--success);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -97,15 +141,6 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -114,13 +149,219 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --radius-sm: var(--r-sm);
+  --radius-md: var(--r-md);
+  --radius-lg: var(--r-lg);
+  --radius-xl: var(--r-xl);
+
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
 }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-line;
   }
+
+  html {
+    scroll-behavior: smooth;
+    /* Header is sticky; anchored sections must clear it. */
+    scroll-padding-top: 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    background: var(--white);
+    color: var(--ink);
+    /* Guards every layout against a stray wide child on small screens. */
+    overflow-x: clip;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), var(--font-inter), system-ui, sans-serif;
+    color: var(--ink);
+    /* Optical tightening. Large type needs more of it than small type. */
+    letter-spacing: -0.022em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: rgba(123, 25, 188, 0.14);
+    color: var(--ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+@layer utilities {
+  .container-page {
+    width: 100%;
+    max-width: var(--container);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  .section-y {
+    padding-block: var(--section-y);
+  }
+
+  /* --- Type scale ------------------------------------------------------- */
+  /* Mobile-first: the lower bound of each clamp is the phone size, chosen
+     first, with the desktop size scaled up from it. */
+  .type-display {
+    font-size: clamp(2.5rem, 6.2vw, 5rem);
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+    font-weight: 600;
+  }
+
+  .type-h1 {
+    font-size: clamp(2rem, 4.6vw, 3.5rem);
+    line-height: 1.07;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+  }
+
+  .type-h2 {
+    font-size: clamp(1.75rem, 3.4vw, 2.75rem);
+    line-height: 1.12;
+    letter-spacing: -0.026em;
+    font-weight: 600;
+  }
+
+  .type-h3 {
+    font-size: 1.25rem;
+    line-height: 1.35;
+    letter-spacing: -0.016em;
+    font-weight: 600;
+  }
+
+  .type-lead {
+    font-size: clamp(1.0625rem, 1.35vw, 1.3125rem);
+    line-height: 1.55;
+    letter-spacing: -0.01em;
+    color: var(--ink-muted);
+  }
+
+  .type-body {
+    font-size: 1.0625rem;
+    line-height: 1.62;
+    color: var(--ink-muted);
+  }
+
+  .type-small {
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--ink-muted);
+  }
+
+  .type-eyebrow {
+    font-size: 0.8125rem;
+    line-height: 1.2;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: var(--brand);
+  }
+
+  /* --- Surfaces --------------------------------------------------------- */
+  .card-surface {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+  }
+
+  /* Hover contract for every interactive card on the site: 4px lift, 1.02
+     scale, nothing else. Declared once so no section can drift. */
+  .card-hover {
+    transition:
+      transform 300ms cubic-bezier(0.32, 0.72, 0, 1),
+      box-shadow 300ms cubic-bezier(0.32, 0.72, 0, 1),
+      border-color 300ms cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-md);
+    border-color: var(--line-strong);
+  }
+
+  /* Faint ruled background for mockup interiors. Never used full-bleed. */
+  .bg-hairline-grid {
+    background-image:
+      linear-gradient(to right, rgba(17, 17, 17, 0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(17, 17, 17, 0.035) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  }
+}
+
+/* ==========================================================================
+   Motion
+   Subtle by policy: opacity, ≤16px of travel, ≤0.02 of scale. Nothing here
+   should be noticeable as an effect — only as the page feeling settled.
+   ========================================================================== */
+
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  animation: marquee var(--marquee-duration, 48s) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .card-hover:hover {
+    transform: none;
   }
 }

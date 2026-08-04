@@ -1,0 +1,55 @@
+rules_version = '2';
+
+// TechOn — Firebase Storage Security Rules
+//
+// Uploads are admin-only. The public site reads images, so download is open —
+// but nothing outside the four known prefixes is writable, and every write is
+// constrained by content type and size so the bucket cannot be used as free
+// file hosting.
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function isAdmin() {
+      return request.auth != null
+        && firestore.exists(/databases/(default)/documents/admins/$(request.auth.uid));
+    }
+
+    function isImage() {
+      return request.resource.contentType.matches('image/(jpeg|png|webp|avif)')
+        && request.resource.size < 5 * 1024 * 1024;
+    }
+
+    function isVideo() {
+      return request.resource.contentType.matches('video/(mp4|webm)')
+        && request.resource.size < 50 * 1024 * 1024;
+    }
+
+    // Portfolio covers, hero shots and blog images.
+    match /portfolio/{file} {
+      allow read: if true;
+      allow write: if isAdmin() && isImage();
+    }
+
+    match /hero/{file} {
+      allow read: if true;
+      allow write: if isAdmin() && isImage();
+    }
+
+    match /posts/{file} {
+      allow read: if true;
+      allow write: if isAdmin() && isImage();
+    }
+
+    // NOVA accepts a demo video as well as stills.
+    match /nova/{file} {
+      allow read: if true;
+      allow write: if isAdmin() && (isImage() || isVideo());
+    }
+
+    // Everything else is denied, including the bucket root.
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

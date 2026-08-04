@@ -1,0 +1,671 @@
+{
+  "meta": {
+    "title": "TechOn — Programu, AI na Mabadiliko ya Kidijitali",
+    "description": "TechOn hubuni na kujenga mifumo ya AI, programu za simu na mifumo ya kampuni kwa makampuni yanayojali jinsi mambo yanavyofanya kazi.",
+    "portfolioTitle": "Kazi"
+  },
+  "nav": {
+    "home": "Mwanzo",
+    "about": "Kuhusu Sisi",
+    "services": "Huduma",
+    "portfolio": "Kazi Zetu",
+    "nova": "NOVA AI",
+    "contact": "Wasiliana",
+    "book": "Weka miadi",
+    "cta": "Anza mradi",
+    "menu": "Fungua menyu",
+    "close": "Funga menyu",
+    "language": "Lugha"
+  },
+  "hero": {
+    "badge": "NOVA AI",
+    "badgeText": "Mfumo wetu wa AI upo hewani",
+    "title": "Tunajenga programu ambazo biashara yako inategemea.",
+    "lead": "Mifumo ya AI, programu za simu na mifumo ya kampuni — imebuniwa, imejengwa na kusaidiwa na timu moja ya wataalam.",
+    "primary": "Anza mradi",
+    "secondary": "Tazama kazi zetu",
+    "stat1": "Miradi iliyokamilika",
+    "stat2": "Wateja duniani",
+    "stat3": "Kuridhika kwa wateja"
+  },
+  "logos": {
+    "title": "Tunaaminiwa na timu zinazojenga Afrika, Ulaya na Amerika Kaskazini"
+  },
+  "aboutPreview": {
+    "eyebrow": "Kuhusu TechOn",
+    "title": "Timu ndogo, kwa makusudi.",
+    "body": "TechOn ilianzishwa mwaka 2019 kujenga programu kwa usahihi — zile ambazo bado zinafanya kazi, na bado zinaeleweka, miaka mingi baada ya uzinduzi. Tunabaki wadogo kwa makusudi: wahandisi unaokutana nao mwanzoni ndio wanaoandika msimbo wako, na wanabaki nao hata baada ya kuzinduliwa.",
+    "ceoRole": "Mwanzilishi na Mkurugenzi Mtendaji",
+    "cta": "Jifunze zaidi"
+  },
+  "nova": {
+    "eyebrow": "NOVA AI",
+    "title": "Nguvu kazi isiyolala kamwe.",
+    "lead": "NOVA hupokea simu, hujibu ujumbe wako, hupanga mikutano na husasisha CRM. Hufanya kazi saa tisa usiku, kwa kila lugha wateja wako wanaozungumza.",
+    "cta": "Zungumza nasi kuhusu NOVA",
+    "secondary": "Panga onyesho",
+    "panelStatus": "Inafanya kazi",
+    "metric1": "Imetatuliwa bila binadamu",
+    "metric2": "Wastani wa jibu la kwanza",
+    "metric3": "Lugha zinazotumika",
+    "capabilitiesTitle": "Kila kitu NOVA anachofanya.",
+    "capabilitiesLead": "Uwezo ishirini na mbili, jukwaa moja. Washa unachohitaji na uache kingine.",
+    "scene": {
+      "incoming": "Simu inayoingia",
+      "answering": "NOVA anapokea",
+      "listening": "Anasikiliza",
+      "thinking": "Anafikiri",
+      "chat": "Gumzo la moja kwa moja"
+    },
+    "groups": {
+      "voice": "Sauti na simu",
+      "channels": "Ujumbe na mifereji",
+      "intelligence": "Akili",
+      "operations": "Uendeshaji"
+    },
+    "capabilities": {
+      "aiVoiceCalling": "Simu za sauti za AI",
+      "receivesCalls": "Hupokea simu kiotomatiki",
+      "makesCalls": "Hupiga simu kiotomatiki",
+      "naturalConversations": "Mazungumzo ya sauti ya kawaida",
+      "humanHandoff": "Kukabidhi kwa binadamu",
+      "customerSupport": "Msaada wa wateja wa AI",
+      "whatsapp": "Uendeshaji wa WhatsApp",
+      "instagram": "Uendeshaji wa Instagram",
+      "facebook": "Uendeshaji wa Facebook",
+      "email": "Uendeshaji wa barua pepe",
+      "knowledgeBase": "Hifadhi ya maarifa",
+      "documentSearch": "Utafutaji wa nyaraka",
+      "multilingual": "Msaada wa lugha nyingi",
+      "analytics": "Uchambuzi wa biashara",
+      "customEmployees": "Wafanyakazi maalum wa AI",
+      "appointmentBooking": "Kuweka miadi",
+      "leadQualification": "Uchujaji wa wateja watarajiwa",
+      "crmIntegration": "Muunganisho wa CRM",
+      "calendarIntegration": "Muunganisho wa kalenda",
+      "workflowAutomation": "Uendeshaji wa michakato",
+      "apiIntegration": "Muunganisho wa API",
+      "availability": "Upatikanaji wa saa 24/7"
+    }
+  },
+  "services": {
+    "eyebrow": "Huduma",
+    "title": "Kila tunachofanya, tunakifanya vizuri.",
+    "lead": "Mshirika mmoja kutoka mchoro wa kwanza hadi uzalishaji kamili, hivyo hakuna kinachopotea kati ya mkakati, ubunifu na msimbo.",
+    "items": {
+      "aiSolutions": {
+        "title": "Suluhisho za AI",
+        "description": "Mifano maalum na tabaka za akili zilizojengwa ndani ya bidhaa unazotumia tayari."
+      },
+      "aiAgents": {
+        "title": "Mawakala wa AI",
+        "description": "Mawakala wanaojitegemea wanaoshughulikia simu, mazungumzo na kazi za hatua nyingi."
+      },
+      "customSoftware": {
+        "title": "Programu maalum",
+        "description": "Mifumo iliyojengwa kulingana na jinsi biashara yako inavyofanya kazi kweli, si kiolezo."
+      },
+      "mobileApps": {
+        "title": "Programu za simu",
+        "description": "Bidhaa za iOS na Android zenye hisia asilia zilizojengwa kwa Flutter na React Native."
+      },
+      "enterpriseSystems": {
+        "title": "Mifumo ya kampuni",
+        "description": "ERP, CRM na mifumo ya uendeshaji inayostahimili uzito halisi wa shirika."
+      },
+      "cloudSolutions": {
+        "title": "Suluhisho za wingu",
+        "description": "Usanifu na miundombinu inayobaki haraka na ya kutabirika unapokua."
+      },
+      "automation": {
+        "title": "Uendeshaji otomatiki",
+        "description": "Injini za michakato zinazoondoa kazi za kurudia zinazochosha timu yako."
+      },
+      "webDevelopment": {
+        "title": "Uundaji wa tovuti",
+        "description": "Mifumo ya haraka, inayofikika na tayari kwa utafutaji, iliyojengwa kwa Next.js na React."
+      },
+      "uiuxDesign": {
+        "title": "Ubunifu wa UI/UX",
+        "description": "Ubunifu wa kiolesura na bidhaa wenye ustadi wa programu ya kiwango cha mtumiaji."
+      },
+      "paymentIntegrations": {
+        "title": "Muunganisho wa malipo",
+        "description": "Pesa za simu, kadi na njia za kimataifa zilizounganishwa kwa usalama na kupatanishwa."
+      },
+      "apiDevelopment": {
+        "title": "Uundaji wa API",
+        "description": "API zilizoandikwa, zenye matoleo na imara ambazo washirika wako watashukuru."
+      },
+      "digitalTransformation": {
+        "title": "Mabadiliko ya kidijitali",
+        "description": "Mkakati na utekelezaji wa kuhamisha shughuli kutoka mikono hadi kupimika."
+      }
+    }
+  },
+  "portfolio": {
+    "eyebrow": "Kazi",
+    "title": "Miradi iliyochaguliwa.",
+    "lead": "Mifumo, programu na majukwaa yaliyojengwa kwa waanzilishi, taasisi na makampuni makubwa.",
+    "viewAll": "Tazama kazi zote",
+    "view": "Tazama mradi",
+    "code": "Msimbo",
+    "empty": "Hakuna miradi katika kundi hili bado.",
+    "showing": "Inaonyesha {count} kati ya {total}",
+    "categories": {
+      "all": "Yote",
+      "mobile": "Programu za Simu",
+      "ai": "Suluhisho za AI",
+      "web": "Majukwaa ya Wavuti",
+      "business": "Mifumo ya Biashara",
+      "games": "Michezo"
+    },
+    "status": {
+      "live": "Hewani",
+      "comingSoon": "Inakuja hivi karibuni",
+      "template": "Kiolezo — badilisha baadaye"
+    },
+    "items": {
+      "taxiApp": "Jukwaa la usafiri lenye upangaji wa moja kwa moja, makadirio ya nauli na malipo ya madereva.",
+      "deliveryApp": "Programu ya usafirishaji yenye uboreshaji wa njia na ufuatiliaji wa wakati halisi.",
+      "tradingApp": "Kituo cha biashara chenye chati za moja kwa moja, orodha za ufuatiliaji na utekelezaji wa haraka.",
+      "restaurantApp": "Programu ya kuagiza na kuweka nafasi yenye muunganisho wa jikoni na zawadi za uaminifu.",
+      "fitnessApp": "Msaidizi wa mazoezi wenye programu zinazobadilika, mfululizo na muunganisho wa vifaa.",
+      "musicApp": "Programu ya muziki yenye usikilizaji nje ya mtandao, orodha na ugunduzi wa kibinafsi.",
+      "educationApp": "Jukwaa la kujifunza lenye masomo ya video, mitihani yenye alama na ufuatiliaji wa maendeleo.",
+      "healthcareApp": "Programu ya mgonjwa kwa miadi, ushauri wa mbali na historia ya dawa.",
+      "novaAi": "Jukwaa letu kuu la AI kwa mawasiliano ya kiotomatiki, msaada na michakato.",
+      "aiCallingAgent": "Wakala wa sauti anayepiga na kupokea simu halisi kwa lugha ya kawaida.",
+      "aiCustomerSupport": "Tabaka la msaada linalotatua maswali lenyewe na kupeleka mengine na maelezo.",
+      "aiChatAssistant": "Msaidizi aliyefundishwa kwa nyaraka, bidhaa na mtindo wa mawasiliano yako.",
+      "documentIntelligence": "Huchambua data kutoka ankara, mikataba na nyaraka zilizoskaniwa.",
+      "workflowAutomation": "Huunganisha zana za ndani na kuendesha michakato ya hatua nyingi bila kukatika.",
+      "pbzBank": "Tovuti ya benki ya kampuni yenye ugunduzi wa bidhaa na safari salama za huduma.",
+      "techonWebsite": "Tovuti unayosoma sasa — mfumo wetu wa ubunifu, ukiwa kazini.",
+      "corporateWebsite": "Tovuti ya taasisi yenye maudhui ya lugha nyingi na ubora wa kiwango cha wawekezaji.",
+      "realEstate": "Soko la mali lenye utafutaji wa ramani, ziara za mtandaoni na dashibodi za mawakala.",
+      "restaurantWebsite": "Tovuti ya mgahawa yenye menyu ya moja kwa moja, nafasi na muunganisho wa usafirishaji.",
+      "ecommerce": "Duka la mtandaoni lenye wauzaji wengi, malipo na uratibu wa mifumo ya malipo.",
+      "portfolioWebsite": "Tovuti ya chapa binafsi yenye masomo ya kazi na jarida linalosimamiwa.",
+      "hospital": "Mfumo wa hospitali unaojumuisha rekodi, wodi, bili, famasia na maabara.",
+      "school": "Jukwaa la shule kwa udahili, ratiba, alama na mawasiliano na wazazi.",
+      "inventory": "Udhibiti wa hisa katika maghala mengi wenye uskani wa msimbopau na utabiri wa kuagiza.",
+      "hotel": "Mfumo wa hoteli kwa nafasi, usafi, bili na muunganisho wa mifereji ya kuweka nafasi.",
+      "pos": "Mfumo wa mauzo wenye hali ya nje ya mtandao, upatanisho wa zamu na ripoti za matawi mengi.",
+      "hrManagement": "Mfumo wa rasilimali watu kwa ajira, uandikishaji, likizo, tathmini na rekodi.",
+      "payroll": "Injini ya mishahara yenye makato ya kisheria, hati za malipo na faili za benki.",
+      "loanManagement": "Mfumo wa mikopo kwa maombi, tathmini, utoaji na ukusanyaji.",
+      "erp": "Upangaji wa rasilimali za kampuni katika fedha, ugavi na uendeshaji.",
+      "crm": "CRM ya mauzo yenye usimamizi wa mchakato, ufuatiliaji wa shughuli na utabiri wa mapato.",
+      "puzzleGame": "Mchezo wa mafumbo wenye changamoto za kila siku na ugumu unaoongezeka.",
+      "adventureGame": "Mchezo wa matukio wenye hadithi, ulimwengu uliochorwa kwa mkono na matokeo tofauti.",
+      "strategyGame": "Mchezo wa mkakati wa zamu wenye usimamizi wa rasilimali na wachezaji wengi mtandaoni.",
+      "arcadeGame": "Mchezo wa kasi wa arcade wenye orodha za washindi na wahusika wa kufungua."
+    }
+  },
+  "why": {
+    "eyebrow": "Kwa nini TechOn",
+    "title": "Imejengwa na wahandisi wanaozindua.",
+    "lead": "Si soko la wafanyakazi wa kujitegemea. Timu moja ya wataalam, inayowajibika kutoka mwanzo hadi miaka baada ya uzinduzi.",
+    "stats": {
+      "projects": "Miradi iliyokamilika",
+      "clients": "Wateja duniani",
+      "satisfaction": "Kuridhika kwa wateja",
+      "support": "Msaada unaopatikana"
+    },
+    "points": {
+      "senior": {
+        "title": "Timu za wataalam pekee",
+        "description": "Wahandisi walio kwenye mkutano wako wa kwanza ndio wanaoandika msimbo wako. Hakuna kukabidhi kwa wanaoanza."
+      },
+      "speed": {
+        "title": "Kuzindua, si kupanga tu",
+        "description": "Programu inayofanya kazi ndani ya wiki chache. Unaona kitu halisi kila mzunguko badala ya ripoti."
+      },
+      "ownership": {
+        "title": "Unamiliki kila kitu",
+        "description": "Msimbo, miundombinu, vitambulisho na nyaraka ni vyako kuanzia siku ya kwanza."
+      },
+      "longevity": {
+        "title": "Imejengwa kudumu",
+        "description": "Imepimwa, imeandikwa na kusanifiwa ili timu yoyote yenye ujuzi iweze kuendeleza miaka baadaye."
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Mchakato",
+    "title": "Hatua saba. Bila mshangao.",
+    "lead": "Kila hatua huisha na kitu unachoweza kukiona na kukiidhinisha, hivyo unajua daima mradi wako uko wapi.",
+    "steps": {
+      "discovery": {
+        "title": "Ugunduzi",
+        "description": "Tunachora biashara, watumiaji na vikwazo kabla ya uamuzi wowote kufungwa."
+      },
+      "planning": {
+        "title": "Upangaji",
+        "description": "Wigo, usanifu, ratiba na bajeti zimekubaliwa kwa maandishi — hakuna mabadiliko ya ghafla baadaye."
+      },
+      "design": {
+        "title": "Ubunifu",
+        "description": "Mifano shirikishi unayoweza kubofya na kurekebisha kabla msimbo haujaandikwa."
+      },
+      "development": {
+        "title": "Uundaji",
+        "description": "Mizunguko ya wiki mbili, kila mmoja ukiisha na programu inayofanya kazi tayari kujaribiwa."
+      },
+      "testing": {
+        "title": "Upimaji",
+        "description": "Majaribio ya kiotomatiki, upimaji wa mzigo, ukaguzi wa usalama na vifaa halisi katika mazingira halisi."
+      },
+      "deployment": {
+        "title": "Uzinduzi",
+        "description": "Uzinduzi bila kukatika wenye ufuatiliaji, nakala rudufu na njia ya kurudi nyuma tayari."
+      },
+      "support": {
+        "title": "Msaada",
+        "description": "Matengenezo endelevu, uboreshaji wa utendaji na mpango wa kinachofuata."
+      }
+    }
+  },
+  "stack": {
+    "eyebrow": "Teknolojia",
+    "title": "Zana zilizothibitishwa, zilizochaguliwa kwa makusudi.",
+    "lead": "Tunachagua chaguo lililoeleweka vizuri isipokuwa kuna sababu halisi ya kutofanya hivyo — na tunaweza kukueleza sababu hiyo ni ipi."
+  },
+  "testimonials": {
+    "eyebrow": "Wateja",
+    "title": "Jinsi ilivyo kufanya kazi nasi.",
+    "lead": "Matokeo kutoka kwa timu zilizotuamini na kitu cha muhimu.",
+    "prev": "Iliyopita",
+    "next": "Inayofuata",
+    "items": {
+      "amina": {
+        "quote": "Walibadilisha mfumo ambao wauzaji wengine watatu walishindwa kuumaliza. Wiki kumi na moja baadaye ulikuwa hewani na mzigo wa msaada ulipungua nusu.",
+        "name": "Amina Rashid",
+        "role": "Afisa Mkuu wa Uendeshaji",
+        "company": "Zanzi Logistics"
+      },
+      "daniel": {
+        "quote": "NOVA hushughulikia jibu la kwanza kwa kila swali tunalopokea. Timu yetu iliacha kuzama kwenye barua pepe na ikaanza kufunga mikataba tena.",
+        "name": "Daniel Mwakalinga",
+        "role": "Mwanzilishi",
+        "company": "Serengeti Retail Group"
+      },
+      "claire": {
+        "quote": "Ubunifu peke yake ulibadilisha jinsi wawekezaji wetu walivyoiona kampuni. Tulipata raundi yetu ijayo kwa sababu ya onyesho hilo.",
+        "name": "Claire Dubois",
+        "role": "Mkuu wa Bidhaa",
+        "company": "Meridian Health"
+      },
+      "thomas": {
+        "quote": "Makadirio ya kweli, bila maigizo, na walituambia wakati kipengele hakikustahili kujengwa. Hiyo ni nadra kuliko msimbo mzuri.",
+        "name": "Thomas Weber",
+        "role": "Afisa Mkuu wa Teknolojia",
+        "company": "Halden Systems"
+      },
+      "grace": {
+        "quote": "Miaka miwili baadaye, mfumo bado unafanya kazi kama ulivyokabidhiwa. Nyaraka zilikuwa nzuri kiasi kwamba timu yetu ya ndani iliuchukua.",
+        "name": "Grace Otieno",
+        "role": "Mkurugenzi Mtendaji",
+        "company": "Tembo Financial"
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Wasiliana",
+    "title": "Tujenge kitu pamoja.",
+    "lead": "Tuambie unachotaka kujenga. Tutakwambia kwa uwazi kama sisi ndio timu sahihi, kwa kawaida ndani ya siku moja ya kazi.",
+    "whatsapp": "WhatsApp",
+    "whatsappHint": "Jibu la haraka zaidi",
+    "email": "Barua pepe",
+    "emailHint": "Maelezo marefu",
+    "book": "Panga mashauriano",
+    "bookHint": "Dakika 30, bure",
+    "response": "Muda wa wastani wa kujibu: chini ya saa 6",
+    "callUs": "Tupigie simu",
+    "regions": {
+      "tanzania": "Tanzania",
+      "unitedStates": "Marekani"
+    }
+  },
+  "footer": {
+    "tagline": "Tunabuni na kujenga programu ambazo biashara zinategemea.",
+    "navigation": "Urambazaji",
+    "company": "Kampuni",
+    "connect": "Unganisha",
+    "contact": "Wasiliana",
+    "newsletter": "Jarida",
+    "newsletterHint": "Maelezo ya mara kwa mara kuhusu AI, uhandisi na tunachozindua.",
+    "placeholder": "wewe@kampuni.com",
+    "subscribe": "Jiunge",
+    "subscribed": "Umo kwenye orodha.",
+    "invalid": "Weka anwani sahihi ya barua pepe.",
+    "rights": "Haki zote zimehifadhiwa.",
+    "privacy": "Faragha",
+    "terms": "Masharti",
+    "top": "Rudi juu"
+  },
+  "portfolioPage": {
+    "eyebrow": "Kazi",
+    "title": "Kila kitu tulichojenga.",
+    "lead": "Programu za simu, mifumo ya AI, bidhaa za wavuti, mifumo ya biashara na michezo.",
+    "back": "Rudi nyumbani",
+    "ctaTitle": "Una kitu kama hiki akilini?",
+    "ctaLead": "Tuambie. Utapata jibu halisi, si kijitabu cha matangazo.",
+    "ctaButton": "Anza mradi"
+  },
+  "booking": {
+    "meta": {
+      "title": "Weka Miadi ya Mazungumzo",
+      "description": "Panga mashauriano na TechOn kujadili suluhisho za AI, uundaji wa programu, tovuti, programu za simu na mifumo ya kampuni."
+    },
+    "eyebrow": "Mashauriano",
+    "title": "Panga Kikao Chako cha Utambuzi",
+    "subtitle": "Tujadili mradi wako na tugundue suluhisho bora la kiteknolojia kwa biashara yako.",
+    "free": "Bure",
+    "recommended": "Inayopendelewa zaidi",
+    "minutes": "{count, plural, =1 {dakika #} other {dakika #}}",
+    "stepLabel": "Hatua {step}",
+    "continue": "Endelea",
+    "back": "Rudi",
+    "submit": "Panga Kikao Changu",
+    "submitting": "Inapanga…",
+    "backHome": "Rudi nyumbani",
+    "seeWork": "Tazama kazi zetu",
+    "feeCredit": "Ukiendelea na TechOn kutengeneza mradi wako, ada yako ya mashauriano itapunguzwa kwenye gharama ya mwisho ya mradi.",
+    "stages": {
+      "label": "Maendeleo ya kuweka miadi",
+      "consultation": "Mashauriano",
+      "schedule": "Ratiba",
+      "details": "Maelezo",
+      "review": "Kagua"
+    },
+    "steps": {
+      "consultation": "Chagua mashauriano yako",
+      "date": "Chagua tarehe",
+      "time": "Chagua saa",
+      "meeting": "Ungependa tukutane vipi?",
+      "personal": "Maelezo yako",
+      "project": "Kuhusu mradi wako",
+      "review": "Kagua na uthibitishe"
+    },
+    "hints": {
+      "consultation": "Chagua mashauriano ili kuendelea.",
+      "schedule": "Chagua tarehe, saa na aina ya mkutano ili kuendelea."
+    },
+    "consultations": {
+      "discovery": {
+        "title": "Simu ya Utambuzi Bure",
+        "description": "Mkutano mfupi wa utangulizi kuelewa mradi wako na kubaini jinsi TechOn inavyoweza kusaidia."
+      },
+      "aiStrategy": {
+        "title": "Mashauriano ya Mkakati wa AI",
+        "description": "Yanafaa kwa kampuni changa zinazotafuta mifumo ya AI, uendeshaji otomatiki au mabadiliko ya kidijitali."
+      },
+      "businessStrategy": {
+        "title": "Mashauriano ya Mkakati wa Biashara",
+        "description": "Kwa kampuni zilizoimarika zinazohitaji usanifu wa programu, mifumo ya kampuni na mkakati wa kidijitali wa muda mrefu."
+      }
+    },
+    "calendar": {
+      "previousMonth": "Mwezi uliopita",
+      "nextMonth": "Mwezi ujao",
+      "loading": "Inaangalia upatikanaji…",
+      "legendOpen": "Nafasi zipo",
+      "legendFilling": "Zinaisha",
+      "legendFull": "Imejaa",
+      "closed": "Imefungwa",
+      "slotsLeft": "Nafasi {count} zipo"
+    },
+    "time": {
+      "label": "Saa zinazopatikana",
+      "pickDateFirst": "Chagua tarehe ili kuona saa zinazopatikana.",
+      "fullyBooked": "Imejaa",
+      "fullyBookedHint": "Kila nafasi ya siku hii imechukuliwa. Tafadhali chagua tarehe nyingine.",
+      "loading": "Inaangalia upatikanaji…",
+      "closed": "Imefungwa",
+      "closedHint": "Hatufunguzi siku hii. Tafadhali chagua tarehe nyingine.",
+      "remaining": "Nyakati {available} kati ya {total} zipo",
+      "lunchBreak": "Mapumziko ya chakula",
+      "reason": {
+        "booked": "Imechukuliwa",
+        "blocked": "Haipatikani",
+        "past": "Imepita",
+        "tooLate": "Muda hautoshi"
+      }
+    },
+    "meeting": {
+      "office": {
+        "title": "Kutembelea ofisi",
+        "description": "Kutana nasi ana kwa ana makao makuu yetu Dar es Salaam."
+      },
+      "online": {
+        "title": "Mkutano mtandaoni",
+        "description": "Jiunge kutoka popote kwa simu ya video."
+      },
+      "officeLabel": "Mahali",
+      "onlineLabel": "Jukwaa",
+      "directions": "Pata maelekezo",
+      "mapPlaceholder": "Onyesho la ramani",
+      "linkAfterConfirmation": "Kiungo cha mkutano wako kinatengenezwa baada ya uthibitisho."
+    },
+    "contact": {
+      "firstName": "Jina la kwanza",
+      "lastName": "Jina la ukoo",
+      "company": "Kampuni",
+      "email": "Barua pepe",
+      "phone": "Namba ya simu",
+      "country": "Nchi",
+      "countryPlaceholder": "Chagua nchi yako",
+      "optional": "(si lazima)"
+    },
+    "project": {
+      "category": "Kundi la mashauriano",
+      "categoryPlaceholder": "Chagua kundi",
+      "budget": "Bajeti ya mradi",
+      "budgetPlaceholder": "Chagua kiwango cha bajeti",
+      "description": "Maelezo ya mradi",
+      "descriptionPlaceholder": "Tafadhali eleza mradi wako, malengo ya biashara na mahitaji yoyote maalum.",
+      "optional": "(si lazima)"
+    },
+    "categories": {
+      "aiSolutions": "Suluhisho za AI",
+      "novaAi": "NOVA AI",
+      "customSoftware": "Programu Maalum",
+      "website": "Uundaji wa Tovuti",
+      "mobileApp": "Programu ya Simu",
+      "businessSystems": "Mifumo ya Biashara",
+      "erp": "ERP ya Kampuni",
+      "cloud": "Suluhisho za Wingu",
+      "automation": "Uendeshaji Otomatiki",
+      "cyberSecurity": "Usalama wa Mtandao",
+      "other": "Nyingine"
+    },
+    "budgets": {
+      "under2m": "Chini ya TZS Milioni 2",
+      "from2to5m": "TZS M2 – M5",
+      "from5to10m": "TZS M5 – M10",
+      "from10to20m": "TZS M10 – M20",
+      "above20m": "Zaidi ya TZS Milioni 20",
+      "unsure": "Sijaamua bado"
+    },
+    "summary": {
+      "title": "Muhtasari wa miadi",
+      "consultation": "Mashauriano",
+      "price": "Bei",
+      "duration": "Muda",
+      "meetingType": "Aina ya mkutano",
+      "date": "Tarehe",
+      "time": "Saa",
+      "location": "Mahali",
+      "email": "Barua pepe",
+      "phone": "Simu"
+    },
+    "errors": {
+      "summary": "Tafadhali angalia sehemu zilizoangaziwa na ujaribu tena.",
+      "firstName": {
+        "required": "Weka jina lako la kwanza."
+      },
+      "lastName": {
+        "required": "Weka jina lako la ukoo."
+      },
+      "email": {
+        "required": "Weka anwani yako ya barua pepe.",
+        "invalid": "Weka anwani sahihi ya barua pepe."
+      },
+      "phone": {
+        "required": "Weka namba yako ya simu.",
+        "invalid": "Weka namba sahihi ya simu."
+      },
+      "country": {
+        "required": "Chagua nchi yako."
+      },
+      "category": {
+        "required": "Chagua kundi."
+      },
+      "budget": {
+        "required": "Chagua kiwango cha bajeti."
+      }
+    },
+    "success": {
+      "title": "Kikao Chako cha Utambuzi Kimepangwa",
+      "lead": "Uthibitisho unakuja kwenye kikasha chako. Tunatazamia kuzungumza nawe.",
+      "reference": "Namba ya Miadi",
+      "copyReference": "Nakili namba ya miadi",
+      "meetingLink": "Kiungo cha mkutano",
+      "linkPending": "Inatengeneza…",
+      "linkNote": "Mwaliko wa kalenda wenye kiungo hiki umetumwa kwenye barua pepe yako.",
+      "addToCalendar": "Ongeza kwenye kalenda",
+      "google": "Kalenda ya Google",
+      "outlook": "Kalenda ya Outlook",
+      "apple": "Kalenda ya Apple",
+      "questions": "Unahitaji kubadilisha ratiba au una swali kabla hatujakutana?",
+      "eventTitle": "Kikao cha Utambuzi",
+      "eventDescription": "Mashauriano yako na timu ya TechOn."
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Kuhusu Sisi",
+      "description": "TechOn ni kampuni ya programu inayojenga mifumo ya AI, programu za simu na mifumo ya kampuni kutoka Dar es Salaam, Nairobi na Houston."
+    },
+    "hero": {
+      "eyebrow": "Kuhusu Sisi",
+      "title": "Tunajenga programu jinsi zinavyostahili kujengwa.",
+      "lead": "Ilianzishwa mwaka 2019. Wadogo kwa makusudi, wataalam kwa muundo, na bado tunasaidia mifumo ya kwanza tuliyozindua."
+    },
+    "who": {
+      "eyebrow": "Sisi ni nani",
+      "title": "Kampuni ya programu, si wakala.",
+      "body1": "TechOn ni timu ya wahandisi na wabunifu wanaofanya kazi Dar es Salaam, Nairobi na Houston. Tunajenga mifumo ya AI, programu za simu na mifumo ya kampuni ambayo biashara hutegemea kila siku.",
+      "body2": "Hatutoi kazi kwa wengine, na hatuwapangii miradi watu waliopo tu. Watu ulionao kwenye mkutano wa kwanza ndio wanaojenga kitu — na ndio wanaojibu simu miaka miwili baadaye unapotaka kukiongeza."
+    },
+    "mission": {
+      "eyebrow": "Dhamira",
+      "title": "Kufanya programu bora ziwe za kawaida.",
+      "body": "Biashara nyingi zimeuziwa mifumo iliyo polepole, dhaifu au iliyoachwa tayari. Tupo hapa kubadilisha kile watu wanachotarajia kutoka kwa programu wanazolipia: haraka, zilizoandikwa, zinazomilikiwa nao, na bado zinasimama miaka baadaye."
+    },
+    "vision": {
+      "eyebrow": "Maono",
+      "title": "Uhandisi wa Kiafrika, kwa kiwango cha dunia.",
+      "body": "Tunataka TechOn iwe ushahidi kwamba programu iliyojengwa Dar es Salaam inashindana na programu iliyojengwa mahali popote — ikipimwa kwa ustadi, uaminifu na ubora wa fikra nyuma yake, si kwa bei."
+    },
+    "values": {
+      "eyebrow": "Maadili",
+      "title": "Tunayojiwekea.",
+      "lead": "Ahadi sita zinazoamua jinsi tunavyofanya kazi hata wakati hakuna anayeangalia.",
+      "items": {
+        "craft": {
+          "title": "Ustadi kuliko wingi",
+          "description": "Tungependelea kuzindua vitu vichache kwa usahihi kuliko vingi kwa kiwango cha wastani."
+        },
+        "candour": {
+          "title": "Sema lililo gumu",
+          "description": "Kama kipengele hakistahili kujengwa au tarehe si halisi, unasikia kutoka kwetu kwanza."
+        },
+        "ownership": {
+          "title": "Miliki matokeo",
+          "description": "Kazi haiishii kwenye kukabidhi. Inaisha kitu kinapofanya kazi kwenye uzalishaji."
+        },
+        "speed": {
+          "title": "Nenda kwa kasi halisi",
+          "description": "Programu inayofanya kazi kila mzunguko. Kasi ni kipengele, si nyongeza."
+        },
+        "security": {
+          "title": "Salama kwa msingi",
+          "description": "Usimbaji fiche, ruhusa ndogo na kumbukumbu za ukaguzi ni maamuzi tunayofanya siku ya kwanza."
+        },
+        "curiosity": {
+          "title": "Baki na udadisi",
+          "description": "Tunasoma tafiti, tunafanya majaribio, na tunachukua kipya tu kinapostahili."
+        }
+      }
+    },
+    "leadership": {
+      "eyebrow": "Uongozi",
+      "title": "Mtu aliye nyuma ya kazi.",
+      "lead": "TechOn inaongozwa na mhandisi, ndiyo maana uhandisi unakuja kwanza.",
+      "role": "Mwanzilishi na Mkurugenzi Mtendaji",
+      "bio": "Conrad alianzisha TechOn mwaka 2019 baada ya muongo mmoja wa kujenga mifumo kwa benki, hospitali na makampuni ya usafirishaji Afrika Mashariki. Bado anakagua usanifu wa kila mradi kampuni inaochukua.",
+      "educationLabel": "Elimu",
+      "readProfile": "Soma wasifu kamili",
+      "portraitPending": "Picha inakuja hivi karibuni",
+      "qualifications": {
+        "bachelor": "Shahada ya Uhandisi wa Kompyuta",
+        "masters": "Shahada ya Uzamili ya Usalama wa Mtandao"
+      }
+    },
+    "stack": {
+      "eyebrow": "Teknolojia",
+      "title": "Tunachojengea.",
+      "lead": "Zana chache zilizoeleweka vizuri kwa makusudi. Tunaongeza polepole na kuondoa mara kwa mara."
+    },
+    "timeline": {
+      "eyebrow": "Historia",
+      "title": "Jinsi tulivyofika hapa.",
+      "lead": "Miaka saba, mwelekeo mmoja.",
+      "items": {
+        "founded": {
+          "title": "TechOn inaanzishwa",
+          "description": "Wahandisi wawili, chumba kimoja Dar es Salaam, na mkataba wa kwanza wa kujenga upya ofisi ya usafirishaji."
+        },
+        "firstEnterprise": {
+          "title": "Mfumo wa kwanza wa kampuni",
+          "description": "Jukwaa la usimamizi wa hospitali ambalo bado linatumika kila siku miaka sita baadaye."
+        },
+        "mobile": {
+          "title": "Kitengo cha simu kinafunguliwa",
+          "description": "Flutter na React Native zinakuwa uwezo wa msingi badala ya huduma ya pembeni."
+        },
+        "regional": {
+          "title": "Nairobi na Houston",
+          "description": "Wateja katika nchi tatu, na timu inakua kuwahudumia ipasavyo."
+        },
+        "ai": {
+          "title": "AI inakuwa taaluma",
+          "description": "Mifumo ya utafutaji, akili ya nyaraka na mawakala wa kwanza wa sauti kwenye uzalishaji."
+        },
+        "nova": {
+          "title": "NOVA AI inazinduliwa",
+          "description": "Kila tulichojifunza kuhusu AI kwenye uzalishaji, kimeunganishwa kwenye jukwaa moja."
+        },
+        "today": {
+          "title": "Leo",
+          "description": "Miradi hamsini iliyokamilika, wateja ishirini, na mifumo ya kwanza tuliyojenga bado inafanya kazi."
+        }
+      }
+    },
+    "cta": {
+      "title": "Fanya kazi nasi.",
+      "lead": "Tuambie unachojenga. Tutakwambia kwa uwazi kama sisi ndio timu sahihi.",
+      "primary": "Anza mradi",
+      "secondary": "Tazama kazi zetu"
+    }
+  },
+  "notFound": {
+    "title": "Ukurasa huu haupo.",
+    "lead": "Kiungo huenda kimepitwa na wakati, au ukurasa umehamia mahali pazuri zaidi.",
+    "home": "Rudi nyumbani",
+    "work": "Tazama kazi zetu"
+  }
+}

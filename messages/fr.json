@@ -1,0 +1,671 @@
+{
+  "meta": {
+    "title": "TechOn — Logiciels, IA et transformation numérique",
+    "description": "TechOn conçoit et développe des plateformes IA, des applications mobiles et des systèmes d'entreprise pour les sociétés attachées à la qualité d'exécution.",
+    "portfolioTitle": "Réalisations"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "portfolio": "Réalisations",
+    "nova": "NOVA AI",
+    "contact": "Contact",
+    "book": "Réserver",
+    "cta": "Démarrer un projet",
+    "menu": "Ouvrir le menu",
+    "close": "Fermer le menu",
+    "language": "Langue"
+  },
+  "hero": {
+    "badge": "NOVA AI",
+    "badgeText": "Notre plateforme IA est en ligne",
+    "title": "Nous construisons les logiciels dont votre entreprise dépend.",
+    "lead": "Plateformes IA, applications mobiles et systèmes d'entreprise — conçus, développés et maintenus par une seule équipe senior.",
+    "primary": "Démarrer un projet",
+    "secondary": "Voir nos réalisations",
+    "stat1": "Projets livrés",
+    "stat2": "Clients dans le monde",
+    "stat3": "Satisfaction client"
+  },
+  "logos": {
+    "title": "La confiance d'équipes en Afrique, en Europe et en Amérique du Nord"
+  },
+  "aboutPreview": {
+    "eyebrow": "À propos de TechOn",
+    "title": "Une petite équipe, délibérément.",
+    "body": "TechOn a été fondée en 2019 pour construire des logiciels correctement — de ceux qui fonctionnent encore, et qui ont encore du sens, des années après le lancement. Nous restons petits volontairement : les ingénieurs que vous rencontrez au démarrage sont ceux qui écrivent votre code, et ils restent bien après la mise en production.",
+    "ceoRole": "Fondateur et directeur général",
+    "cta": "En savoir plus"
+  },
+  "nova": {
+    "eyebrow": "NOVA AI",
+    "title": "Une force de travail qui ne dort jamais.",
+    "lead": "NOVA répond au téléphone, traite vos messages, réserve le rendez-vous et met à jour le CRM. Elle travaille à trois heures du matin, dans toutes les langues de vos clients.",
+    "cta": "Parlons de NOVA",
+    "secondary": "Réserver une démo",
+    "panelStatus": "Actif",
+    "metric1": "Résolu sans intervention humaine",
+    "metric2": "Première réponse moyenne",
+    "metric3": "Langues prises en charge",
+    "capabilitiesTitle": "Tout ce que fait NOVA.",
+    "capabilitiesLead": "Vingt-deux capacités, une seule plateforme. Activez ce dont vous avez besoin et laissez le reste.",
+    "scene": {
+      "incoming": "Appel entrant",
+      "answering": "NOVA répond",
+      "listening": "Écoute",
+      "thinking": "Réflexion",
+      "chat": "Chat en direct"
+    },
+    "groups": {
+      "voice": "Voix et appels",
+      "channels": "Messagerie et canaux",
+      "intelligence": "Intelligence",
+      "operations": "Opérations"
+    },
+    "capabilities": {
+      "aiVoiceCalling": "Appels vocaux IA",
+      "receivesCalls": "Reçoit les appels automatiquement",
+      "makesCalls": "Passe les appels automatiquement",
+      "naturalConversations": "Conversations vocales naturelles",
+      "humanHandoff": "Transfert à un humain",
+      "customerSupport": "Support client IA",
+      "whatsapp": "Automatisation WhatsApp",
+      "instagram": "Automatisation Instagram",
+      "facebook": "Automatisation Facebook",
+      "email": "Automatisation des e-mails",
+      "knowledgeBase": "Base de connaissances",
+      "documentSearch": "Recherche documentaire",
+      "multilingual": "Support multilingue",
+      "analytics": "Analyse commerciale",
+      "customEmployees": "Employés IA sur mesure",
+      "appointmentBooking": "Prise de rendez-vous",
+      "leadQualification": "Qualification des prospects",
+      "crmIntegration": "Intégration CRM",
+      "calendarIntegration": "Intégration calendrier",
+      "workflowAutomation": "Automatisation des processus",
+      "apiIntegration": "Intégration API",
+      "availability": "Disponibilité 24/7"
+    }
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Tout ce que nous faisons, bien fait.",
+    "lead": "Un seul partenaire du premier croquis à la mise à l'échelle, pour que rien ne se perde entre la stratégie, le design et le code.",
+    "items": {
+      "aiSolutions": {
+        "title": "Solutions IA",
+        "description": "Modèles sur mesure et couches d'intelligence intégrés aux produits que vous exploitez."
+      },
+      "aiAgents": {
+        "title": "Agents IA",
+        "description": "Des agents autonomes qui gèrent appels, conversations et tâches complexes."
+      },
+      "customSoftware": {
+        "title": "Logiciels sur mesure",
+        "description": "Des plateformes conçues autour du fonctionnement réel de votre entreprise."
+      },
+      "mobileApps": {
+        "title": "Applications mobiles",
+        "description": "Des produits iOS et Android à la sensation native, en Flutter et React Native."
+      },
+      "enterpriseSystems": {
+        "title": "Systèmes d'entreprise",
+        "description": "ERP, CRM et plateformes opérationnelles qui tiennent sous une vraie charge."
+      },
+      "cloudSolutions": {
+        "title": "Solutions cloud",
+        "description": "Architecture et infrastructure qui restent rapides et prévisibles à mesure que vous grandissez."
+      },
+      "automation": {
+        "title": "Automatisation",
+        "description": "Des moteurs de processus qui éliminent le travail répétitif qui épuise vos équipes."
+      },
+      "webDevelopment": {
+        "title": "Développement web",
+        "description": "Des plateformes rapides, accessibles et optimisées, bâties sur Next.js et React."
+      },
+      "uiuxDesign": {
+        "title": "Design UI/UX",
+        "description": "Un design d'interface et de produit avec le soin d'une application grand public."
+      },
+      "paymentIntegrations": {
+        "title": "Intégrations de paiement",
+        "description": "Mobile money, cartes et flux transfrontaliers intégrés en sécurité et réconciliés."
+      },
+      "apiDevelopment": {
+        "title": "Développement d'API",
+        "description": "Des API documentées, versionnées et résilientes dont vos partenaires vous remercieront."
+      },
+      "digitalTransformation": {
+        "title": "Transformation numérique",
+        "description": "Stratégie et exécution pour faire passer une opération du manuel au mesurable."
+      }
+    }
+  },
+  "portfolio": {
+    "eyebrow": "Réalisations",
+    "title": "Projets sélectionnés.",
+    "lead": "Plateformes, applications et systèmes construits pour des fondateurs, des institutions et des grands comptes.",
+    "viewAll": "Voir toutes les réalisations",
+    "view": "Voir le projet",
+    "code": "Code source",
+    "empty": "Aucun projet dans cette catégorie pour l'instant.",
+    "showing": "{count} sur {total} affichés",
+    "categories": {
+      "all": "Tous",
+      "mobile": "Applications mobiles",
+      "ai": "Solutions IA",
+      "web": "Plateformes web",
+      "business": "Systèmes métier",
+      "games": "Jeux"
+    },
+    "status": {
+      "live": "En ligne",
+      "comingSoon": "Bientôt disponible",
+      "template": "Modèle — à remplacer"
+    },
+    "items": {
+      "taxiApp": "Plateforme de VTC avec répartition en direct, estimation des courses et paiement des chauffeurs.",
+      "deliveryApp": "Application de livraison du dernier kilomètre avec optimisation d'itinéraire et suivi en temps réel.",
+      "tradingApp": "Terminal de trading avec graphiques en direct, listes de suivi et exécution instantanée.",
+      "restaurantApp": "Application de commande et réservation avec synchronisation cuisine et fidélité.",
+      "fitnessApp": "Compagnon d'entraînement avec programmes adaptatifs, séries et synchronisation des montres.",
+      "musicApp": "Application de streaming avec lecture hors ligne, playlists et découverte personnalisée.",
+      "educationApp": "Plateforme d'apprentissage avec cours vidéo, quiz notés et suivi de progression.",
+      "healthcareApp": "Application patient pour rendez-vous, téléconsultation et historique des ordonnances.",
+      "novaAi": "Notre plateforme IA phare pour la communication, le support et les processus automatisés.",
+      "aiCallingAgent": "Agent vocal qui passe et reçoit de vrais appels téléphoniques en langage naturel.",
+      "aiCustomerSupport": "Couche de support qui résout les tickets en autonomie et transmet le reste avec contexte.",
+      "aiChatAssistant": "Assistant intégré entraîné sur votre documentation, vos produits et votre ton.",
+      "documentIntelligence": "Extrait des données structurées de factures, contrats et documents numérisés.",
+      "workflowAutomation": "Relie les outils internes et exécute des processus complexes sans transfert manuel.",
+      "pbzBank": "Site de banque d'entreprise avec découverte des produits et parcours de service sécurisés.",
+      "techonWebsite": "Le site que vous parcourez — notre propre système de design, en production.",
+      "corporateWebsite": "Site institutionnel avec contenu multilingue et finition de niveau investisseur.",
+      "realEstate": "Marketplace immobilière avec recherche cartographique, visites virtuelles et espace agents.",
+      "restaurantWebsite": "Site de restaurant avec menu en direct, réservations et intégration livraison.",
+      "ecommerce": "Boutique en ligne avec catalogue multi-vendeurs, tunnel d'achat et orchestration des paiements.",
+      "portfolioWebsite": "Site de marque personnelle avec études de cas et journal éditorial.",
+      "hospital": "Système hospitalier couvrant dossiers, services, facturation, pharmacie et laboratoire.",
+      "school": "Plateforme scolaire pour admissions, emplois du temps, notes et communication aux parents.",
+      "inventory": "Gestion de stock multi-entrepôts avec lecture de codes-barres et prévision de réapprovisionnement.",
+      "hotel": "Système hôtelier pour réservations, gouvernance, facturation et synchronisation des canaux.",
+      "pos": "Point de vente avec mode hors ligne, clôture de caisse et reporting multi-sites.",
+      "hrManagement": "Suite RH pour recrutement, intégration, congés, évaluations et dossiers du personnel.",
+      "payroll": "Moteur de paie avec retenues légales, bulletins et export des fichiers bancaires.",
+      "loanManagement": "Système de crédit pour instruction, scoring, déblocage et recouvrement.",
+      "erp": "Progiciel de gestion intégré couvrant finance, chaîne d'approvisionnement et opérations.",
+      "crm": "CRM commercial avec gestion du pipeline, suivi d'activité et prévision des revenus.",
+      "puzzleGame": "Jeu de puzzle par association de tuiles avec défis quotidiens et difficulté progressive.",
+      "adventureGame": "Aventure narrative aux univers dessinés à la main et aux dénouements multiples.",
+      "strategyGame": "Stratégie au tour par tour avec gestion des ressources et multijoueur en ligne.",
+      "arcadeGame": "Runner arcade nerveux avec classements et personnages à débloquer."
+    }
+  },
+  "why": {
+    "eyebrow": "Pourquoi TechOn",
+    "title": "Construit par des ingénieurs qui livrent.",
+    "lead": "Pas une place de marché de freelances. Une seule équipe senior, responsable du lancement aux années qui suivent.",
+    "stats": {
+      "projects": "Projets livrés",
+      "clients": "Clients dans le monde",
+      "satisfaction": "Satisfaction client",
+      "support": "Couverture support"
+    },
+    "points": {
+      "senior": {
+        "title": "Uniquement des seniors",
+        "description": "Les ingénieurs présents au lancement sont ceux qui écrivent votre code. Aucun transfert vers des juniors."
+      },
+      "speed": {
+        "title": "Livré, pas seulement cadré",
+        "description": "Du logiciel fonctionnel en quelques semaines. Vous testez du concret à chaque sprint, pas un rapport."
+      },
+      "ownership": {
+        "title": "Vous possédez tout",
+        "description": "Code source, infrastructure, accès et documentation vous appartiennent dès le premier jour."
+      },
+      "longevity": {
+        "title": "Conçu pour durer",
+        "description": "Testé, documenté et architecturé pour qu'une autre équipe compétente puisse reprendre des années plus tard."
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Méthode",
+    "title": "Sept étapes. Aucune surprise.",
+    "lead": "Chaque étape se termine par un livrable que vous pouvez voir et valider, pour toujours savoir où en est votre projet.",
+    "steps": {
+      "discovery": {
+        "title": "Découverte",
+        "description": "Nous cartographions l'activité, les utilisateurs et les contraintes avant de figer la moindre décision."
+      },
+      "planning": {
+        "title": "Planification",
+        "description": "Périmètre, architecture, calendrier et budget actés par écrit — plus de cible mouvante ensuite."
+      },
+      "design": {
+        "title": "Design",
+        "description": "Des prototypes interactifs que vous pouvez parcourir et corriger bien avant la première ligne de code."
+      },
+      "development": {
+        "title": "Développement",
+        "description": "Des sprints de deux semaines, chacun livrant un logiciel fonctionnel déployé pour vos tests."
+      },
+      "testing": {
+        "title": "Tests",
+        "description": "Couverture automatisée, tests de charge, revue de sécurité et vrais appareils en conditions réelles."
+      },
+      "deployment": {
+        "title": "Déploiement",
+        "description": "Mise en production sans interruption, avec supervision, sauvegardes et retour arrière prêts."
+      },
+      "support": {
+        "title": "Support",
+        "description": "Maintenance continue, optimisation des performances et feuille de route pour la suite."
+      }
+    }
+  },
+  "stack": {
+    "eyebrow": "Technologies",
+    "title": "Des outils éprouvés, choisis délibérément.",
+    "lead": "Nous choisissons l'option bien comprise sauf raison valable de faire autrement — et nous pouvons vous dire précisément laquelle."
+  },
+  "testimonials": {
+    "eyebrow": "Clients",
+    "title": "Ce que c'est de travailler avec nous.",
+    "lead": "Les résultats des équipes qui nous ont confié quelque chose d'important.",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "items": {
+      "amina": {
+        "quote": "Ils ont remplacé un système que trois prestataires n'avaient pas su terminer. Onze semaines plus tard il était en ligne et notre charge de support avait été divisée par deux.",
+        "name": "Amina Rashid",
+        "role": "Directrice des opérations",
+        "company": "Zanzi Logistics"
+      },
+      "daniel": {
+        "quote": "NOVA gère la première réponse à chaque demande. Notre équipe a cessé de se noyer dans les e-mails et s'est remise à signer.",
+        "name": "Daniel Mwakalinga",
+        "role": "Fondateur",
+        "company": "Serengeti Retail Group"
+      },
+      "claire": {
+        "quote": "Le travail de design à lui seul a changé le regard de nos investisseurs sur l'entreprise. Nous avons levé notre tour suivant grâce à cette démo.",
+        "name": "Claire Dubois",
+        "role": "Directrice produit",
+        "company": "Meridian Health"
+      },
+      "thomas": {
+        "quote": "Des estimations honnêtes, aucun spectacle, et ils nous ont dit quand une fonctionnalité ne valait pas la peine. C'est plus rare qu'un bon code.",
+        "name": "Thomas Weber",
+        "role": "Directeur technique",
+        "company": "Halden Systems"
+      },
+      "grace": {
+        "quote": "Deux ans après, la plateforme tourne exactement comme livrée. La documentation était assez bonne pour que notre équipe reprenne la main.",
+        "name": "Grace Otieno",
+        "role": "Directrice générale",
+        "company": "Tembo Financial"
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Construisons quelque chose ensemble.",
+    "lead": "Dites-nous ce que vous cherchez à construire. Nous vous dirons honnêtement si nous sommes la bonne équipe, généralement sous un jour ouvré.",
+    "whatsapp": "WhatsApp",
+    "whatsappHint": "Réponse la plus rapide",
+    "email": "E-mail",
+    "emailHint": "Briefs détaillés",
+    "book": "Planifier un échange",
+    "bookHint": "30 minutes, gratuit",
+    "response": "Délai de réponse moyen : moins de 6 heures",
+    "callUs": "Appelez-nous",
+    "regions": {
+      "tanzania": "Tanzanie",
+      "unitedStates": "États-Unis"
+    }
+  },
+  "footer": {
+    "tagline": "Nous concevons et développons les logiciels dont les entreprises dépendent.",
+    "navigation": "Navigation",
+    "company": "Entreprise",
+    "connect": "Suivez-nous",
+    "contact": "Contact",
+    "newsletter": "Newsletter",
+    "newsletterHint": "Quelques notes sur l'IA, l'ingénierie et ce que nous livrons.",
+    "placeholder": "vous@entreprise.com",
+    "subscribe": "S'abonner",
+    "subscribed": "Vous êtes inscrit.",
+    "invalid": "Saisissez une adresse e-mail valide.",
+    "rights": "Tous droits réservés.",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "top": "Retour en haut"
+  },
+  "portfolioPage": {
+    "eyebrow": "Réalisations",
+    "title": "Tout ce que nous avons construit.",
+    "lead": "Applications mobiles, plateformes IA, produits web, systèmes métier et jeux.",
+    "back": "Retour à l'accueil",
+    "ctaTitle": "Vous avez un projet de ce type en tête ?",
+    "ctaLead": "Parlez-nous-en. Vous aurez une vraie réponse, pas une plaquette.",
+    "ctaButton": "Démarrer un projet"
+  },
+  "booking": {
+    "meta": {
+      "title": "Réserver une session découverte",
+      "description": "Planifiez une consultation avec TechOn pour discuter de solutions IA, de développement logiciel, de sites web, d'applications mobiles et de systèmes d'entreprise."
+    },
+    "eyebrow": "Consultation",
+    "title": "Planifiez votre session découverte",
+    "subtitle": "Discutons de votre projet et trouvons la meilleure solution technologique pour votre entreprise.",
+    "free": "Gratuit",
+    "recommended": "Le plus demandé",
+    "minutes": "{count, plural, =1 {# minute} other {# minutes}}",
+    "stepLabel": "Étape {step}",
+    "continue": "Continuer",
+    "back": "Retour",
+    "submit": "Planifier ma session",
+    "submitting": "Planification…",
+    "backHome": "Retour à l'accueil",
+    "seeWork": "Voir nos réalisations",
+    "feeCredit": "Si vous confiez la réalisation de votre projet à TechOn, le montant de la consultation sera déduit du coût final du projet.",
+    "stages": {
+      "label": "Progression de la réservation",
+      "consultation": "Consultation",
+      "schedule": "Créneau",
+      "details": "Coordonnées",
+      "review": "Récapitulatif"
+    },
+    "steps": {
+      "consultation": "Choisissez votre consultation",
+      "date": "Choisissez une date",
+      "time": "Choisissez un horaire",
+      "meeting": "Comment souhaitez-vous nous rencontrer ?",
+      "personal": "Vos coordonnées",
+      "project": "À propos de votre projet",
+      "review": "Vérifier et confirmer"
+    },
+    "hints": {
+      "consultation": "Sélectionnez une consultation pour continuer.",
+      "schedule": "Choisissez une date, un horaire et un type de rendez-vous pour continuer."
+    },
+    "consultations": {
+      "discovery": {
+        "title": "Appel découverte gratuit",
+        "description": "Un court échange introductif pour comprendre votre projet et déterminer comment TechOn peut vous aider."
+      },
+      "aiStrategy": {
+        "title": "Consultation stratégie IA",
+        "description": "Idéal pour les startups recherchant des systèmes IA, de l'automatisation ou une transformation numérique."
+      },
+      "businessStrategy": {
+        "title": "Consultation stratégie entreprise",
+        "description": "Pour les sociétés établies nécessitant une architecture logicielle, des systèmes d'entreprise et une stratégie numérique de long terme."
+      }
+    },
+    "calendar": {
+      "previousMonth": "Mois précédent",
+      "nextMonth": "Mois suivant",
+      "loading": "Vérification des disponibilités…",
+      "legendOpen": "Créneaux libres",
+      "legendFilling": "Se remplit",
+      "legendFull": "Complet",
+      "closed": "Fermé",
+      "slotsLeft": "{count} créneaux libres"
+    },
+    "time": {
+      "label": "Horaires disponibles",
+      "pickDateFirst": "Choisissez une date pour voir les horaires disponibles.",
+      "fullyBooked": "Complet",
+      "fullyBookedHint": "Tous les créneaux de cette journée sont pris. Choisissez une autre date.",
+      "loading": "Vérification des disponibilités…",
+      "closed": "Fermé",
+      "closedHint": "Nous sommes fermés ce jour-là. Choisissez une autre date.",
+      "remaining": "{available} horaires sur {total} disponibles",
+      "lunchBreak": "Pause déjeuner",
+      "reason": {
+        "booked": "Réservé",
+        "blocked": "Indisponible",
+        "past": "Passé",
+        "tooLate": "Durée insuffisante"
+      }
+    },
+    "meeting": {
+      "office": {
+        "title": "Visite au bureau",
+        "description": "Rencontrez-nous à notre siège de Dar es Salaam."
+      },
+      "online": {
+        "title": "Réunion en ligne",
+        "description": "Rejoignez-nous où que vous soyez par visioconférence."
+      },
+      "officeLabel": "Adresse",
+      "onlineLabel": "Plateforme",
+      "directions": "Obtenir l'itinéraire",
+      "mapPlaceholder": "Aperçu de la carte",
+      "linkAfterConfirmation": "Votre lien de réunion est généré après confirmation."
+    },
+    "contact": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "company": "Entreprise",
+      "email": "E-mail",
+      "phone": "Numéro de téléphone",
+      "country": "Pays",
+      "countryPlaceholder": "Sélectionnez votre pays",
+      "optional": "(facultatif)"
+    },
+    "project": {
+      "category": "Catégorie de consultation",
+      "categoryPlaceholder": "Sélectionnez une catégorie",
+      "budget": "Budget du projet",
+      "budgetPlaceholder": "Sélectionnez une fourchette",
+      "description": "Description du projet",
+      "descriptionPlaceholder": "Décrivez votre projet, vos objectifs commerciaux et toute exigence particulière.",
+      "optional": "(facultatif)"
+    },
+    "categories": {
+      "aiSolutions": "Solutions IA",
+      "novaAi": "NOVA AI",
+      "customSoftware": "Logiciel sur mesure",
+      "website": "Développement web",
+      "mobileApp": "Application mobile",
+      "businessSystems": "Systèmes métier",
+      "erp": "ERP d'entreprise",
+      "cloud": "Solutions cloud",
+      "automation": "Automatisation",
+      "cyberSecurity": "Cybersécurité",
+      "other": "Autre"
+    },
+    "budgets": {
+      "under2m": "Moins de 2 millions TZS",
+      "from2to5m": "2 M – 5 M TZS",
+      "from5to10m": "5 M – 10 M TZS",
+      "from10to20m": "10 M – 20 M TZS",
+      "above20m": "Plus de 20 millions TZS",
+      "unsure": "Pas encore décidé"
+    },
+    "summary": {
+      "title": "Récapitulatif",
+      "consultation": "Consultation",
+      "price": "Prix",
+      "duration": "Durée",
+      "meetingType": "Type de rendez-vous",
+      "date": "Date",
+      "time": "Heure",
+      "location": "Lieu",
+      "email": "E-mail",
+      "phone": "Téléphone"
+    },
+    "errors": {
+      "summary": "Veuillez vérifier les champs signalés et réessayer.",
+      "firstName": {
+        "required": "Saisissez votre prénom."
+      },
+      "lastName": {
+        "required": "Saisissez votre nom."
+      },
+      "email": {
+        "required": "Saisissez votre adresse e-mail.",
+        "invalid": "Saisissez une adresse e-mail valide."
+      },
+      "phone": {
+        "required": "Saisissez votre numéro de téléphone.",
+        "invalid": "Saisissez un numéro de téléphone valide."
+      },
+      "country": {
+        "required": "Sélectionnez votre pays."
+      },
+      "category": {
+        "required": "Sélectionnez une catégorie."
+      },
+      "budget": {
+        "required": "Sélectionnez une fourchette de budget."
+      }
+    },
+    "success": {
+      "title": "Votre session découverte est planifiée",
+      "lead": "Une confirmation arrive dans votre boîte de réception. Au plaisir de vous parler.",
+      "reference": "Numéro de réservation",
+      "copyReference": "Copier le numéro",
+      "meetingLink": "Lien de réunion",
+      "linkPending": "Génération…",
+      "linkNote": "Une invitation contenant ce lien a été envoyée à votre adresse e-mail.",
+      "addToCalendar": "Ajouter au calendrier",
+      "google": "Google Agenda",
+      "outlook": "Calendrier Outlook",
+      "apple": "Calendrier Apple",
+      "questions": "Besoin de reporter ou une question avant notre rendez-vous ?",
+      "eventTitle": "Session découverte",
+      "eventDescription": "Votre consultation avec l'équipe TechOn."
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "À propos",
+      "description": "TechOn est une société de logiciels qui construit des plateformes IA, des applications mobiles et des systèmes d'entreprise depuis Dar es Salaam, Nairobi et Houston."
+    },
+    "hero": {
+      "eyebrow": "À propos",
+      "title": "Nous construisons les logiciels comme il faut les construire.",
+      "lead": "Fondée en 2019. Petits par choix, seniors par conception, et toujours au support des premiers systèmes que nous avons livrés."
+    },
+    "who": {
+      "eyebrow": "Qui nous sommes",
+      "title": "Une société de logiciels, pas une agence.",
+      "body1": "TechOn est une équipe d'ingénieurs et de designers basée à Dar es Salaam, Nairobi et Houston. Nous construisons des plateformes IA, des applications mobiles et les systèmes d'entreprise sur lesquels les sociétés font tourner leur journée.",
+      "body2": "Nous ne sous-traitons pas, et nous n'affectons pas les projets à qui est disponible. Les personnes présentes à votre première réunion sont celles qui construisent — et qui répondent au téléphone deux ans plus tard quand vous voulez aller plus loin."
+    },
+    "mission": {
+      "eyebrow": "Mission",
+      "title": "Rendre le bon logiciel ordinaire.",
+      "body": "Trop d'entreprises se sont vu vendre des systèmes lents, fragiles ou déjà abandonnés. Nous existons pour changer ce que les gens attendent du logiciel qu'ils paient : rapide, documenté, qui leur appartient, et toujours debout des années plus tard."
+    },
+    "vision": {
+      "eyebrow": "Vision",
+      "title": "L'ingénierie africaine, au standard mondial.",
+      "body": "Nous voulons que TechOn prouve qu'un logiciel construit à Dar es Salaam rivalise avec un logiciel construit n'importe où — jugé sur le soin, la fiabilité et la qualité de la réflexion, pas sur le prix."
+    },
+    "values": {
+      "eyebrow": "Valeurs",
+      "title": "Ce à quoi nous nous tenons.",
+      "lead": "Six engagements qui décident de notre façon de travailler quand personne ne regarde.",
+      "items": {
+        "craft": {
+          "title": "Le soin avant le volume",
+          "description": "Nous préférons livrer moins de choses correctement que beaucoup de choses passablement."
+        },
+        "candour": {
+          "title": "Dire ce qui dérange",
+          "description": "Si une fonctionnalité ne vaut pas la peine ou qu'une échéance n'est pas réaliste, vous l'apprenez par nous en premier."
+        },
+        "ownership": {
+          "title": "Assumer le résultat",
+          "description": "Le travail ne s'arrête pas à la livraison. Il s'arrête quand la chose fonctionne en production."
+        },
+        "speed": {
+          "title": "Avancer à un rythme réel",
+          "description": "Du logiciel fonctionnel à chaque sprint. La dynamique est une fonctionnalité, pas un bonus."
+        },
+        "security": {
+          "title": "Sécurisé par défaut",
+          "description": "Chiffrement, moindre privilège et journaux d'audit sont des décisions prises dès le premier jour."
+        },
+        "curiosity": {
+          "title": "Rester curieux",
+          "description": "Nous lisons les publications, menons les expériences, et n'adoptons la nouveauté qu'une fois qu'elle l'a mérité."
+        }
+      }
+    },
+    "leadership": {
+      "eyebrow": "Direction",
+      "title": "La personne derrière le travail.",
+      "lead": "TechOn est dirigée par un ingénieur, et c'est pourquoi l'ingénierie passe en premier.",
+      "role": "Fondateur et directeur général",
+      "bio": "Conrad a fondé TechOn en 2019, après une décennie passée à construire des systèmes pour des banques, des hôpitaux et des opérateurs logistiques en Afrique de l'Est. Il revoit encore l'architecture de chaque projet que la société accepte.",
+      "educationLabel": "Formation",
+      "readProfile": "Lire le profil complet",
+      "portraitPending": "Portrait à venir",
+      "qualifications": {
+        "bachelor": "Licence en génie informatique",
+        "masters": "Master en cybersécurité"
+      }
+    },
+    "stack": {
+      "eyebrow": "Technologies",
+      "title": "Ce avec quoi nous construisons.",
+      "lead": "Une boîte à outils volontairement réduite et bien maîtrisée. Nous y ajoutons lentement et en retirons souvent."
+    },
+    "timeline": {
+      "eyebrow": "Parcours",
+      "title": "Comment nous en sommes arrivés là.",
+      "lead": "Sept ans, une seule direction.",
+      "items": {
+        "founded": {
+          "title": "Fondation de TechOn",
+          "description": "Deux ingénieurs, une pièce à Dar es Salaam, et un premier contrat pour refaire un back-office logistique."
+        },
+        "firstEnterprise": {
+          "title": "Premier système d'entreprise",
+          "description": "Une plateforme de gestion hospitalière encore utilisée quotidiennement six ans plus tard."
+        },
+        "mobile": {
+          "title": "Ouverture du pôle mobile",
+          "description": "Flutter et React Native deviennent une compétence centrale plutôt qu'une offre annexe."
+        },
+        "regional": {
+          "title": "Nairobi et Houston",
+          "description": "Des clients dans trois pays, et une équipe qui grandit pour les accompagner correctement."
+        },
+        "ai": {
+          "title": "L'IA devient une discipline",
+          "description": "Systèmes de recherche, intelligence documentaire et premiers agents vocaux en production."
+        },
+        "nova": {
+          "title": "Lancement de NOVA AI",
+          "description": "Tout ce que nous avons appris de l'IA en production, réuni dans une seule plateforme."
+        },
+        "today": {
+          "title": "Aujourd'hui",
+          "description": "Cinquante projets livrés, vingt clients, et les premiers systèmes que nous avons construits toujours en service."
+        }
+      }
+    },
+    "cta": {
+      "title": "Travaillons ensemble.",
+      "lead": "Dites-nous ce que vous construisez. Nous vous dirons honnêtement si nous sommes la bonne équipe.",
+      "primary": "Démarrer un projet",
+      "secondary": "Voir nos réalisations"
+    }
+  },
+  "notFound": {
+    "title": "Cette page n'existe pas.",
+    "lead": "Le lien est peut-être obsolète, ou la page a déménagé vers un meilleur endroit.",
+    "home": "Retour à l'accueil",
+    "work": "Voir nos réalisations"
+  }
+}
