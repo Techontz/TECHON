@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Sparkles } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
 import { ProductMockup } from '@/components/sections/product-mockup'
@@ -14,9 +14,13 @@ import { stats } from '@/data/why'
 /**
  * The hero.
  *
- * No background treatment at all — the page opens on plain white, and the
- * headline is the only thing competing for attention. Everything moves once,
- * 12px, on load; there is nothing looping.
+ * Composition follows the references: an announcement pill, a very large
+ * medium-weight headline, a tight sub-paragraph, two calls to action, then the
+ * product shot bleeding upward into the fold.
+ *
+ * The page still opens on plain white. The references use a full-bleed dark
+ * panel here, but the brief specifies white backgrounds with purple accents,
+ * so the weight comes from the type rather than from a colour field.
  */
 export function Hero() {
   const t = useTranslations('hero')
@@ -29,10 +33,20 @@ export function Hero() {
   ]
 
   return (
-    <section className="pt-16 pb-20 sm:pt-24 sm:pb-28">
-      <div className="container-page">
-        <div className="mx-auto max-w-3xl text-center">
-          {/* Product announcement */}
+    <section className="relative overflow-hidden pt-12 pb-20 sm:pt-20 sm:pb-28">
+      {/* A single, very soft brand wash behind the headline. Not a gradient
+          treatment — just enough tint to stop the fold reading as a blank sheet. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 -top-40 h-[36rem] opacity-70"
+        style={{
+          background:
+            'radial-gradient(ellipse 60% 50% at 50% 40%, rgba(123, 25, 188, 0.07), transparent 70%)',
+        }}
+      />
+
+      <div className="container-page relative">
+        <div className="mx-auto max-w-4xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
@@ -40,9 +54,10 @@ export function Hero() {
           >
             <Link
               href="/#nova"
-              className="group inline-flex items-center gap-2 rounded-full border border-line bg-white py-1 pr-3 pl-1 transition-colors duration-200 hover:border-line-strong"
+              className="group inline-flex items-center gap-2 rounded-full border border-line bg-white py-1.5 pr-4 pl-1.5 shadow-xs transition-colors duration-200 hover:border-line-strong"
             >
-              <span className="rounded-full bg-brand px-2.5 py-1 text-[0.6875rem] font-semibold tracking-wide text-white">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-brand px-2.5 py-1 text-[0.6875rem] font-semibold tracking-wide text-white">
+                <Sparkles className="size-3" aria-hidden />
                 {t('badge')}
               </span>
               <span className="text-[0.8125rem] text-ink-muted">{t('badgeText')}</span>
@@ -54,28 +69,28 @@ export function Hero() {
           </motion.div>
 
           <motion.h1
-            initial={{ opacity: 0, y: 12 }}
+            initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease, delay: 0.06 }}
-            className="type-display mt-7 text-balance"
+            transition={{ duration: 0.7, ease, delay: 0.06 }}
+            className="type-display mt-8 text-balance sm:mt-10"
           >
             {t('title')}
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 12 }}
+            initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease, delay: 0.12 }}
-            className="type-lead mx-auto mt-6 max-w-2xl"
+            transition={{ duration: 0.7, ease, delay: 0.12 }}
+            className="type-lead mx-auto mt-7 max-w-2xl"
           >
             {t('lead')}
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 12 }}
+            initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease, delay: 0.18 }}
-            className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center"
+            transition={{ duration: 0.7, ease, delay: 0.18 }}
+            className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center"
           >
             <ActionLink href="/book" size="lg">
               {t('primary')}
@@ -91,35 +106,37 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* Product shot */}
+        {/* Product shot. Scales in very slightly rather than sliding, so the
+            fold settles rather than moves. */}
         <motion.div
-          initial={{ opacity: 0, y: 20, scale: 0.99 }}
+          initial={{ opacity: 0, y: 24, scale: 0.985 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.8, ease, delay: 0.24 }}
-          className="mx-auto mt-16 max-w-5xl sm:mt-20"
+          transition={{ duration: 0.9, ease, delay: 0.24 }}
+          className="mx-auto mt-16 max-w-5xl sm:mt-24"
         >
-          <BrowserFrame url="app.techon.co.tz">
-            <ProductMockup className="h-[300px] sm:h-[420px]" />
+          <BrowserFrame url="app.techontz.com">
+            <ProductMockup className="h-[300px] sm:h-[440px]" />
           </BrowserFrame>
         </motion.div>
 
-        {/* Credibility strip */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, ease, delay: 0.4 }}
           className="mx-auto mt-16 max-w-3xl sm:mt-20"
         >
-          <dl className="grid grid-cols-3 gap-4 border-y border-line py-8">
+          <dl className="grid grid-cols-3 gap-4 border-y border-line py-9">
             {heroStats.map((stat) => (
               <div key={stat.value.id} className="text-center">
                 <dt className="sr-only">{stat.label}</dt>
                 <dd>
-                  <span className="block text-[1.75rem] font-semibold tracking-[-0.03em] text-ink tabular-nums sm:text-[2.25rem]">
+                  <span className="block text-[2rem] font-semibold tracking-[-0.03em] text-ink tabular-nums sm:text-[2.75rem]">
                     {stat.value.value}
                     {stat.value.suffix}
                   </span>
-                  <span className="mt-1 block text-[0.8125rem] text-ink-muted">{stat.label}</span>
+                  <span className="mt-1.5 block text-[0.8125rem] text-ink-muted">
+                    {stat.label}
+                  </span>
                 </dd>
               </div>
             ))}

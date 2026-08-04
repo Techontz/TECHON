@@ -178,6 +178,13 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
+    // ------------------------------------------------------------------- team
+
+    match /team/{id} {
+      allow read, list: if true;
+      allow write: if isAdmin();
+    }
+
     // ------------------------------------------------------------- newsletter
     //
     // Write-only for the public: anyone may subscribe, nobody may read the

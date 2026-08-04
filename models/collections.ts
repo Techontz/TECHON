@@ -18,6 +18,7 @@ export const COLLECTIONS = {
   consultations: 'consultations',
   portfolio: 'portfolio',
   testimonials: 'testimonials',
+  team: 'team',
   newsletter: 'newsletter',
   posts: 'posts',
 

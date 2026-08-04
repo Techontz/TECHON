@@ -544,6 +544,21 @@
       "eventDescription": "Ihre Beratung mit dem TechOn-Team."
     }
   },
+  "team": {
+    "eyebrow": "Team",
+    "title": "Die Menschen dahinter.",
+    "lead": "Ein kleines Senior-Team. Die Ingenieure, die Sie beim Kickoff treffen, schreiben Ihren Code — und gehen Jahre später ans Telefon.",
+    "note": "Wir stellen ein. Die gezeigten Rollen sind die Disziplinen, mit denen wir bauen.",
+    "roles": {
+      "founder": "Gründer und Geschäftsführer",
+      "aiEngineer": "KI-Ingenieur",
+      "backendEngineer": "Backend-Entwickler",
+      "frontendEngineer": "Frontend-Entwickler",
+      "mobileDeveloper": "Mobile-Entwickler",
+      "designer": "UI/UX-Designer",
+      "projectManager": "Projektmanager"
+    }
+  },
   "about": {
     "meta": {
       "title": "Über uns",

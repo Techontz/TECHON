@@ -20,6 +20,7 @@ export const STORAGE_PATHS = {
   nova: 'nova',
   hero: 'hero',
   posts: 'posts',
+  team: 'team',
 } as const
 
 export type StorageArea = (typeof STORAGE_PATHS)[keyof typeof STORAGE_PATHS]

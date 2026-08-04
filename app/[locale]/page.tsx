@@ -7,17 +7,18 @@ import { Nova } from '@/components/sections/nova'
 import { Portfolio } from '@/components/sections/portfolio'
 import { Process } from '@/components/sections/process'
 import { Services } from '@/components/sections/services'
+import { Team } from '@/components/sections/team'
 import { TechStack } from '@/components/sections/tech-stack'
 import { Testimonials } from '@/components/sections/testimonials'
 import { WhyTechOn } from '@/components/sections/why-techon'
 
 /**
- * Section order is the argument the page makes: what we build, our product,
- * who we are, what we can do, proof, why us, how we work, what we work with,
- * what clients say, how to reach us.
+ * Section order follows the brief, and it tells a story: what we build, our
+ * product, the proof, who we serve, why us, how we work, what we build with,
+ * what clients say, who we are, and how to reach us.
  *
- * The About preview sits between NOVA and Services deliberately — a human
- * pause between the two densest sections on the page.
+ * Team sits immediately before About so the company is introduced by its
+ * people rather than by its prose.
  */
 export default async function HomePage({
   params,
@@ -30,14 +31,15 @@ export default async function HomePage({
   return (
     <>
       <Hero />
-      <Nova />
-      <AboutPreview />
       <Services />
+      <Nova />
       <Portfolio />
       <WhyTechOn />
       <Process />
       <TechStack />
       <Testimonials />
+      <Team />
+      <AboutPreview />
       <Contact />
     </>
   )

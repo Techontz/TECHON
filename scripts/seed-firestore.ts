@@ -28,6 +28,7 @@ import {
   SEED_TESTIMONIALS,
 } from '../data/seed/content'
 import { buildSeedPortfolio } from '../data/seed/portfolio'
+import { SEED_TEAM } from '../data/seed/team'
 import { DEFAULT_AVAILABILITY } from '../models/availability'
 import { COLLECTIONS, CONTENT_DOCS } from '../models/collections'
 
@@ -107,6 +108,12 @@ async function main() {
     await put(COLLECTIONS.testimonials, id, rest)
   }
   console.log(`  testimonials    ${SEED_TESTIMONIALS.length}`)
+
+  for (const member of SEED_TEAM) {
+    const { id, ...rest } = member
+    await put(COLLECTIONS.team, id, rest)
+  }
+  console.log(`  team            ${SEED_TEAM.length}`)
 
   const portfolio = buildSeedPortfolio()
   for (const project of portfolio) {

@@ -544,6 +544,21 @@
       "eventDescription": "Mashauriano yako na timu ya TechOn."
     }
   },
+  "team": {
+    "eyebrow": "Timu",
+    "title": "Watu wanaojenga.",
+    "lead": "Timu ndogo ya wataalam. Wahandisi unaokutana nao mwanzoni ndio wanaoandika msimbo wako — na ndio wanaojibu simu miaka baadaye.",
+    "note": "Tunaajiri. Nafasi zilizoonyeshwa ni taaluma tunazojengea.",
+    "roles": {
+      "founder": "Mwanzilishi na Mkurugenzi Mtendaji",
+      "aiEngineer": "Mhandisi wa AI",
+      "backendEngineer": "Mhandisi wa Backend",
+      "frontendEngineer": "Mhandisi wa Frontend",
+      "mobileDeveloper": "Mtengenezaji wa Programu za Simu",
+      "designer": "Mbunifu wa UI/UX",
+      "projectManager": "Meneja wa Miradi"
+    }
+  },
   "about": {
     "meta": {
       "title": "Kuhusu Sisi",

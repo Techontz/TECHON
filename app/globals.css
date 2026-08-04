@@ -11,8 +11,12 @@
 :root {
   /* --- Surfaces --------------------------------------------------------- */
   --white: #ffffff;
-  --surface: #f8f8fa; /* alternating section background */
-  --surface-2: #fafafa; /* the quieter of the two, for long stretches */
+  /* Tinted toward the brand hue rather than neutral grey. A section band that
+     carries a trace of the logo purple reads as part of the identity; a pure
+     grey one reads as an absence of decision. */
+  --surface: #f7f4fb; /* alternating section background */
+  --surface-2: #fbf9fd; /* the quieter of the two, for long stretches */
+  --surface-card: #f2ebf9; /* filled cards, so they sit on white without a border */
 
   /* --- Ink -------------------------------------------------------------- */
   --ink: #111111;
@@ -37,29 +41,43 @@
   --brand-deep: #641499;
   /* 8% brand on white, for quiet fills. */
   --brand-wash: #f4edfa;
+  /* 40% brand on white. Used where a second density of the brand hue is
+     needed as a signal — never as decoration. */
+  --brand-soft: #caa3e4;
   --success: #16a34a;
 
   /* --- Radius ----------------------------------------------------------- */
-  /* Hard ceiling of 14px. Nothing in this system is a pill except the
-     locale chip and filter tabs, which are explicitly full-round. */
+  /* Raised from the previous 14px ceiling to match the reference card
+     language. Controls stay tight (8–10px); surfaces that hold a composition
+     get 16px; the floating nav gets 20px, which is what stops a detached bar
+     reading as a rectangle that came loose. */
   --r-sm: 8px;
   --r-md: 10px;
   --r-lg: 12px;
-  --r-xl: 14px;
+  --r-xl: 16px;
+  --r-card: 16px;
+  --r-float: 20px;
 
   /* --- Elevation -------------------------------------------------------- */
   /* Barely there. Depth comes from the 1px line, not the shadow. */
   --shadow-xs: 0 1px 2px rgba(17, 17, 17, 0.04);
   --shadow-sm: 0 1px 2px rgba(17, 17, 17, 0.04), 0 2px 6px rgba(17, 17, 17, 0.04);
   --shadow-md: 0 2px 4px rgba(17, 17, 17, 0.03), 0 8px 24px rgba(17, 17, 17, 0.06);
+  /* Detached navigation. Wide and very low opacity — the bar should appear to
+     hover, not to be outlined. */
+  --shadow-float: 0 1px 2px rgba(20, 6, 31, 0.04), 0 8px 30px rgba(20, 6, 31, 0.08);
 
   /* --- Rhythm ----------------------------------------------------------- */
   /* 140px from roughly 1170px upward — so every real laptop gets the full
      interval — compressed on small screens, where 140px of nothing reads as a
      loading bug rather than as composure. */
-  --section-y: clamp(4.5rem, 12vw, 8.75rem);
+  /* Up to 160px at desktop. The references breathe considerably more than a
+     standard 96px rhythm, and that space is doing real work. */
+  --section-y: clamp(4.5rem, 12vw, 10rem);
   --container: 1280px;
   --gutter: clamp(1.25rem, 4vw, 2.5rem);
+  /* Height of the floating nav plus its inset, for scroll-padding and offsets. */
+  --nav-h: 5.5rem;
 
   /* --- shadcn/ui compatibility ------------------------------------------ */
   /* The vendored primitives read these names. Mapped onto the tokens above
@@ -111,6 +129,7 @@
   --color-white: var(--white);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
+  --color-surface-card: var(--surface-card);
   --color-ink: var(--ink);
   --color-ink-muted: var(--ink-muted);
   --color-ink-subtle: var(--ink-subtle);
@@ -120,6 +139,7 @@
   --color-brand-accent: var(--brand-accent);
   --color-brand-deep: var(--brand-deep);
   --color-brand-wash: var(--brand-wash);
+  --color-brand-soft: var(--brand-soft);
   --color-success: var(--success);
 
   --color-background: var(--background);
@@ -159,10 +179,13 @@
   --radius-md: var(--r-md);
   --radius-lg: var(--r-lg);
   --radius-xl: var(--r-xl);
+  --radius-card: var(--r-card);
+  --radius-float: var(--r-float);
 
   --shadow-xs: var(--shadow-xs);
   --shadow-sm: var(--shadow-sm);
   --shadow-md: var(--shadow-md);
+  --shadow-float: var(--shadow-float);
 }
 
 /* ==========================================================================
@@ -177,7 +200,7 @@
   html {
     scroll-behavior: smooth;
     /* Header is sticky; anchored sections must clear it. */
-    scroll-padding-top: 6rem;
+    scroll-padding-top: calc(var(--nav-h) + 1.5rem);
     -webkit-text-size-adjust: 100%;
   }
 
@@ -237,24 +260,27 @@
   /* --- Type scale ------------------------------------------------------- */
   /* Mobile-first: the lower bound of each clamp is the phone size, chosen
      first, with the desktop size scaled up from it. */
+  /* The single biggest lever on how expensive the page looks: a very large
+     headline held at MEDIUM weight. Going bolder at this size reads as
+     shouting; the references all stay at 500–600. */
   .type-display {
-    font-size: clamp(2.5rem, 6.2vw, 5rem);
-    line-height: 1.04;
-    letter-spacing: -0.035em;
+    font-size: clamp(2.75rem, 7vw, 5.75rem);
+    line-height: 1.02;
+    letter-spacing: -0.038em;
     font-weight: 600;
   }
 
   .type-h1 {
-    font-size: clamp(2rem, 4.6vw, 3.5rem);
-    line-height: 1.07;
-    letter-spacing: -0.03em;
+    font-size: clamp(2.25rem, 5vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.032em;
     font-weight: 600;
   }
 
   .type-h2 {
-    font-size: clamp(1.75rem, 3.4vw, 2.75rem);
-    line-height: 1.12;
-    letter-spacing: -0.026em;
+    font-size: clamp(1.875rem, 3.8vw, 3.25rem);
+    line-height: 1.1;
+    letter-spacing: -0.028em;
     font-weight: 600;
   }
 
@@ -266,9 +292,9 @@
   }
 
   .type-lead {
-    font-size: clamp(1.0625rem, 1.35vw, 1.3125rem);
-    line-height: 1.55;
-    letter-spacing: -0.01em;
+    font-size: clamp(1.0625rem, 1.45vw, 1.375rem);
+    line-height: 1.6;
+    letter-spacing: -0.011em;
     color: var(--ink-muted);
   }
 
@@ -296,7 +322,18 @@
   .card-surface {
     background: var(--white);
     border: 1px solid var(--line);
-    border-radius: var(--r-sm);
+    border-radius: var(--r-card);
+  }
+
+  /*
+   * Filled card. The references lean on a tinted fill with no border rather
+   * than white-on-white with a hairline — it groups content more strongly and
+   * lets a product mockup bleed to the card edge.
+   */
+  .card-filled {
+    background: var(--surface-card);
+    border: 1px solid transparent;
+    border-radius: var(--r-card);
   }
 
   /* Hover contract for every interactive card on the site: 4px lift, 1.02

@@ -215,16 +215,17 @@ export function BookingCalendar({ value, onSelect, durationMinutes }: BookingCal
 }
 
 /**
- * The only three non-brand colours on the site.
+ * Availability, encoded as a density of the brand hue rather than as a
+ * traffic light.
  *
- * Availability is a status signal, not decoration — green/amber/red is the
- * convention every booking system uses, and inventing a purple-only encoding
- * for it would be less legible, not more tasteful.
+ * Colour is never the only signal: a full day is also struck through, the
+ * legend names each state, and every cell's accessible name carries the count
+ * of remaining slots — so the scale reads without relying on hue at all.
  */
 const LOAD_DOT: Record<DayLoad, string> = {
-  open: 'bg-success',
-  filling: 'bg-[#D97706]',
-  full: 'bg-[#DC2626]',
+  open: 'bg-brand',
+  filling: 'bg-brand-soft',
+  full: 'bg-line-strong',
 }
 
 function NavButton({

@@ -544,6 +544,21 @@
       "eventDescription": "Votre consultation avec l'équipe TechOn."
     }
   },
+  "team": {
+    "eyebrow": "Équipe",
+    "title": "Celles et ceux qui construisent.",
+    "lead": "Une petite équipe senior. Les ingénieurs que vous rencontrez au démarrage écrivent votre code — et répondent au téléphone des années plus tard.",
+    "note": "Nous recrutons. Les rôles affichés sont les disciplines avec lesquelles nous construisons.",
+    "roles": {
+      "founder": "Fondateur et directeur général",
+      "aiEngineer": "Ingénieur IA",
+      "backendEngineer": "Ingénieur backend",
+      "frontendEngineer": "Ingénieur frontend",
+      "mobileDeveloper": "Développeur mobile",
+      "designer": "Designer UI/UX",
+      "projectManager": "Chef de projet"
+    }
+  },
   "about": {
     "meta": {
       "title": "À propos",

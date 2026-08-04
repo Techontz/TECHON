@@ -41,6 +41,11 @@ service firebase.storage {
       allow write: if isAdmin() && isImage();
     }
 
+    match /team/{file} {
+      allow read: if true;
+      allow write: if isAdmin() && isImage();
+    }
+
     // NOVA accepts a demo video as well as stills.
     match /nova/{file} {
       allow read: if true;
