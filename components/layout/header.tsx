@@ -106,8 +106,8 @@ export function Header() {
                   width={site.logo.width}
                   height={site.logo.height}
                   priority
-                  sizes="140px"
-                  className="h-6 w-auto sm:h-7"
+                  sizes="220px"
+                  className="h-9 w-auto sm:h-11"
                 />
               </Link>
 

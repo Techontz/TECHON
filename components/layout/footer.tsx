@@ -38,8 +38,8 @@ export function Footer() {
                 alt={site.legalName}
                 width={site.logo.width}
                 height={site.logo.height}
-                sizes="132px"
-                className="h-7 w-auto"
+                sizes="220px"
+                className="h-11 w-auto"
               />
             </Link>
 
