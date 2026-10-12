@@ -20,6 +20,7 @@ export interface Leader {
   qualifications: Qualification[]
   /** Destination for "Read full profile". Point at a biography page when it exists. */
   profileHref?: string
+  instagram?: string
 }
 
 export const leaders: Leader[] = [
@@ -29,6 +30,7 @@ export const leaders: Leader[] = [
     // 1087×1447 portrait. next/image serves it as AVIF/WebP at the two sizes
     // actually rendered, so the 2.4MB source never reaches a visitor.
     image: '/ceo.PNG',
+    instagram: 'https://www.instagram.com/conradbubex/',
     qualifications: [
       {
         id: 'bachelor',

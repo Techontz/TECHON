@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "TechOn — Logiciels, IA et transformation numérique",
+    "title": "TechOn | Logiciels, IA et transformation numérique",
     "description": "TechOn conçoit et développe des plateformes IA, des applications mobiles et des systèmes d'entreprise pour les sociétés attachées à la qualité d'exécution.",
     "portfolioTitle": "Réalisations"
   },
@@ -21,7 +21,7 @@
     "badge": "NOVA AI",
     "badgeText": "Notre plateforme IA est en ligne",
     "title": "Nous construisons les logiciels dont votre entreprise dépend.",
-    "lead": "Plateformes IA, applications mobiles et systèmes d'entreprise — conçus, développés et maintenus par une seule équipe senior.",
+    "lead": "Plateformes IA, applications mobiles et systèmes d'entreprise, conçus, développés et maintenus par une seule équipe senior.",
     "primary": "Démarrer un projet",
     "secondary": "Voir nos réalisations",
     "stat1": "Projets livrés",
@@ -34,7 +34,7 @@
   "aboutPreview": {
     "eyebrow": "À propos de TechOn",
     "title": "Une petite équipe, délibérément.",
-    "body": "TechOn a été fondée en 2019 pour construire des logiciels correctement — de ceux qui fonctionnent encore, et qui ont encore du sens, des années après le lancement. Nous restons petits volontairement : les ingénieurs que vous rencontrez au démarrage sont ceux qui écrivent votre code, et ils restent bien après la mise en production.",
+    "body": "TechOn a été fondée en 2019 pour construire des logiciels correctement, de ceux qui fonctionnent encore, et qui ont encore du sens, des années après le lancement. Nous restons petits volontairement : les ingénieurs que vous rencontrez au démarrage sont ceux qui écrivent votre code, et ils restent bien après la mise en production.",
     "ceoRole": "Fondateur et directeur général",
     "cta": "En savoir plus"
   },
@@ -86,12 +86,25 @@
       "workflowAutomation": "Automatisation des processus",
       "apiIntegration": "Intégration API",
       "availability": "Disponibilité 24/7"
+    },
+    "emailPlaceholder": "Entrez votre adresse e-mail",
+    "tryFree": "Essayer gratuitement",
+    "feature1": "Répond aux appels, chats et e-mails, jour et nuit",
+    "feature2": "Fonctionne par téléphone, WhatsApp, Instagram, Facebook et sur le web",
+    "stage": {
+      "online": "En ligne",
+      "placeholder": "Demandez n’importe quoi à NOVA…",
+      "speaking": "NOVA parle",
+      "chat1": "Bonjour, puis-je réserver une consultation vendredi ?",
+      "chat2": "Bien sûr. Vendredi à 10h00 ou 14h00 ?",
+      "chat3": "10h00, c’est parfait.",
+      "chat4": "C’est réservé. Votre confirmation est sur WhatsApp."
     }
   },
   "services": {
     "eyebrow": "Services",
-    "title": "Tout ce que nous faisons, bien fait.",
-    "lead": "Un seul partenaire du premier croquis à la mise à l'échelle, pour que rien ne se perde entre la stratégie, le design et le code.",
+    "title": "Tout ce que nous faisons.",
+    "lead": "Faites défiler l’étagère. Un seul partenaire, du premier croquis à la mise en production.",
     "items": {
       "aiSolutions": {
         "title": "Solutions IA",
@@ -141,67 +154,58 @@
         "title": "Transformation numérique",
         "description": "Stratégie et exécution pour faire passer une opération du manuel au mesurable."
       }
-    }
+    },
+    "prev": "Service précédent",
+    "next": "Service suivant",
+    "cta": "Démarrer un projet"
   },
   "portfolio": {
     "eyebrow": "Réalisations",
     "title": "Projets sélectionnés.",
-    "lead": "Plateformes, applications et systèmes construits pour des fondateurs, des institutions et des grands comptes.",
+    "lead": "De vrais produits, en ligne aujourd’hui, pour des banques, fintechs, places de marché et startups à travers l’Afrique.",
     "viewAll": "Voir toutes les réalisations",
-    "view": "Voir le projet",
-    "code": "Code source",
     "empty": "Aucun projet dans cette catégorie pour l'instant.",
     "showing": "{count} sur {total} affichés",
     "categories": {
       "all": "Tous",
       "mobile": "Applications mobiles",
-      "ai": "Solutions IA",
-      "web": "Plateformes web",
-      "business": "Systèmes métier",
-      "games": "Jeux"
-    },
-    "status": {
-      "live": "En ligne",
-      "comingSoon": "Bientôt disponible",
-      "template": "Modèle — à remplacer"
+      "web": "Sites web",
+      "ai": "IA et automatisation"
     },
     "items": {
-      "taxiApp": "Plateforme de VTC avec répartition en direct, estimation des courses et paiement des chauffeurs.",
-      "deliveryApp": "Application de livraison du dernier kilomètre avec optimisation d'itinéraire et suivi en temps réel.",
-      "tradingApp": "Terminal de trading avec graphiques en direct, listes de suivi et exécution instantanée.",
-      "restaurantApp": "Application de commande et réservation avec synchronisation cuisine et fidélité.",
-      "fitnessApp": "Compagnon d'entraînement avec programmes adaptatifs, séries et synchronisation des montres.",
-      "musicApp": "Application de streaming avec lecture hors ligne, playlists et découverte personnalisée.",
-      "educationApp": "Plateforme d'apprentissage avec cours vidéo, quiz notés et suivi de progression.",
-      "healthcareApp": "Application patient pour rendez-vous, téléconsultation et historique des ordonnances.",
-      "novaAi": "Notre plateforme IA phare pour la communication, le support et les processus automatisés.",
-      "aiCallingAgent": "Agent vocal qui passe et reçoit de vrais appels téléphoniques en langage naturel.",
-      "aiCustomerSupport": "Couche de support qui résout les tickets en autonomie et transmet le reste avec contexte.",
-      "aiChatAssistant": "Assistant intégré entraîné sur votre documentation, vos produits et votre ton.",
-      "documentIntelligence": "Extrait des données structurées de factures, contrats et documents numérisés.",
-      "workflowAutomation": "Relie les outils internes et exécute des processus complexes sans transfert manuel.",
-      "pbzBank": "Site de banque d'entreprise avec découverte des produits et parcours de service sécurisés.",
-      "techonWebsite": "Le site que vous parcourez — notre propre système de design, en production.",
-      "corporateWebsite": "Site institutionnel avec contenu multilingue et finition de niveau investisseur.",
-      "realEstate": "Marketplace immobilière avec recherche cartographique, visites virtuelles et espace agents.",
-      "restaurantWebsite": "Site de restaurant avec menu en direct, réservations et intégration livraison.",
-      "ecommerce": "Boutique en ligne avec catalogue multi-vendeurs, tunnel d'achat et orchestration des paiements.",
-      "portfolioWebsite": "Site de marque personnelle avec études de cas et journal éditorial.",
-      "hospital": "Système hospitalier couvrant dossiers, services, facturation, pharmacie et laboratoire.",
-      "school": "Plateforme scolaire pour admissions, emplois du temps, notes et communication aux parents.",
-      "inventory": "Gestion de stock multi-entrepôts avec lecture de codes-barres et prévision de réapprovisionnement.",
-      "hotel": "Système hôtelier pour réservations, gouvernance, facturation et synchronisation des canaux.",
-      "pos": "Point de vente avec mode hors ligne, clôture de caisse et reporting multi-sites.",
-      "hrManagement": "Suite RH pour recrutement, intégration, congés, évaluations et dossiers du personnel.",
-      "payroll": "Moteur de paie avec retenues légales, bulletins et export des fichiers bancaires.",
-      "loanManagement": "Système de crédit pour instruction, scoring, déblocage et recouvrement.",
-      "erp": "Progiciel de gestion intégré couvrant finance, chaîne d'approvisionnement et opérations.",
-      "crm": "CRM commercial avec gestion du pipeline, suivi d'activité et prévision des revenus.",
-      "puzzleGame": "Jeu de puzzle par association de tuiles avec défis quotidiens et difficulté progressive.",
-      "adventureGame": "Aventure narrative aux univers dessinés à la main et aux dénouements multiples.",
-      "strategyGame": "Stratégie au tour par tour avec gestion des ressources et multijoueur en ligne.",
-      "arcadeGame": "Runner arcade nerveux avec classements et personnages à débloquer."
-    }
+      "tunes": "Distribution musicale née en Tanzanie : publiez sur Spotify, Apple Music, TikTok et plus, grandissez avec les créateurs et retirez vos royalties sur mobile money ou en banque.",
+      "pilot": "Un robot de trading que vous contrôlez : fixez les règles, testez-les sur l’historique, puis laissez-le trader en démo ou en réel, dans vos limites.",
+      "pbzBank": "Site web et banque mobile de la People’s Bank of Zanzibar, comptes, virements, factures et paiements QR PBZ Lipa Hapa.",
+      "mkopa": "Site web de M-KOPA, la fintech qui met smartphones et services financiers numériques entre les mains de millions d’Africains.",
+      "safiri": "Voyager en Afrique : billets de bus, train, ferry et avion, et envoi de colis, sur le web, Android et iOS.",
+      "novaAi": "Notre propre plateforme IA : répond aux appels, échange sur WhatsApp et les réseaux sociaux, prend des rendez-vous et passe la main à un humain si besoin.",
+      "chapChap": "Achetez directement auprès de fournisseurs fiables en Chine, avec une expédition groupée vers la Tanzanie à prix abordable.",
+      "najo": "Assistance routière à la demande : le conducteur appelle à l’aide, un mécanicien proche accepte et arrive. Deux applications : conducteur et mécanicien.",
+      "konect": "La place de marché en ligne de Tanzanie : achetez ce qui est déjà dans le pays, livré en quelques jours, ou commandez à l’étranger et suivez jusqu’à votre porte.",
+      "agiza": "Boutique en ligne et application de livraison expédiant les produits tendance en Afrique de l’Est, de l’Ouest et centrale.",
+      "direct2kariakoo": "Les vendeurs de Kariakoo en ligne : électronique, mode, maison et beauté, livrés dans tout Dar es Salaam.",
+      "foodie": "Repas, courses et essentiels de la maison, livrés à votre porte en Tanzanie.",
+      "hunPlus": "Une application de divertissement pour films, séries et émissions, en streaming, au même endroit."
+    },
+    "sectors": {
+      "music": "Distribution musicale",
+      "trading": "Trading automatisé",
+      "banking": "Banque",
+      "fintech": "Fintech",
+      "travel": "Voyages et billets",
+      "ai": "Intelligence artificielle",
+      "ecommerce": "E-commerce",
+      "automotive": "Assistance routière",
+      "foodDelivery": "Livraison de repas",
+      "entertainment": "Divertissement"
+    },
+    "links": {
+      "website": "Site web",
+      "android": "Google Play",
+      "ios": "App Store",
+      "partnerAndroid": "App mécanicien"
+    },
+    "appComingSoon": "Application mobile bientôt disponible"
   },
   "why": {
     "eyebrow": "Pourquoi TechOn",
@@ -243,7 +247,7 @@
       },
       "planning": {
         "title": "Planification",
-        "description": "Périmètre, architecture, calendrier et budget actés par écrit — plus de cible mouvante ensuite."
+        "description": "Périmètre, architecture, calendrier et budget actés par écrit, plus de cible mouvante ensuite."
       },
       "design": {
         "title": "Design",
@@ -270,7 +274,7 @@
   "stack": {
     "eyebrow": "Technologies",
     "title": "Des outils éprouvés, choisis délibérément.",
-    "lead": "Nous choisissons l'option bien comprise sauf raison valable de faire autrement — et nous pouvons vous dire précisément laquelle."
+    "lead": "Nous choisissons l'option bien comprise sauf raison valable de faire autrement, et nous pouvons vous dire précisément laquelle."
   },
   "testimonials": {
     "eyebrow": "Clients",
@@ -348,7 +352,7 @@
   "portfolioPage": {
     "eyebrow": "Réalisations",
     "title": "Tout ce que nous avons construit.",
-    "lead": "Applications mobiles, plateformes IA, produits web, systèmes métier et jeux.",
+    "lead": "Sites web, applications mobiles et produits IA que nous avons livrés, ouvrez-les et jugez par vous-même.",
     "back": "Retour à l'accueil",
     "ctaTitle": "Vous avez un projet de ce type en tête ?",
     "ctaLead": "Parlez-nous-en. Vous aurez une vraie réponse, pas une plaquette.",
@@ -546,9 +550,8 @@
   },
   "team": {
     "eyebrow": "Équipe",
-    "title": "Celles et ceux qui construisent.",
-    "lead": "Une petite équipe senior. Les ingénieurs que vous rencontrez au démarrage écrivent votre code — et répondent au téléphone des années plus tard.",
-    "note": "Nous recrutons. Les rôles affichés sont les disciplines avec lesquelles nous construisons.",
+    "title": "Dirigée par Conrad Bubex.",
+    "lead": "Nous sommes une équipe de 6 ingénieurs logiciel et spécialistes en cybersécurité. Les personnes rencontrées au lancement sont celles qui écrivent et sécurisent votre code, et qui répondent encore au téléphone des années plus tard.",
     "roles": {
       "founder": "Fondateur et directeur général",
       "aiEngineer": "Ingénieur IA",
@@ -557,6 +560,20 @@
       "mobileDeveloper": "Développeur mobile",
       "designer": "Designer UI/UX",
       "projectManager": "Chef de projet"
+    },
+    "facts": {
+      "engineers": {
+        "value": "6",
+        "label": "Ingénieurs logiciel et spécialistes sécurité"
+      },
+      "security": {
+        "value": "Sécurisé",
+        "label": "Cybersécurité intégrée dès le premier jour"
+      },
+      "ownership": {
+        "value": "Une équipe",
+        "label": "Du premier croquis au support"
+      }
     }
   },
   "about": {
@@ -572,8 +589,8 @@
     "who": {
       "eyebrow": "Qui nous sommes",
       "title": "Une société de logiciels, pas une agence.",
-      "body1": "TechOn est une équipe d'ingénieurs et de designers basée à Dar es Salaam, Nairobi et Houston. Nous construisons des plateformes IA, des applications mobiles et les systèmes d'entreprise sur lesquels les sociétés font tourner leur journée.",
-      "body2": "Nous ne sous-traitons pas, et nous n'affectons pas les projets à qui est disponible. Les personnes présentes à votre première réunion sont celles qui construisent — et qui répondent au téléphone deux ans plus tard quand vous voulez aller plus loin."
+      "body1": "TechOn est une équipe de 6 ingénieurs logiciel et spécialistes en cybersécurité basée à Dar es Salaam, Nairobi et Houston. Nous construisons des plateformes IA, des applications mobiles et les systèmes d'entreprise sur lesquels les sociétés font tourner leur journée.",
+      "body2": "Nous ne sous-traitons pas, et nous n'affectons pas les projets à qui est disponible. Les personnes présentes à votre première réunion sont celles qui construisent, et qui répondent au téléphone deux ans plus tard quand vous voulez aller plus loin."
     },
     "mission": {
       "eyebrow": "Mission",
@@ -583,7 +600,7 @@
     "vision": {
       "eyebrow": "Vision",
       "title": "L'ingénierie africaine, au standard mondial.",
-      "body": "Nous voulons que TechOn prouve qu'un logiciel construit à Dar es Salaam rivalise avec un logiciel construit n'importe où — jugé sur le soin, la fiabilité et la qualité de la réflexion, pas sur le prix."
+      "body": "Nous voulons que TechOn prouve qu'un logiciel construit à Dar es Salaam rivalise avec un logiciel construit n'importe où, jugé sur le soin, la fiabilité et la qualité de la réflexion, pas sur le prix."
     },
     "values": {
       "eyebrow": "Valeurs",
@@ -623,12 +640,12 @@
       "role": "Fondateur et directeur général",
       "bio": "Conrad a fondé TechOn en 2019, après une décennie passée à construire des systèmes pour des banques, des hôpitaux et des opérateurs logistiques en Afrique de l'Est. Il revoit encore l'architecture de chaque projet que la société accepte.",
       "educationLabel": "Formation",
-      "readProfile": "Lire le profil complet",
       "portraitPending": "Portrait à venir",
       "qualifications": {
         "bachelor": "Licence en génie informatique",
         "masters": "Master en cybersécurité"
-      }
+      },
+      "followInstagram": "Suivre sur Instagram"
     },
     "stack": {
       "eyebrow": "Technologies",

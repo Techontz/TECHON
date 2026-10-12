@@ -8,9 +8,9 @@ type Size = 'sm' | 'md' | 'lg'
 
 /** Radius steps with size, but never past the 14px ceiling. */
 const sizes: Record<Size, string> = {
-  sm: 'h-9 px-3.5 text-[0.875rem] rounded-[8px] gap-1.5',
-  md: 'h-11 px-5 text-[0.9375rem] rounded-[8px] gap-2',
-  lg: 'h-[3.25rem] px-7 text-[1rem] rounded-[10px] gap-2',
+  sm: 'h-9 px-3.5 text-[0.875rem] rounded-full gap-1.5',
+  md: 'h-11 px-5 text-[0.9375rem] rounded-full gap-2',
+  lg: 'h-[3.25rem] px-7 text-[1rem] rounded-full gap-2',
 }
 
 const variants: Record<Variant, string> = {

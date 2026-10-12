@@ -33,7 +33,7 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(site.url),
-    title: { default: t('title'), template: `%s — ${site.name}` },
+    title: { default: t('title'), template: `%s | ${site.name}` },
     description: t('description'),
     applicationName: site.name,
     authors: [{ name: site.legalName, url: site.url }],
@@ -75,10 +75,12 @@ export async function generateMetadata({
     },
     icons: {
       icon: [
-        { url: '/icon.svg', type: 'image/svg+xml' },
-        { url: '/icon-light-32x32.png', sizes: '32x32', type: 'image/png' },
+        { url: '/favicon.ico', sizes: '16x16 32x32 48x48' },
+        { url: '/icon-32x32.png', sizes: '32x32', type: 'image/png' },
+        { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+        { url: '/icon-512.png', sizes: '512x512', type: 'image/png' },
       ],
-      apple: '/apple-icon.png',
+      apple: { url: '/apple-icon.png', sizes: '180x180' },
     },
     robots: {
       index: true,

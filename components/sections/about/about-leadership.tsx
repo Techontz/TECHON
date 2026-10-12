@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react'
+import { Instagram } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
 import { Reveal } from '@/components/motion/reveal'
@@ -71,15 +71,16 @@ export function AboutLeadership() {
           </div>
 
           <div className="mt-10">
-            <ActionLink
-              // Points at the About page until a dedicated biography exists;
-              // set `profileHref` on the leader to redirect it.
-              href={ceo.profileHref ?? '/about'}
-              variant="secondary"
-              icon={<ArrowRight className="size-4" aria-hidden />}
-            >
-              {t('readProfile')}
-            </ActionLink>
+            {ceo.instagram ? (
+              <ActionLink
+                href={ceo.instagram}
+                external
+                variant="secondary"
+                icon={<Instagram className="size-4" aria-hidden />}
+              >
+                {t('followInstagram')}
+              </ActionLink>
+            ) : null}
           </div>
         </Reveal>
       </div>

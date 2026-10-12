@@ -1,6 +1,7 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
+import { useRef } from 'react'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
@@ -112,11 +113,14 @@ export function Hero() {
           initial={{ opacity: 0, y: 24, scale: 0.985 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.9, ease, delay: 0.24 }}
-          className="mx-auto mt-16 max-w-5xl sm:mt-24"
+          className="relative mx-auto mt-16 max-w-5xl [perspective:1600px] sm:mt-24"
         >
-          <BrowserFrame url="app.techontz.com">
-            <ProductMockup className="h-[300px] sm:h-[440px]" />
-          </BrowserFrame>
+          {/* Glow the dashboard floats on. */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute -inset-x-10 top-10 -bottom-10 rounded-[48px] bg-[radial-gradient(60%_60%_at_50%_40%,rgba(123,25,188,0.18),transparent_70%)] blur-2xl"
+          />
+          <HeroShot />
         </motion.div>
 
         <motion.div
@@ -146,5 +150,29 @@ export function Hero() {
         </motion.div>
       </div>
     </section>
+  )
+}
+
+/**
+ * The dashboard tilts back in 3D and lays flat as it scrolls into place, the
+ * way a product launch page reveals its hero device.
+ */
+function HeroShot() {
+  const ref = useRef<HTMLDivElement>(null)
+  const reduced = useReducedMotion()
+  const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'start 0.3'] })
+  const rotateX = useTransform(scrollYProgress, [0, 1], [reduced ? 0 : 16, 0])
+  const scale = useTransform(scrollYProgress, [0, 1], [reduced ? 1 : 0.94, 1])
+
+  return (
+    <motion.div
+      ref={ref}
+      style={{ rotateX, scale, transformOrigin: '50% 0%' }}
+      className="relative shadow-[0_40px_100px_-30px_rgba(40,10,70,0.35)] [border-radius:12px]"
+    >
+      <BrowserFrame url="app.techontz.com">
+        <ProductMockup className="h-[340px] sm:h-[480px]" />
+      </BrowserFrame>
+    </motion.div>
   )
 }

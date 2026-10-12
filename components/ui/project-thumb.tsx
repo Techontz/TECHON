@@ -70,48 +70,6 @@ function Wireframe({ category }: { category: ProjectCategory }) {
         </svg>
       )
 
-    case 'business':
-      return (
-        <svg viewBox="0 0 320 200" className="size-full" aria-hidden>
-          <rect x="40" y="26" width="240" height="148" rx="10" fill="#fff" stroke={line} />
-          <rect x="58" y="46" width="60" height="34" rx="6" fill={fill} />
-          <rect x="128" y="46" width="60" height="34" rx="6" fill={fill} />
-          <rect x="198" y="46" width="64" height="34" rx="6" fill={fill} />
-          {[
-            [64, 28],
-            [88, 44],
-            [112, 20],
-            [136, 52],
-            [160, 34],
-            [184, 58],
-            [208, 40],
-            [232, 26],
-          ].map(([x, height], index) => (
-            <rect
-              key={x}
-              x={x}
-              y={152 - height}
-              width="13"
-              height={height}
-              rx="3"
-              fill={index === 5 ? brand : line}
-            />
-          ))}
-        </svg>
-      )
-
-    case 'games':
-      return (
-        <svg viewBox="0 0 320 200" className="size-full" aria-hidden>
-          <rect x="76" y="66" width="168" height="76" rx="34" fill="#fff" stroke={line} />
-          <rect x="104" y="100" width="26" height="6" rx="3" fill={line} />
-          <rect x="114" y="90" width="6" height="26" rx="3" fill={line} />
-          <circle cx="196" cy="94" r="7" fill={brand} />
-          <circle cx="214" cy="110" r="7" fill={line} />
-          <circle cx="178" cy="110" r="7" fill={line} />
-          <circle cx="196" cy="126" r="7" fill={line} />
-        </svg>
-      )
   }
 }
 
@@ -146,7 +104,7 @@ export function ProjectThumb({
   return (
     <div className={cn('relative overflow-hidden bg-surface', className)}>
       <div className="absolute inset-0 flex items-center justify-center p-4">
-        <Wireframe category={project.category} />
+        <Wireframe category={project.categories[0]} />
       </div>
     </div>
   )

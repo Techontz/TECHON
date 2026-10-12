@@ -90,7 +90,7 @@ export function TimeSelector({ availability, value, onSelect, loading }: TimeSel
                 // Screen readers get the reason, which the strikethrough only
                 // implies visually.
                 aria-label={
-                  slot.available ? slot.time : `${slot.time} — ${t(`reason.${slot.reason}`)}`
+                  slot.available ? slot.time : `${slot.time}, ${t(`reason.${slot.reason}`)}`
                 }
                 className={cn(
                   'h-12 rounded-[8px] border text-[0.9375rem] font-medium tabular-nums',

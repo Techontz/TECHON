@@ -1,100 +1,103 @@
-import { Check } from 'lucide-react'
+import { Check, Globe, PhoneCall } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
-import { Reveal, RevealGroup, RevealItem } from '@/components/motion/reveal'
-import { NovaPhone } from '@/components/sections/nova-phone'
-import { ActionLink } from '@/components/ui/action-link'
+import { Reveal } from '@/components/motion/reveal'
+import { NovaSignup } from '@/components/sections/nova-signup'
+import { NovaStage } from '@/components/sections/nova-stage'
 import { Eyebrow } from '@/components/ui/section'
 import { novaGroups, novaMetrics } from '@/data/nova'
 
 /**
- * The flagship product, staged as a product announcement.
- *
- * Centred type, one large visual, then the specification. The section carries
- * the most vertical space on the page and the only sustained motion — all of
- * it inside the handset.
+ * The flagship product, staged as a launch: statement, the device family
+ * running NOVA live, a one-field "try it", then the capabilities as two slow
+ * ribbons instead of a wall of cards.
  */
 export function Nova() {
   const t = useTranslations('nova')
+  const capabilities = novaGroups.flatMap((group) => group.capabilities)
+  const half = Math.ceil(capabilities.length / 2)
 
   return (
-    <section id="nova" className="section-y border-t border-line bg-surface">
+    <section id="nova" className="section-y border-t border-line bg-white">
       <div className="container-page">
-        {/* Statement */}
-        <Reveal className="mx-auto max-w-3xl text-center">
-          <Eyebrow>{t('eyebrow')}</Eyebrow>
+        <div className="relative overflow-hidden rounded-[32px] bg-[radial-gradient(120%_80%_at_50%_0%,#f4edfa_0%,#fbfbfd_55%,#f5f5f7_100%)] px-5 pt-14 pb-10 sm:rounded-[44px] sm:px-10 sm:pt-20 sm:pb-14">
+          <Reveal className="mx-auto max-w-3xl text-center">
+            <Eyebrow>{t('eyebrow')}</Eyebrow>
+            <h2 className="type-display mt-4 text-balance">{t('title')}</h2>
+            <p className="type-lead mx-auto mt-5 max-w-2xl">{t('lead')}</p>
+          </Reveal>
 
-          <h2 className="type-display mt-4 text-balance">{t('title')}</h2>
+          <Reveal className="mt-10 sm:mt-14">
+            <NovaStage />
+          </Reveal>
 
-          <p className="type-lead mx-auto mt-6 max-w-2xl">{t('lead')}</p>
+          <Reveal className="mt-10 sm:mt-14">
+            <NovaSignup />
 
-          <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-            <ActionLink href="/#contact" size="lg">
-              {t('cta')}
-            </ActionLink>
-            <ActionLink href="/book" variant="secondary" size="lg">
-              {t('secondary')}
-            </ActionLink>
-          </div>
-        </Reveal>
+            <ul className="mx-auto mt-8 grid max-w-2xl gap-4 sm:grid-cols-2">
+              {[
+                { icon: PhoneCall, key: 'feature1' },
+                { icon: Globe, key: 'feature2' },
+              ].map(({ icon: Icon, key }) => (
+                <li key={key} className="flex items-center gap-3">
+                  <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white text-brand shadow-xs">
+                    <Icon className="size-4" aria-hidden />
+                  </span>
+                  <span className="text-[0.9375rem] leading-snug text-ink">{t(key)}</span>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
 
-        {/* Product */}
-        <Reveal className="mt-16 sm:mt-20">
-          <NovaPhone />
-        </Reveal>
-
-        <Reveal className="mx-auto mt-14 max-w-2xl sm:mt-16">
-          <dl className="grid grid-cols-3 gap-4 border-y border-line py-8">
-            {novaMetrics.map((metric) => (
-              <div key={metric.key} className="text-center">
-                <dd className="text-[1.5rem] font-semibold tracking-[-0.03em] text-ink tabular-nums sm:text-[2rem]">
-                  {metric.value}
-                </dd>
-                <dt className="mt-1.5 text-[0.75rem] leading-snug text-ink-muted sm:text-[0.8125rem]">
-                  {t(metric.key)}
-                </dt>
-              </div>
-            ))}
-          </dl>
-        </Reveal>
-
-        {/* Specification. Four cards rather than twenty-two — grouped, the
-            list reads as a specification; flat, it reads as a wall. */}
-        <Reveal className="mx-auto mt-20 max-w-2xl text-center sm:mt-24">
-          <h3 className="type-h2">{t('capabilitiesTitle')}</h3>
-          <p className="type-lead mt-4">{t('capabilitiesLead')}</p>
-        </Reveal>
-
-        <RevealGroup
-          as="ul"
-          className="mt-12 grid gap-4 sm:mt-14 sm:grid-cols-2 lg:grid-cols-4"
-          stagger={0.06}
-        >
-          {novaGroups.map((group) => {
-            const Icon = group.icon
-
-            return (
-              <RevealItem key={group.id} as="li">
-                <div className="card-surface flex h-full flex-col rounded-[10px] bg-white p-6">
-                  <Icon className="size-5 text-brand" aria-hidden />
-
-                  <h4 className="type-h3 mt-4 text-[1.0625rem]">{t(`groups.${group.id}`)}</h4>
-
-                  <ul className="mt-4 space-y-2.5">
-                    {group.capabilities.map((capability) => (
-                      <li key={capability} className="flex items-start gap-2.5">
-                        <Check className="mt-[3px] size-3.5 shrink-0 text-brand" aria-hidden />
-                        <span className="text-[0.875rem] leading-snug text-ink-muted">
-                          {t(`capabilities.${capability}`)}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
+          <Reveal className="mx-auto mt-10 max-w-2xl">
+            <dl className="grid grid-cols-3 gap-4 border-t border-line pt-8">
+              {novaMetrics.map((metric) => (
+                <div key={metric.key} className="text-center">
+                  <dd className="text-[1.5rem] font-semibold tracking-[-0.03em] text-ink tabular-nums sm:text-[2rem]">
+                    {metric.value}
+                  </dd>
+                  <dt className="mt-1 text-[0.75rem] leading-snug text-ink-muted sm:text-[0.8125rem]">
+                    {t(metric.key)}
+                  </dt>
                 </div>
-              </RevealItem>
-            )
-          })}
-        </RevealGroup>
+              ))}
+            </dl>
+          </Reveal>
+        </div>
+
+        {/* Capabilities: two ribbons moving in opposite directions. */}
+        <Reveal className="mt-14 text-center sm:mt-16">
+          <h3 className="type-h2">{t('capabilitiesTitle')}</h3>
+          <p className="type-lead mx-auto mt-3 max-w-xl">{t('capabilitiesLead')}</p>
+        </Reveal>
+
+        <div className="mask-fade-x mt-8 space-y-3 overflow-hidden">
+          {[capabilities.slice(0, half), capabilities.slice(half)].map((row, rowIndex) => (
+            <div
+              key={rowIndex}
+              className="animate-marquee flex w-max gap-3 hover:[animation-play-state:paused]"
+              style={
+                {
+                  '--marquee-duration': rowIndex === 0 ? '46s' : '54s',
+                  animationDirection: rowIndex === 0 ? 'normal' : 'reverse',
+                } as React.CSSProperties
+              }
+            >
+              {/* Doubled so the loop is seamless; the copy is hidden from
+                  assistive tech. */}
+              {[...row, ...row].map((capability, index) => (
+                <span
+                  key={`${capability}-${index}`}
+                  aria-hidden={index >= row.length ? true : undefined}
+                  className="inline-flex shrink-0 items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-[0.875rem] text-ink"
+                >
+                  <Check className="size-3.5 text-brand" aria-hidden />
+                  {t(`capabilities.${capability}`)}
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

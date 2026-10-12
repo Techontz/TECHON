@@ -49,7 +49,7 @@ export function PortfolioGallery() {
         <div className="container-page">
           {/* Sticky so the filter stays reachable through a long grid. The
               offset clears the sticky header above it. */}
-          <div className="sticky top-16 z-30 -mx-[var(--gutter)] border-b border-line bg-white/90 px-[var(--gutter)] py-4 backdrop-blur-md">
+          <div className="sticky top-14 sm:top-[3.75rem] z-30 -mx-[var(--gutter)] border-b border-line bg-white/90 px-[var(--gutter)] py-4 backdrop-blur-md">
             <PortfolioTabs active={filter} onChange={setFilter} />
           </div>
 

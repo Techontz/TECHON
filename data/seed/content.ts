@@ -114,7 +114,7 @@ export const SEED_CONTACT: ContactContent = {
     { label: 'GitHub', href: 'https://github.com/techontz' },
     { label: 'LinkedIn', href: 'https://linkedin.com/company/tech_ontz' },
     { label: 'X', href: 'https://x.com/techontz' },
-    { label: 'Instagram', href: 'https://instagram.com/tech_ontz' },
+    { label: 'Instagram', href: 'https://www.instagram.com/tech_ontz/' },
     { label: 'TikTok', href: 'https://tiktok.com/tech_ontz' },
   ],
 }

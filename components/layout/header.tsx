@@ -77,24 +77,18 @@ export function Header() {
         Skip to content
       </a>
 
-      <header className="sticky top-0 z-50 pt-3 sm:pt-4">
+      {/* Apple-style global bar: full width, thin, frosted. The hairline
+          appears once content scrolls beneath it. */}
+      <header
+        className={cn(
+          'sticky top-0 z-50 border-b transition-colors duration-300',
+          'bg-[rgba(251,251,253,0.8)] backdrop-blur-xl backdrop-saturate-[1.8]',
+          isScrolled ? 'border-line' : 'border-transparent',
+        )}
+      >
         <div className="container-page">
-          <motion.div
-            initial={false}
-            animate={{
-              // A near-invisible lift at rest, deepening once content is behind
-              // it — the only thing that changes on scroll.
-              boxShadow: isScrolled
-                ? '0 1px 2px rgba(20,6,31,0.04), 0 8px 30px rgba(20,6,31,0.10)'
-                : '0 1px 2px rgba(20,6,31,0.03), 0 4px 16px rgba(20,6,31,0.05)',
-            }}
-            transition={{ duration: 0.3, ease }}
-            className={cn(
-              'rounded-float border border-line/70 bg-white/80',
-              'backdrop-blur-xl backdrop-saturate-150',
-            )}
-          >
-            <div className="flex h-16 items-center justify-between gap-4 px-4 sm:h-[4.5rem] sm:px-6">
+          <motion.div initial={false} transition={{ duration: 0.3, ease }}>
+            <div className="flex h-14 items-center justify-between gap-4 sm:h-[3.75rem]">
               <Link
                 href="/"
                 aria-label={site.name}
@@ -107,7 +101,7 @@ export function Header() {
                   height={site.logo.height}
                   priority
                   sizes="220px"
-                  className="h-9 w-auto sm:h-11"
+                  className="h-7 w-auto sm:h-8"
                 />
               </Link>
 
@@ -125,8 +119,8 @@ export function Header() {
                     key={item.key}
                     href={item.href}
                     className={cn(
-                      'rounded-[10px] px-3.5 py-2 text-[0.9375rem] text-ink-muted',
-                      'transition-colors duration-200 hover:bg-surface hover:text-ink',
+                      'px-3 py-2 text-[0.8125rem] tracking-[-0.01em] text-ink/80',
+                      'transition-colors duration-200 hover:text-ink',
                     )}
                   >
                     {t(item.key)}
@@ -171,7 +165,7 @@ export function Header() {
             transition={{ duration: 0.2, ease }}
             className="fixed inset-0 z-40 bg-white/95 backdrop-blur-xl lg:hidden"
           >
-            <div className="container-page flex h-full flex-col pt-28 pb-10">
+            <div className="container-page flex h-full flex-col pt-20 pb-10">
               <nav aria-label="Mobile" className="flex flex-col">
                 {NAV.map((item, index) => (
                   <motion.div

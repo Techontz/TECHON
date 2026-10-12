@@ -14,20 +14,20 @@
   /* Tinted toward the brand hue rather than neutral grey. A section band that
      carries a trace of the logo purple reads as part of the identity; a pure
      grey one reads as an absence of decision. */
-  --surface: #f7f4fb; /* alternating section background */
-  --surface-2: #fbf9fd; /* the quieter of the two, for long stretches */
-  --surface-card: #f2ebf9; /* filled cards, so they sit on white without a border */
+  --surface: #f5f5f7; /* alternating section background */
+  --surface-2: #fbfbfd; /* the quieter of the two, for long stretches */
+  --surface-card: #f5f5f7; /* filled cards, so they sit on white without a border */
 
   /* --- Ink -------------------------------------------------------------- */
-  --ink: #111111;
-  --ink-muted: #555555;
+  --ink: #1d1d1f;
+  --ink-muted: #6e6e73;
   /* Derived, not invented: #555 lightened for captions and disabled states.
      Still passes 4.5:1 on white at the sizes it is used. */
-  --ink-subtle: #767676;
+  --ink-subtle: #6e6e73;
 
   /* --- Lines ------------------------------------------------------------ */
-  --line: #e8e8e8;
-  --line-strong: #d8d8dc;
+  --line: #e8e8ed;
+  --line-strong: #d2d2d7;
 
   /* --- Brand ------------------------------------------------------------ */
   /* Sampled directly from the logo artwork: #7B19BC accounts for 682k pixels
@@ -54,8 +54,8 @@
   --r-sm: 8px;
   --r-md: 10px;
   --r-lg: 12px;
-  --r-xl: 16px;
-  --r-card: 16px;
+  --r-xl: 18px;
+  --r-card: 22px;
   --r-float: 20px;
 
   /* --- Elevation -------------------------------------------------------- */
@@ -77,7 +77,7 @@
   --container: 1280px;
   --gutter: clamp(1.25rem, 4vw, 2.5rem);
   /* Height of the floating nav plus its inset, for scroll-padding and offsets. */
-  --nav-h: 5.5rem;
+  --nav-h: 3.75rem;
 
   /* --- shadcn/ui compatibility ------------------------------------------ */
   /* The vendored primitives read these names. Mapped onto the tokens above
@@ -120,10 +120,14 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-inter), ui-sans-serif, -apple-system, 'SF Pro Text',
+  /* Apple's typeface is not licensed for the web, so it is never shipped.
+     `-apple-system` asks Apple devices for their own installed system font
+     (San Francisco); everything else falls back to Inter, the closest open
+     match. */
+  --font-sans: -apple-system, BlinkMacSystemFont, var(--font-inter), 'Segoe UI',
+    system-ui, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, var(--font-inter),
     'Segoe UI', system-ui, sans-serif;
-  --font-display: var(--font-display), var(--font-inter), ui-sans-serif,
-    -apple-system, 'SF Pro Display', system-ui, sans-serif;
   --font-mono: var(--font-mono), ui-monospace, 'SF Mono', Menlo, monospace;
 
   --color-white: var(--white);
@@ -218,10 +222,10 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-display), var(--font-inter), system-ui, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, var(--font-inter), system-ui, sans-serif;
     color: var(--ink);
     /* Optical tightening. Large type needs more of it than small type. */
-    letter-spacing: -0.022em;
+    letter-spacing: -0.02em;
     text-wrap: balance;
   }
 
@@ -264,8 +268,8 @@
      headline held at MEDIUM weight. Going bolder at this size reads as
      shouting; the references all stay at 500–600. */
   .type-display {
-    font-size: clamp(2.75rem, 7vw, 5.75rem);
-    line-height: 1.02;
+    font-size: clamp(2.75rem, 7.4vw, 6rem);
+    line-height: 1.04;
     letter-spacing: -0.038em;
     font-weight: 600;
   }
@@ -292,15 +296,15 @@
   }
 
   .type-lead {
-    font-size: clamp(1.0625rem, 1.45vw, 1.375rem);
-    line-height: 1.6;
+    font-size: clamp(1.1875rem, 1.6vw, 1.5rem);
+    line-height: 1.42;
     letter-spacing: -0.011em;
     color: var(--ink-muted);
   }
 
   .type-body {
     font-size: 1.0625rem;
-    line-height: 1.62;
+    line-height: 1.47;
     color: var(--ink-muted);
   }
 
@@ -323,6 +327,7 @@
     background: var(--white);
     border: 1px solid var(--line);
     border-radius: var(--r-card);
+    overflow: hidden;
   }
 
   /*
@@ -345,10 +350,11 @@
       border-color 300ms cubic-bezier(0.32, 0.72, 0, 1);
   }
 
+  /* Apple's tile hover: a soft lift and a deeper, wider shadow. */
   .card-hover:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: var(--shadow-md);
-    border-color: var(--line-strong);
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 20px 48px rgba(0, 0, 0, 0.08);
+    border-color: transparent;
   }
 
   /* Faint ruled background for mockup interiors. Never used full-bleed. */

@@ -1,4 +1,4 @@
-import { Linkedin } from 'lucide-react'
+import { Instagram, Linkedin } from 'lucide-react'
 import Image from 'next/image'
 import { getTranslations } from 'next-intl/server'
 
@@ -21,25 +21,39 @@ import { cn } from '@/lib/utils'
  */
 export async function Team() {
   const t = await getTranslations('team')
-  const members = await listTeam()
+  // Only the founder is shown by name; the wider team is described in words.
+  const ceo = (await listTeam()).find((member) => member.roleKey === 'founder')
 
   return (
     <Section id="team" tone="subtle" divided>
-      <SectionHeader eyebrow={t('eyebrow')} title={t('title')} lead={t('lead')} />
+      <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-20">
+        {ceo ? (
+          <RevealGroup className="mx-auto w-full max-w-sm lg:max-w-none">
+            <RevealItem>
+              <TeamCard member={ceo} priority roleLabel={roleLabel(ceo, t)} />
+            </RevealItem>
+          </RevealGroup>
+        ) : null}
 
-      <RevealGroup
-        as="ul"
-        className="mt-14 grid gap-5 sm:mt-16 sm:grid-cols-2 lg:grid-cols-3"
-        stagger={0.05}
-      >
-        {members.map((member, index) => (
-          <RevealItem key={member.id} as="li">
-            <TeamCard member={member} priority={index < 3} roleLabel={roleLabel(member, t)} />
-          </RevealItem>
-        ))}
-      </RevealGroup>
+        <div>
+          <SectionHeader eyebrow={t('eyebrow')} title={t('title')} lead={t('lead')} />
 
-      <p className="mt-10 text-center text-[0.875rem] text-ink-subtle">{t('note')}</p>
+          <RevealGroup as="ul" className="mt-10 grid gap-3 sm:grid-cols-3" stagger={0.06}>
+            {(['engineers', 'security', 'ownership'] as const).map((key) => (
+              <RevealItem key={key} as="li">
+                <div className="h-full rounded-[18px] bg-white p-5">
+                  <p className="text-[1.75rem] leading-tight font-semibold tracking-[-0.03em] text-ink">
+                    {t(`facts.${key}.value`)}
+                  </p>
+                  <p className="mt-1 text-[0.875rem] leading-snug text-ink-muted">
+                    {t(`facts.${key}.label`)}
+                  </p>
+                </div>
+              </RevealItem>
+            ))}
+          </RevealGroup>
+        </div>
+      </div>
     </Section>
   )
 }
@@ -66,7 +80,7 @@ function TeamCard({
             src={member.photoUrl}
             alt={member.name}
             fill
-            sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 92vw"
+            sizes="(min-width: 1024px) 40vw, (min-width: 640px) 384px, 92vw"
             priority={priority}
             className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
           />
@@ -79,7 +93,7 @@ function TeamCard({
               aria-hidden
               className="flex size-20 items-center justify-center rounded-full bg-white text-[1.25rem] font-semibold tracking-tight text-brand shadow-xs"
             >
-              {initials(member.name) || '—'}
+              {initials(member.name) || '?'}
             </span>
           </div>
         )}
@@ -97,6 +111,18 @@ function TeamCard({
               <p className="truncate text-[0.8125rem] text-ink-muted">{roleLabel}</p>
             </div>
 
+            <div className="flex shrink-0 items-center gap-3">
+            {member.instagramUrl ? (
+              <a
+                href={member.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${member.name} on Instagram`}
+                className="shrink-0 text-ink-subtle transition-colors hover:text-brand"
+              >
+                <Instagram className="size-4" aria-hidden />
+              </a>
+            ) : null}
             {member.linkedinUrl ? (
               <a
                 href={member.linkedinUrl}
@@ -108,6 +134,7 @@ function TeamCard({
                 <Linkedin className="size-4" aria-hidden />
               </a>
             ) : null}
+            </div>
           </div>
         </div>
       </div>

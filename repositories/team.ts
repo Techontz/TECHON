@@ -34,6 +34,10 @@ function mapMember(id: string, data: Record<string, unknown>): TeamMember {
     photoUrl: str(data.photoUrl),
     photoPath: str(data.photoPath),
     linkedinUrl: str(data.linkedinUrl),
+    // Stored members predate this field; the seed supplies it until an admin
+    // sets one.
+    instagramUrl:
+      str(data.instagramUrl) || SEED_TEAM.find((member) => member.id === id)?.instagramUrl || '',
     order: num(data.order, 99),
     published: bool(data.published, true),
     placeholder: bool(data.placeholder),

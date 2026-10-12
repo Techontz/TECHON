@@ -42,7 +42,7 @@ export const site = {
     { label: 'GitHub', href: 'https://github.com/techontz' },
     { label: 'LinkedIn', href: 'https://linkedin.com/company/tech_ontz' },
     { label: 'X', href: 'https://x.com/techontz' },
-    { label: 'Instagram', href: 'https://instagram.com/tech_ontz' },
+    { label: 'Instagram', href: 'https://www.instagram.com/tech_ontz/' },
     { label: 'TikTok', href: 'https://tiktok.com/tech_ontz' },
   ],
 
@@ -62,7 +62,7 @@ export const site = {
 export const primaryPhone = site.contact.phones[0]
 
 /** Prefilled WhatsApp deep link, so the first message is never a blank thread. */
-export function whatsappLink(message = "Hi TechOn — I'd like to discuss a project.") {
+export function whatsappLink(message = "Hi TechOn, I'd like to discuss a project.") {
   return `https://wa.me/${site.contact.whatsapp}?text=${encodeURIComponent(message)}`
 }
 

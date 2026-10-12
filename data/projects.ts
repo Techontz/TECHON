@@ -1,348 +1,228 @@
 /**
- * Every id must have a matching entry under `portfolio.items` in all four
- * message bundles. Pages are statically rendered for each locale, so a missing
- * translation fails the build rather than shipping a blank card.
+ * Shipped work. Every id must have a matching entry under `portfolio.items`
+ * in all four message bundles. Pages are statically rendered for each locale,
+ * so a missing translation fails the build rather than shipping a blank card.
+ *
+ * Covers in `public/work/` are real screenshots of each product — the live
+ * website in a browser frame and/or store screenshots in phone frames — on a
+ * tint of the client's brand colour, all 1600×1000 so the grid stays even.
  */
 export type ProjectId =
-  | 'taxiApp'
-  | 'deliveryApp'
-  | 'tradingApp'
-  | 'restaurantApp'
-  | 'fitnessApp'
-  | 'musicApp'
-  | 'educationApp'
-  | 'healthcareApp'
-  | 'novaAi'
-  | 'aiCallingAgent'
-  | 'aiCustomerSupport'
-  | 'aiChatAssistant'
-  | 'documentIntelligence'
-  | 'workflowAutomation'
+  | 'tunes'
+  | 'pilot'
   | 'pbzBank'
-  | 'techonWebsite'
-  | 'corporateWebsite'
-  | 'realEstate'
-  | 'restaurantWebsite'
-  | 'ecommerce'
-  | 'portfolioWebsite'
-  | 'hospital'
-  | 'school'
-  | 'inventory'
-  | 'hotel'
-  | 'pos'
-  | 'hrManagement'
-  | 'payroll'
-  | 'loanManagement'
-  | 'erp'
-  | 'crm'
-  | 'puzzleGame'
-  | 'adventureGame'
-  | 'strategyGame'
-  | 'arcadeGame'
+  | 'mkopa'
+  | 'safiri'
+  | 'novaAi'
+  | 'chapChap'
+  | 'najo'
+  | 'konect'
+  | 'agiza'
+  | 'direct2kariakoo'
+  | 'foodie'
+  | 'hunPlus'
 
 /** Tab order is deliberate and matches the order rendered in the UI. */
-export const projectCategories = ['mobile', 'ai', 'web', 'business', 'games'] as const
+export const projectCategories = ['mobile', 'web', 'ai'] as const
 export type ProjectCategory = (typeof projectCategories)[number]
 
 export const portfolioFilters = ['all', ...projectCategories] as const
 export type PortfolioFilter = (typeof portfolioFilters)[number]
 
-/**
- * `live`        — shipped, links are real.
- * `comingSoon`  — in production, not yet public.
- * `template`    — placeholder entry. Swap the title, tags and links for a real
- *                 case study; the badge disappears the moment you change this.
- */
-export type ProjectStatus = 'live' | 'comingSoon' | 'template'
+/** Each id maps to `portfolio.sectors.<id>` in every message bundle. */
+export type ProjectSector =
+  | 'music'
+  | 'trading'
+  | 'banking'
+  | 'fintech'
+  | 'travel'
+  | 'ai'
+  | 'ecommerce'
+  | 'automotive'
+  | 'foodDelivery'
+  | 'entertainment'
+
+export type ProjectLinkKind = 'website' | 'android' | 'ios' | 'partnerAndroid'
+
+export interface ProjectLink {
+  kind: ProjectLinkKind
+  href: string
+}
 
 export interface Project {
   id: ProjectId
   /** Proper noun, intentionally not translated. */
   title: string
-  category: ProjectCategory
-  status: ProjectStatus
-  tags: string[]
+  sector: ProjectSector
+  /** Every tab the project appears under; the first is its primary one. */
+  categories: ProjectCategory[]
   /** Surfaced on the homepage's curated grid. */
   featured?: boolean
-  href?: string
-  github?: string
-  /**
-   * Optional screenshot in `public/`. Without one the card renders its
-   * generated gradient artwork, which is the intended state until you have
-   * real imagery.
-   */
+  /** 16:10 cover in `public/`. Without one the card draws its wireframe. */
   image?: string
+  /** Square app icon or logo in `public/`, shown beside the title. */
+  icon?: string
+  links: ProjectLink[]
+  /** The mobile app is built but not yet in the stores. */
+  appComingSoon?: boolean
 }
 
 export const projects: Project[] = [
-  // ---------------------------------------------------------------- Mobile
   {
-    id: 'taxiApp',
-    title: 'Taxi App',
-    category: 'mobile',
-    status: 'template',
-    tags: ['Flutter', 'Google Maps', 'Firebase'],
+    id: 'tunes',
+    title: '2KTunes',
+    sector: 'music',
+    categories: ['web', 'mobile'],
     featured: true,
+    image: '/work/tunes.webp',
+    icon: '/work/tunes-icon.webp',
+    links: [{ kind: 'website', href: 'https://www.2ktunes.com/' }],
+    appComingSoon: true,
   },
   {
-    id: 'deliveryApp',
-    title: 'Delivery App',
-    category: 'mobile',
-    status: 'template',
-    tags: ['React Native', 'Node.js', 'PostgreSQL'],
+    id: 'pilot',
+    title: '2KPilot',
+    sector: 'trading',
+    categories: ['web', 'mobile', 'ai'],
+    featured: true,
+    image: '/work/pilot.webp',
+    icon: '/work/pilot-icon.webp',
+    links: [{ kind: 'website', href: 'https://www.2kpilot.online/' }],
+    appComingSoon: true,
   },
   {
-    id: 'tradingApp',
-    title: 'Trading App',
-    category: 'mobile',
-    status: 'template',
-    tags: ['Flutter', 'WebSockets', 'Redis'],
+    id: 'pbzBank',
+    title: 'PBZ Bank',
+    sector: 'banking',
+    categories: ['web', 'mobile'],
+    featured: true,
+    image: '/work/pbz.webp',
+    icon: '/work/pbz-icon.webp',
+    links: [
+      { kind: 'website', href: 'https://pbzbank.co.tz/' },
+      { kind: 'android', href: 'https://play.google.com/store/apps/details?id=com.pbzbank.pbz_version_1' },
+      { kind: 'ios', href: 'https://apps.apple.com/tz/app/pbz/id6502783457' },
+    ],
   },
   {
-    id: 'restaurantApp',
-    title: 'Restaurant App',
-    category: 'mobile',
-    status: 'template',
-    tags: ['Flutter', 'Laravel', 'Stripe'],
+    id: 'mkopa',
+    title: 'M-KOPA',
+    sector: 'fintech',
+    categories: ['web'],
+    featured: true,
+    image: '/work/mkopa.webp',
+    icon: '/work/mkopa-icon.webp',
+    links: [{ kind: 'website', href: 'https://www.m-kopa.com/' }],
   },
   {
-    id: 'fitnessApp',
-    title: 'Fitness App',
-    category: 'mobile',
-    status: 'template',
-    tags: ['React Native', 'HealthKit', 'Supabase'],
+    id: 'safiri',
+    title: 'Safiri',
+    sector: 'travel',
+    categories: ['mobile', 'web'],
+    featured: true,
+    image: '/work/safiri.webp',
+    icon: '/work/safiri-icon.webp',
+    links: [
+      { kind: 'website', href: 'https://safiri.app/' },
+      { kind: 'android', href: 'https://play.google.com/store/apps/details?id=com.itule.safiri' },
+      { kind: 'ios', href: 'https://apps.apple.com/gb/app/safiri/id1541262671' },
+    ],
   },
-  {
-    id: 'musicApp',
-    title: 'Music Streaming App',
-    category: 'mobile',
-    status: 'template',
-    tags: ['Flutter', 'Node.js', 'AWS S3'],
-  },
-  {
-    id: 'educationApp',
-    title: 'Education App',
-    category: 'mobile',
-    status: 'template',
-    tags: ['Flutter', 'Firebase', 'Mux'],
-  },
-  {
-    id: 'healthcareApp',
-    title: 'Healthcare App',
-    category: 'mobile',
-    status: 'template',
-    tags: ['React Native', 'Laravel', 'WebRTC'],
-  },
-
-  // -------------------------------------------------------------------- AI
   {
     id: 'novaAi',
     title: 'NOVA AI',
-    category: 'ai',
-    status: 'live',
-    tags: ['Next.js', 'Claude', 'Vector DB'],
+    sector: 'ai',
+    categories: ['ai'],
     featured: true,
+    image: '/work/nova.webp',
+    icon: '/work/nova-icon.webp',
+    links: [{ kind: 'website', href: '/#nova' }],
   },
   {
-    id: 'aiCallingAgent',
-    title: 'AI Calling Agent',
-    category: 'ai',
-    status: 'template',
-    tags: ['Python', 'Twilio', 'Realtime API'],
+    id: 'chapChap',
+    title: 'ChapChap',
+    sector: 'ecommerce',
+    categories: ['mobile', 'web'],
     featured: true,
+    image: '/work/chap.webp',
+    icon: '/work/chap-icon.webp',
+    links: [
+      { kind: 'website', href: 'https://chap.co.tz/' },
+      { kind: 'android', href: 'https://play.google.com/store/apps/details?id=tz.co.codeblock.chapchap' },
+      { kind: 'ios', href: 'https://apps.apple.com/tz/app/chapchap-app/id1578742848' },
+    ],
   },
   {
-    id: 'aiCustomerSupport',
-    title: 'AI Customer Support',
-    category: 'ai',
-    status: 'template',
-    tags: ['Next.js', 'RAG', 'PostgreSQL'],
-  },
-  {
-    id: 'aiChatAssistant',
-    title: 'AI Chat Assistant',
-    category: 'ai',
-    status: 'template',
-    tags: ['React', 'Embeddings', 'Edge Runtime'],
-  },
-  {
-    id: 'documentIntelligence',
-    title: 'Document Intelligence',
-    category: 'ai',
-    status: 'template',
-    tags: ['Python', 'OCR', 'FastAPI'],
-  },
-  {
-    id: 'workflowAutomation',
-    title: 'Workflow Automation',
-    category: 'ai',
-    status: 'template',
-    tags: ['TypeScript', 'Temporal', 'Docker'],
-  },
-
-  // ------------------------------------------------------------------- Web
-  {
-    id: 'pbzBank',
-    title: 'PBZ Bank Website',
-    category: 'web',
-    status: 'live',
-    tags: ['Next.js', 'TypeScript', 'Tailwind'],
+    id: 'najo',
+    title: 'NAJO Smart Assistant',
+    sector: 'automotive',
+    categories: ['mobile'],
     featured: true,
+    image: '/work/najo.webp',
+    icon: '/work/najo-icon.webp',
+    links: [
+      { kind: 'android', href: 'https://play.google.com/store/apps/details?id=tz.najo.user' },
+      { kind: 'partnerAndroid', href: 'https://play.google.com/store/apps/details?id=tz.najo.mechanic' },
+    ],
   },
   {
-    id: 'techonWebsite',
-    title: 'TechOn Website',
-    category: 'web',
-    status: 'live',
-    tags: ['Next.js', 'Framer Motion', 'Tailwind'],
-    featured: true,
-    href: '/',
+    id: 'konect',
+    title: '2KONECT',
+    sector: 'ecommerce',
+    categories: ['web'],
+    image: '/work/konect.webp',
+    icon: '/work/konect-icon.webp',
+    links: [{ kind: 'website', href: 'https://www.2konect.shop/' }],
   },
   {
-    id: 'corporateWebsite',
-    title: 'Corporate Website',
-    category: 'web',
-    status: 'template',
-    tags: ['Next.js', 'Sanity', 'Vercel'],
+    id: 'agiza',
+    title: 'Agiza',
+    sector: 'ecommerce',
+    categories: ['web', 'mobile'],
+    image: '/work/agiza.webp',
+    icon: '/work/agiza-icon.webp',
+    links: [
+      { kind: 'website', href: 'https://agizastore.com/' },
+      { kind: 'ios', href: 'https://apps.apple.com/tz/app/agiza-delivery/id6748238979' },
+    ],
   },
   {
-    id: 'realEstate',
-    title: 'Real Estate Platform',
-    category: 'web',
-    status: 'template',
-    tags: ['Next.js', 'Mapbox', 'PostgreSQL'],
+    id: 'direct2kariakoo',
+    title: 'Direct2Kariakoo',
+    sector: 'ecommerce',
+    categories: ['web'],
+    image: '/work/d2k.webp',
+    icon: '/work/d2k-icon.webp',
+    links: [{ kind: 'website', href: 'https://www.direct2kariakoo.com/' }],
   },
   {
-    id: 'restaurantWebsite',
-    title: 'Restaurant Website',
-    category: 'web',
-    status: 'template',
-    tags: ['Next.js', 'Sanity', 'Stripe'],
+    id: 'foodie',
+    title: 'Foodie Tanzania',
+    sector: 'foodDelivery',
+    categories: ['mobile'],
+    image: '/work/foodie.webp',
+    icon: '/work/foodie-icon.webp',
+    links: [
+      { kind: 'android', href: 'https://play.google.com/store/apps/details?id=com.foodie.tanzania' },
+    ],
   },
   {
-    id: 'ecommerce',
-    title: 'E-Commerce Platform',
-    category: 'web',
-    status: 'template',
-    tags: ['Next.js', 'Laravel', 'Stripe'],
-    featured: true,
-  },
-  {
-    id: 'portfolioWebsite',
-    title: 'Portfolio Website',
-    category: 'web',
-    status: 'template',
-    tags: ['Next.js', 'MDX', 'Vercel'],
-  },
-
-  // -------------------------------------------------------------- Business
-  {
-    id: 'hospital',
-    title: 'Hospital Management System',
-    category: 'business',
-    status: 'template',
-    tags: ['Laravel', 'MySQL', 'React'],
-    featured: true,
-  },
-  {
-    id: 'school',
-    title: 'School Management System',
-    category: 'business',
-    status: 'template',
-    tags: ['Laravel', 'MySQL', 'Vue'],
-  },
-  {
-    id: 'inventory',
-    title: 'Inventory System',
-    category: 'business',
-    status: 'template',
-    tags: ['Next.js', 'PostgreSQL', 'Prisma'],
-  },
-  {
-    id: 'hotel',
-    title: 'Hotel Management',
-    category: 'business',
-    status: 'template',
-    tags: ['Laravel', 'MySQL', 'Livewire'],
-  },
-  {
-    id: 'pos',
-    title: 'POS System',
-    category: 'business',
-    status: 'template',
-    tags: ['Flutter', 'SQLite', 'Node.js'],
-  },
-  {
-    id: 'hrManagement',
-    title: 'HR Management',
-    category: 'business',
-    status: 'template',
-    tags: ['Laravel', 'MySQL', 'React'],
-  },
-  {
-    id: 'payroll',
-    title: 'Payroll System',
-    category: 'business',
-    status: 'template',
-    tags: ['Laravel', 'PostgreSQL', 'Docker'],
-  },
-  {
-    id: 'loanManagement',
-    title: 'Loan Management System',
-    category: 'business',
-    status: 'template',
-    tags: ['Laravel', 'PostgreSQL', 'React'],
-  },
-  {
-    id: 'erp',
-    title: 'ERP',
-    category: 'business',
-    status: 'template',
-    tags: ['Next.js', 'PostgreSQL', 'Docker'],
-  },
-  {
-    id: 'crm',
-    title: 'CRM',
-    category: 'business',
-    status: 'template',
-    tags: ['Next.js', 'Supabase', 'TypeScript'],
-  },
-
-  // ----------------------------------------------------------------- Games
-  {
-    id: 'puzzleGame',
-    title: 'Puzzle Game',
-    category: 'games',
-    status: 'comingSoon',
-    tags: ['Unity', 'C#'],
-  },
-  {
-    id: 'adventureGame',
-    title: 'Adventure Game',
-    category: 'games',
-    status: 'comingSoon',
-    tags: ['Godot', 'GDScript'],
-  },
-  {
-    id: 'strategyGame',
-    title: 'Strategy Game',
-    category: 'games',
-    status: 'comingSoon',
-    tags: ['Unity', 'Photon'],
-  },
-  {
-    id: 'arcadeGame',
-    title: 'Arcade Game',
-    category: 'games',
-    status: 'comingSoon',
-    tags: ['Flutter', 'Flame'],
+    id: 'hunPlus',
+    title: 'hun+',
+    sector: 'entertainment',
+    categories: ['mobile'],
+    image: '/work/hun.webp',
+    icon: '/work/hun-icon.webp',
+    links: [
+      { kind: 'android', href: 'https://play.google.com/store/apps/details?id=com.hunapp.user' },
+    ],
   },
 ]
 
 export const featuredProjects = projects.filter((project) => project.featured)
 
 export function filterProjects(filter: PortfolioFilter): Project[] {
-  return filter === 'all' ? projects : projects.filter((p) => p.category === filter)
+  return filter === 'all' ? projects : projects.filter((p) => p.categories.includes(filter))
 }
 
 export function countByCategory(filter: PortfolioFilter): number {

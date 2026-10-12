@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "TechOn — Programu, AI na Mabadiliko ya Kidijitali",
+    "title": "TechOn | Programu, AI na Mabadiliko ya Kidijitali",
     "description": "TechOn hubuni na kujenga mifumo ya AI, programu za simu na mifumo ya kampuni kwa makampuni yanayojali jinsi mambo yanavyofanya kazi.",
     "portfolioTitle": "Kazi"
   },
@@ -21,7 +21,7 @@
     "badge": "NOVA AI",
     "badgeText": "Mfumo wetu wa AI upo hewani",
     "title": "Tunajenga programu ambazo biashara yako inategemea.",
-    "lead": "Mifumo ya AI, programu za simu na mifumo ya kampuni — imebuniwa, imejengwa na kusaidiwa na timu moja ya wataalam.",
+    "lead": "Mifumo ya AI, programu za simu na mifumo ya kampuni, imebuniwa, imejengwa na kusaidiwa na timu moja ya wataalam.",
     "primary": "Anza mradi",
     "secondary": "Tazama kazi zetu",
     "stat1": "Miradi iliyokamilika",
@@ -34,7 +34,7 @@
   "aboutPreview": {
     "eyebrow": "Kuhusu TechOn",
     "title": "Timu ndogo, kwa makusudi.",
-    "body": "TechOn ilianzishwa mwaka 2019 kujenga programu kwa usahihi — zile ambazo bado zinafanya kazi, na bado zinaeleweka, miaka mingi baada ya uzinduzi. Tunabaki wadogo kwa makusudi: wahandisi unaokutana nao mwanzoni ndio wanaoandika msimbo wako, na wanabaki nao hata baada ya kuzinduliwa.",
+    "body": "TechOn ilianzishwa mwaka 2019 kujenga programu kwa usahihi, zile ambazo bado zinafanya kazi, na bado zinaeleweka, miaka mingi baada ya uzinduzi. Tunabaki wadogo kwa makusudi: wahandisi unaokutana nao mwanzoni ndio wanaoandika msimbo wako, na wanabaki nao hata baada ya kuzinduliwa.",
     "ceoRole": "Mwanzilishi na Mkurugenzi Mtendaji",
     "cta": "Jifunze zaidi"
   },
@@ -86,12 +86,25 @@
       "workflowAutomation": "Uendeshaji wa michakato",
       "apiIntegration": "Muunganisho wa API",
       "availability": "Upatikanaji wa saa 24/7"
+    },
+    "emailPlaceholder": "Weka barua pepe yako",
+    "tryFree": "Jaribu bure",
+    "feature1": "Hupokea simu, gumzo na barua pepe, mchana na usiku",
+    "feature2": "Inafanya kazi kwenye simu, WhatsApp, Instagram, Facebook na wavuti",
+    "stage": {
+      "online": "Yupo sasa",
+      "placeholder": "Muulize NOVA chochote…",
+      "speaking": "NOVA anaongea",
+      "chat1": "Habari, naweza kupanga mkutano Ijumaa?",
+      "chat2": "Bila shaka. Ijumaa saa 4:00 asubuhi au saa 8:00 mchana?",
+      "chat3": "Saa 4:00 inanifaa.",
+      "chat4": "Imepangwa. Uthibitisho uko WhatsApp."
     }
   },
   "services": {
     "eyebrow": "Huduma",
-    "title": "Kila tunachofanya, tunakifanya vizuri.",
-    "lead": "Mshirika mmoja kutoka mchoro wa kwanza hadi uzalishaji kamili, hivyo hakuna kinachopotea kati ya mkakati, ubunifu na msimbo.",
+    "title": "Kila tunachofanya.",
+    "lead": "Telezesha kupitia rafu. Mshirika mmoja kuanzia wazo la kwanza hadi mfumo kamili.",
     "items": {
       "aiSolutions": {
         "title": "Suluhisho za AI",
@@ -141,67 +154,58 @@
         "title": "Mabadiliko ya kidijitali",
         "description": "Mkakati na utekelezaji wa kuhamisha shughuli kutoka mikono hadi kupimika."
       }
-    }
+    },
+    "prev": "Huduma iliyotangulia",
+    "next": "Huduma inayofuata",
+    "cta": "Anza mradi"
   },
   "portfolio": {
     "eyebrow": "Kazi",
     "title": "Miradi iliyochaguliwa.",
-    "lead": "Mifumo, programu na majukwaa yaliyojengwa kwa waanzilishi, taasisi na makampuni makubwa.",
+    "lead": "Bidhaa halisi, zinazofanya kazi leo, kwa benki, kampuni za fedha, masoko ya mtandaoni na kampuni changa Afrika.",
     "viewAll": "Tazama kazi zote",
-    "view": "Tazama mradi",
-    "code": "Msimbo",
     "empty": "Hakuna miradi katika kundi hili bado.",
     "showing": "Inaonyesha {count} kati ya {total}",
     "categories": {
       "all": "Yote",
       "mobile": "Programu za Simu",
-      "ai": "Suluhisho za AI",
-      "web": "Majukwaa ya Wavuti",
-      "business": "Mifumo ya Biashara",
-      "games": "Michezo"
-    },
-    "status": {
-      "live": "Hewani",
-      "comingSoon": "Inakuja hivi karibuni",
-      "template": "Kiolezo — badilisha baadaye"
+      "web": "Tovuti",
+      "ai": "AI na Uendeshaji"
     },
     "items": {
-      "taxiApp": "Jukwaa la usafiri lenye upangaji wa moja kwa moja, makadirio ya nauli na malipo ya madereva.",
-      "deliveryApp": "Programu ya usafirishaji yenye uboreshaji wa njia na ufuatiliaji wa wakati halisi.",
-      "tradingApp": "Kituo cha biashara chenye chati za moja kwa moja, orodha za ufuatiliaji na utekelezaji wa haraka.",
-      "restaurantApp": "Programu ya kuagiza na kuweka nafasi yenye muunganisho wa jikoni na zawadi za uaminifu.",
-      "fitnessApp": "Msaidizi wa mazoezi wenye programu zinazobadilika, mfululizo na muunganisho wa vifaa.",
-      "musicApp": "Programu ya muziki yenye usikilizaji nje ya mtandao, orodha na ugunduzi wa kibinafsi.",
-      "educationApp": "Jukwaa la kujifunza lenye masomo ya video, mitihani yenye alama na ufuatiliaji wa maendeleo.",
-      "healthcareApp": "Programu ya mgonjwa kwa miadi, ushauri wa mbali na historia ya dawa.",
-      "novaAi": "Jukwaa letu kuu la AI kwa mawasiliano ya kiotomatiki, msaada na michakato.",
-      "aiCallingAgent": "Wakala wa sauti anayepiga na kupokea simu halisi kwa lugha ya kawaida.",
-      "aiCustomerSupport": "Tabaka la msaada linalotatua maswali lenyewe na kupeleka mengine na maelezo.",
-      "aiChatAssistant": "Msaidizi aliyefundishwa kwa nyaraka, bidhaa na mtindo wa mawasiliano yako.",
-      "documentIntelligence": "Huchambua data kutoka ankara, mikataba na nyaraka zilizoskaniwa.",
-      "workflowAutomation": "Huunganisha zana za ndani na kuendesha michakato ya hatua nyingi bila kukatika.",
-      "pbzBank": "Tovuti ya benki ya kampuni yenye ugunduzi wa bidhaa na safari salama za huduma.",
-      "techonWebsite": "Tovuti unayosoma sasa — mfumo wetu wa ubunifu, ukiwa kazini.",
-      "corporateWebsite": "Tovuti ya taasisi yenye maudhui ya lugha nyingi na ubora wa kiwango cha wawekezaji.",
-      "realEstate": "Soko la mali lenye utafutaji wa ramani, ziara za mtandaoni na dashibodi za mawakala.",
-      "restaurantWebsite": "Tovuti ya mgahawa yenye menyu ya moja kwa moja, nafasi na muunganisho wa usafirishaji.",
-      "ecommerce": "Duka la mtandaoni lenye wauzaji wengi, malipo na uratibu wa mifumo ya malipo.",
-      "portfolioWebsite": "Tovuti ya chapa binafsi yenye masomo ya kazi na jarida linalosimamiwa.",
-      "hospital": "Mfumo wa hospitali unaojumuisha rekodi, wodi, bili, famasia na maabara.",
-      "school": "Jukwaa la shule kwa udahili, ratiba, alama na mawasiliano na wazazi.",
-      "inventory": "Udhibiti wa hisa katika maghala mengi wenye uskani wa msimbopau na utabiri wa kuagiza.",
-      "hotel": "Mfumo wa hoteli kwa nafasi, usafi, bili na muunganisho wa mifereji ya kuweka nafasi.",
-      "pos": "Mfumo wa mauzo wenye hali ya nje ya mtandao, upatanisho wa zamu na ripoti za matawi mengi.",
-      "hrManagement": "Mfumo wa rasilimali watu kwa ajira, uandikishaji, likizo, tathmini na rekodi.",
-      "payroll": "Injini ya mishahara yenye makato ya kisheria, hati za malipo na faili za benki.",
-      "loanManagement": "Mfumo wa mikopo kwa maombi, tathmini, utoaji na ukusanyaji.",
-      "erp": "Upangaji wa rasilimali za kampuni katika fedha, ugavi na uendeshaji.",
-      "crm": "CRM ya mauzo yenye usimamizi wa mchakato, ufuatiliaji wa shughuli na utabiri wa mapato.",
-      "puzzleGame": "Mchezo wa mafumbo wenye changamoto za kila siku na ugumu unaoongezeka.",
-      "adventureGame": "Mchezo wa matukio wenye hadithi, ulimwengu uliochorwa kwa mkono na matokeo tofauti.",
-      "strategyGame": "Mchezo wa mkakati wa zamu wenye usimamizi wa rasilimali na wachezaji wengi mtandaoni.",
-      "arcadeGame": "Mchezo wa kasi wa arcade wenye orodha za washindi na wahusika wa kufungua."
-    }
+      "tunes": "Usambazaji wa muziki uliojengwa Tanzania: toa nyimbo Spotify, Apple Music, TikTok na zaidi, kua kupitia wabunifu, na pokea mrabaha kwa pesa za simu au benki.",
+      "pilot": "Roboti ya biashara unayoidhibiti: weka sheria, zijaribu kwenye bei za zamani, kisha iache ifanye biashara kwa majaribio au halisi, ndani ya mipaka yako.",
+      "pbzBank": "Tovuti na benki kwa simu kwa Benki ya Watu wa Zanzibar, akaunti, uhamisho, malipo ya bili na PBZ Lipa Hapa kwa QR.",
+      "mkopa": "Tovuti ya M-KOPA, kampuni ya fedha inayowafikishia mamilioni Afrika simu janja na huduma za kifedha za kidijitali.",
+      "safiri": "Safiri Afrika: nunua tiketi za basi, treni, boti na ndege, na tuma mizigo, kwenye wavuti, Android na iOS.",
+      "novaAi": "Jukwaa letu la AI: hupokea simu, huchati WhatsApp na mitandao ya kijamii, hupanga miadi na humkabidhi binadamu inapohitajika.",
+      "chapChap": "Nunua moja kwa moja kutoka kwa wasambazaji wanaoaminika China, kwa usafirishaji wa pamoja hadi Tanzania kwa bei nafuu.",
+      "najo": "Msaada barabarani papo hapo: dereva anaomba msaada, fundi aliye karibu anakubali na kufika. Programu mbili: dereva na fundi.",
+      "konect": "Soko la mtandaoni la Tanzania: nunua kilichopo nchini upate ndani ya siku chache, au agiza kutoka nje na ufuatilie hadi mlangoni.",
+      "agiza": "Duka la mtandaoni na programu ya usafirishaji inayosafirisha bidhaa zinazovuma Afrika Mashariki, Magharibi na Kati.",
+      "direct2kariakoo": "Wauzaji wa Kariakoo mtandaoni: vifaa vya umeme, mitindo, nyumbani na urembo, vinavyofikishwa Dar es Salaam yote.",
+      "foodie": "Chakula, mahitaji ya jikoni na ya nyumbani, yanayoletwa mlangoni kwako Tanzania.",
+      "hunPlus": "Programu ya burudani ya filamu, tamthilia na vipindi, vyote mahali pamoja."
+    },
+    "sectors": {
+      "music": "Usambazaji wa muziki",
+      "trading": "Biashara ya kiotomatiki",
+      "banking": "Benki",
+      "fintech": "Teknolojia ya fedha",
+      "travel": "Safari na tiketi",
+      "ai": "Akili bandia",
+      "ecommerce": "Biashara mtandaoni",
+      "automotive": "Msaada barabarani",
+      "foodDelivery": "Usafirishaji wa chakula",
+      "entertainment": "Burudani"
+    },
+    "links": {
+      "website": "Tovuti",
+      "android": "Google Play",
+      "ios": "App Store",
+      "partnerAndroid": "Programu ya fundi"
+    },
+    "appComingSoon": "Programu ya simu inakuja hivi karibuni"
   },
   "why": {
     "eyebrow": "Kwa nini TechOn",
@@ -243,7 +247,7 @@
       },
       "planning": {
         "title": "Upangaji",
-        "description": "Wigo, usanifu, ratiba na bajeti zimekubaliwa kwa maandishi — hakuna mabadiliko ya ghafla baadaye."
+        "description": "Wigo, usanifu, ratiba na bajeti zimekubaliwa kwa maandishi, hakuna mabadiliko ya ghafla baadaye."
       },
       "design": {
         "title": "Ubunifu",
@@ -270,7 +274,7 @@
   "stack": {
     "eyebrow": "Teknolojia",
     "title": "Zana zilizothibitishwa, zilizochaguliwa kwa makusudi.",
-    "lead": "Tunachagua chaguo lililoeleweka vizuri isipokuwa kuna sababu halisi ya kutofanya hivyo — na tunaweza kukueleza sababu hiyo ni ipi."
+    "lead": "Tunachagua chaguo lililoeleweka vizuri isipokuwa kuna sababu halisi ya kutofanya hivyo, na tunaweza kukueleza sababu hiyo ni ipi."
   },
   "testimonials": {
     "eyebrow": "Wateja",
@@ -347,8 +351,8 @@
   },
   "portfolioPage": {
     "eyebrow": "Kazi",
-    "title": "Kila kitu tulichojenga.",
-    "lead": "Programu za simu, mifumo ya AI, bidhaa za wavuti, mifumo ya biashara na michezo.",
+    "title": "Kila tulichokijenga.",
+    "lead": "Tovuti, programu za simu na bidhaa za AI tulizozizindua, fungua yoyote ujionee mwenyewe.",
     "back": "Rudi nyumbani",
     "ctaTitle": "Una kitu kama hiki akilini?",
     "ctaLead": "Tuambie. Utapata jibu halisi, si kijitabu cha matangazo.",
@@ -546,9 +550,8 @@
   },
   "team": {
     "eyebrow": "Timu",
-    "title": "Watu wanaojenga.",
-    "lead": "Timu ndogo ya wataalam. Wahandisi unaokutana nao mwanzoni ndio wanaoandika msimbo wako — na ndio wanaojibu simu miaka baadaye.",
-    "note": "Tunaajiri. Nafasi zilizoonyeshwa ni taaluma tunazojengea.",
+    "title": "Inaongozwa na Conrad Bubex.",
+    "lead": "Sisi ni timu ya wahandisi 6 wa programu na wataalamu wa usalama wa mtandao. Mnaokutana nao mwanzoni ndio wanaoandika na kulinda msimbo wako, na ndio wanaopokea simu miaka ijayo.",
     "roles": {
       "founder": "Mwanzilishi na Mkurugenzi Mtendaji",
       "aiEngineer": "Mhandisi wa AI",
@@ -557,6 +560,20 @@
       "mobileDeveloper": "Mtengenezaji wa Programu za Simu",
       "designer": "Mbunifu wa UI/UX",
       "projectManager": "Meneja wa Miradi"
+    },
+    "facts": {
+      "engineers": {
+        "value": "6",
+        "label": "Wahandisi wa programu na wataalamu wa usalama"
+      },
+      "security": {
+        "value": "Salama",
+        "label": "Usalama wa mtandao tangu siku ya kwanza"
+      },
+      "ownership": {
+        "value": "Timu moja",
+        "label": "Kuanzia wazo la kwanza hadi uendeshaji"
+      }
     }
   },
   "about": {
@@ -572,8 +589,8 @@
     "who": {
       "eyebrow": "Sisi ni nani",
       "title": "Kampuni ya programu, si wakala.",
-      "body1": "TechOn ni timu ya wahandisi na wabunifu wanaofanya kazi Dar es Salaam, Nairobi na Houston. Tunajenga mifumo ya AI, programu za simu na mifumo ya kampuni ambayo biashara hutegemea kila siku.",
-      "body2": "Hatutoi kazi kwa wengine, na hatuwapangii miradi watu waliopo tu. Watu ulionao kwenye mkutano wa kwanza ndio wanaojenga kitu — na ndio wanaojibu simu miaka miwili baadaye unapotaka kukiongeza."
+      "body1": "TechOn ni timu ya wahandisi 6 wa programu na wataalamu wa usalama wa mtandao wanaofanya kazi Dar es Salaam, Nairobi na Houston. Tunajenga mifumo ya AI, programu za simu na mifumo ya kampuni ambayo biashara hutegemea kila siku.",
+      "body2": "Hatutoi kazi kwa wengine, na hatuwapangii miradi watu waliopo tu. Watu ulionao kwenye mkutano wa kwanza ndio wanaojenga kitu, na ndio wanaojibu simu miaka miwili baadaye unapotaka kukiongeza."
     },
     "mission": {
       "eyebrow": "Dhamira",
@@ -583,7 +600,7 @@
     "vision": {
       "eyebrow": "Maono",
       "title": "Uhandisi wa Kiafrika, kwa kiwango cha dunia.",
-      "body": "Tunataka TechOn iwe ushahidi kwamba programu iliyojengwa Dar es Salaam inashindana na programu iliyojengwa mahali popote — ikipimwa kwa ustadi, uaminifu na ubora wa fikra nyuma yake, si kwa bei."
+      "body": "Tunataka TechOn iwe ushahidi kwamba programu iliyojengwa Dar es Salaam inashindana na programu iliyojengwa mahali popote, ikipimwa kwa ustadi, uaminifu na ubora wa fikra nyuma yake, si kwa bei."
     },
     "values": {
       "eyebrow": "Maadili",
@@ -623,12 +640,12 @@
       "role": "Mwanzilishi na Mkurugenzi Mtendaji",
       "bio": "Conrad alianzisha TechOn mwaka 2019 baada ya muongo mmoja wa kujenga mifumo kwa benki, hospitali na makampuni ya usafirishaji Afrika Mashariki. Bado anakagua usanifu wa kila mradi kampuni inaochukua.",
       "educationLabel": "Elimu",
-      "readProfile": "Soma wasifu kamili",
       "portraitPending": "Picha inakuja hivi karibuni",
       "qualifications": {
         "bachelor": "Shahada ya Uhandisi wa Kompyuta",
         "masters": "Shahada ya Uzamili ya Usalama wa Mtandao"
-      }
+      },
+      "followInstagram": "Fuata Instagram"
     },
     "stack": {
       "eyebrow": "Teknolojia",

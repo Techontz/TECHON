@@ -40,20 +40,20 @@ export function useSummaryItems(draft: BookingDraft): SummaryItem[] {
           month: 'long',
           year: 'numeric',
         }).format(fromDateKey(draft.date))
-      : '—'
+      : '-'
 
     const location =
       draft.meeting === 'office'
         ? officeAddressLines.slice(0, 4).join(', ')
         : draft.meeting === 'online'
           ? onlineProvider
-          : '—'
+          : '-'
 
     return [
       {
         key: 'consultation',
         label: t('consultation'),
-        value: consultation ? consultationCopy(`${consultation.id}.title`) : '—',
+        value: consultation ? consultationCopy(`${consultation.id}.title`) : '-',
       },
       {
         key: 'price',
@@ -63,18 +63,18 @@ export function useSummaryItems(draft: BookingDraft): SummaryItem[] {
       {
         key: 'duration',
         label: t('duration'),
-        value: consultation ? common('minutes', { count: consultation.durationMinutes }) : '—',
+        value: consultation ? common('minutes', { count: consultation.durationMinutes }) : '-',
       },
       {
         key: 'meeting',
         label: t('meetingType'),
-        value: draft.meeting ? meeting(`${draft.meeting}.title`) : '—',
+        value: draft.meeting ? meeting(`${draft.meeting}.title`) : '-',
       },
       { key: 'date', label: t('date'), value: dateLabel },
-      { key: 'time', label: t('time'), value: draft.time ?? '—' },
+      { key: 'time', label: t('time'), value: draft.time ?? '-' },
       { key: 'location', label: t('location'), value: location },
-      { key: 'email', label: t('email'), value: draft.email || '—' },
-      { key: 'phone', label: t('phone'), value: draft.phone || '—' },
+      { key: 'email', label: t('email'), value: draft.email || '-' },
+      { key: 'phone', label: t('phone'), value: draft.phone || '-' },
     ]
   }, [draft, locale, t, consultationCopy, meeting, common])
 }

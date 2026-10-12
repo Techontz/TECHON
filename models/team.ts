@@ -31,6 +31,7 @@ export interface TeamMember {
   /** Storage path, kept so the object can be deleted with the member. */
   photoPath: string
   linkedinUrl: string
+  instagramUrl: string
   /** Ascending. The founder leads. */
   order: number
   published: boolean
@@ -49,6 +50,7 @@ export function emptyTeamMember(): TeamMemberInput {
     photoUrl: '',
     photoPath: '',
     linkedinUrl: '',
+    instagramUrl: '',
     order: 99,
     published: true,
     placeholder: true,

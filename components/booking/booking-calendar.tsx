@@ -279,8 +279,8 @@ function dayLabel(
   }).format(date)
 
   if (!day) return formatted
-  if (day.status === 'closed') return `${formatted} — ${t('closed')}`
-  if (day.availableCount === 0) return `${formatted} — ${t('legendFull')}`
+  if (day.status === 'closed') return `${formatted}, ${t('closed')}`
+  if (day.availableCount === 0) return `${formatted}, ${t('legendFull')}`
 
-  return `${formatted} — ${t('slotsLeft', { count: day.availableCount })}`
+  return `${formatted}, ${t('slotsLeft', { count: day.availableCount })}`
 }

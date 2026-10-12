@@ -42,7 +42,7 @@ export function SuccessScreen({ booking }: { booking: ConfirmedBooking }) {
   const event: CalendarEvent | null =
     start && consultation
       ? {
-          title: `${site.name} — ${t('eventTitle')}`,
+          title: `${site.name}: ${t('eventTitle')}`,
           description: `${t('eventDescription')}\n\n${t('reference')}: ${reference}`,
           location:
             draft.meeting === 'office'

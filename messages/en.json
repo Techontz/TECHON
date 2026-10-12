@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "TechOn — Software, AI and Digital Transformation",
+    "title": "TechOn | Software, AI and Digital Transformation",
     "description": "TechOn designs and builds AI platforms, mobile applications and enterprise systems for companies that care how things work.",
     "portfolioTitle": "Work"
   },
@@ -21,7 +21,7 @@
     "badge": "NOVA AI",
     "badgeText": "Our AI platform is live",
     "title": "We build the software your business runs on.",
-    "lead": "AI platforms, mobile applications and enterprise systems — designed, engineered and supported by one senior team.",
+    "lead": "AI platforms, mobile applications and enterprise systems, designed, engineered and supported by one senior team.",
     "primary": "Start a project",
     "secondary": "View our work",
     "stat1": "Projects delivered",
@@ -34,7 +34,7 @@
   "aboutPreview": {
     "eyebrow": "About TechOn",
     "title": "A small team, deliberately.",
-    "body": "TechOn was founded in 2019 to build software properly — the kind that still runs, and still makes sense, years after the launch party. We stay small on purpose: the engineers you meet at kickoff are the ones who write your code, and they stay with it long after it ships.",
+    "body": "TechOn was founded in 2019 to build software properly: the kind that still runs, and still makes sense, years after the launch party. We stay small on purpose: the engineers you meet at kickoff are the ones who write your code, and they stay with it long after it ships.",
     "ceoRole": "Founder & Chief Executive Officer",
     "cta": "Learn more"
   },
@@ -86,12 +86,25 @@
       "workflowAutomation": "Workflow automation",
       "apiIntegration": "API integration",
       "availability": "24/7 availability"
+    },
+    "emailPlaceholder": "Enter your email address",
+    "tryFree": "Try for free",
+    "feature1": "Answers calls, chats and emails, day and night",
+    "feature2": "Works on phone, WhatsApp, Instagram, Facebook and the web",
+    "stage": {
+      "online": "Online now",
+      "placeholder": "Ask NOVA anything…",
+      "speaking": "NOVA is speaking",
+      "chat1": "Hi, can I book a consultation for Friday?",
+      "chat2": "Of course. Friday at 10:00 or 14:00?",
+      "chat3": "10:00 works for me.",
+      "chat4": "Booked. Your confirmation is on WhatsApp."
     }
   },
   "services": {
     "eyebrow": "Services",
-    "title": "Everything we do, done properly.",
-    "lead": "One partner from the first sketch to production scale, so nothing is lost in the handoff between strategy, design and code.",
+    "title": "Everything we do.",
+    "lead": "Swipe through the shelf. One partner from the first sketch to production scale.",
     "items": {
       "aiSolutions": {
         "title": "AI Solutions",
@@ -141,67 +154,58 @@
         "title": "Digital Transformation",
         "description": "Strategy and execution to move an operation from manual to measurable."
       }
-    }
+    },
+    "prev": "Previous service",
+    "next": "Next service",
+    "cta": "Start a project"
   },
   "portfolio": {
     "eyebrow": "Work",
     "title": "Selected projects.",
-    "lead": "Platforms, applications and systems built for founders, institutions and enterprises.",
+    "lead": "Real products, live today, for banks, fintechs, marketplaces and startups across Africa.",
     "viewAll": "View all work",
-    "view": "View project",
-    "code": "Source",
     "empty": "No projects in this category yet.",
     "showing": "Showing {count} of {total}",
     "categories": {
       "all": "All",
       "mobile": "Mobile Apps",
-      "ai": "AI Solutions",
-      "web": "Web Platforms",
-      "business": "Business Systems",
-      "games": "Games"
-    },
-    "status": {
-      "live": "Live",
-      "comingSoon": "Coming soon",
-      "template": "Template — replace later"
+      "web": "Websites",
+      "ai": "AI & Automation"
     },
     "items": {
-      "taxiApp": "Ride-hailing platform with live dispatch, fare estimation and driver payouts.",
-      "deliveryApp": "Last-mile delivery app with route optimisation and real-time tracking.",
-      "tradingApp": "Trading terminal with live charts, watchlists and instant order execution.",
-      "restaurantApp": "Ordering and table-booking app with kitchen sync and loyalty rewards.",
-      "fitnessApp": "Training companion with adaptive programmes, streaks and wearable sync.",
-      "musicApp": "Streaming app with offline playback, playlists and personalised discovery.",
-      "educationApp": "Learning platform with video lessons, graded quizzes and progress tracking.",
-      "healthcareApp": "Patient app for appointments, teleconsultation and prescription history.",
-      "novaAi": "Our flagship AI platform for automated communication, support and workflows.",
-      "aiCallingAgent": "Voice agent that places and answers real phone calls in natural language.",
-      "aiCustomerSupport": "Support layer that resolves tickets autonomously and escalates with context.",
-      "aiChatAssistant": "Embedded assistant trained on your documentation, products and tone.",
-      "documentIntelligence": "Extracts structured data from invoices, contracts and scanned records.",
-      "workflowAutomation": "Connects internal tools and runs multi-step processes without handoffs.",
-      "pbzBank": "Corporate banking website with product discovery and secure service journeys.",
-      "techonWebsite": "The site you are reading — our own design system, in production.",
-      "corporateWebsite": "Institutional site with multilingual content and investor-grade polish.",
-      "realEstate": "Property marketplace with map search, virtual tours and agent dashboards.",
-      "restaurantWebsite": "Restaurant site with live menu, reservations and delivery integration.",
-      "ecommerce": "Storefront with multi-vendor catalogue, checkout and payment orchestration.",
-      "portfolioWebsite": "Personal brand site with case studies and a content-managed journal.",
-      "hospital": "Hospital system covering records, wards, billing, pharmacy and laboratory.",
-      "school": "School platform for admissions, timetables, grading and parent communication.",
-      "inventory": "Multi-warehouse stock control with barcode scanning and reorder forecasting.",
-      "hotel": "Hotel system for reservations, housekeeping, folio billing and channel sync.",
-      "pos": "Point-of-sale with offline mode, shift reconciliation and multi-branch reporting.",
-      "hrManagement": "HR suite for recruitment, onboarding, leave, appraisals and records.",
-      "payroll": "Payroll engine with statutory deductions, payslips and bank file export.",
-      "loanManagement": "Lending system for origination, scoring, disbursement and collections.",
-      "erp": "Enterprise resource planning across finance, supply chain and operations.",
-      "crm": "Sales CRM with pipeline management, activity tracking and revenue forecasting.",
-      "puzzleGame": "Tile-matching puzzle game with daily challenges and progressive difficulty.",
-      "adventureGame": "Story-driven adventure with hand-drawn worlds and branching outcomes.",
-      "strategyGame": "Turn-based strategy with resource management and online multiplayer.",
-      "arcadeGame": "Fast-paced arcade runner with leaderboards and unlockable characters."
-    }
+      "tunes": "Music distribution built in Tanzania: release to Spotify, Apple Music, TikTok and more, grow with creators, and withdraw royalties to mobile money or a bank.",
+      "pilot": "A trading robot you control: set the rules, test them on past prices, then let it trade on demo or live, within your limits.",
+      "pbzBank": "Website and mobile banking for the People’s Bank of Zanzibar, accounts, transfers, bills and PBZ Lipa Hapa QR payments.",
+      "mkopa": "Website for M-KOPA, the fintech putting smartphones and digital financial services in the hands of millions across Africa.",
+      "safiri": "Travel across Africa: buy bus, train, ferry and flight tickets and send parcels, on the web, Android and iOS.",
+      "novaAi": "Our own AI platform: answers calls, chats on WhatsApp and social media, books appointments and hands off to a human when needed.",
+      "chapChap": "Shop directly from trusted suppliers in China, with consolidated shipping to Tanzania at affordable prices.",
+      "najo": "Roadside help on demand: drivers request assistance, nearby mechanics accept and arrive. Two apps: driver and mechanic.",
+      "konect": "Tanzania’s online marketplace: buy what’s already in the country for delivery in days, or order from abroad and track it to your door.",
+      "agiza": "Online store and delivery app shipping hot-selling products across East, West and Central Africa.",
+      "direct2kariakoo": "Kariakoo’s sellers online: electronics, fashion, home and beauty, delivered across Dar es Salaam.",
+      "foodie": "Food, groceries and home essentials, delivered to your door in Tanzania.",
+      "hunPlus": "An entertainment app for movies, series and shows, streaming in one place."
+    },
+    "sectors": {
+      "music": "Music distribution",
+      "trading": "Automated trading",
+      "banking": "Banking",
+      "fintech": "Fintech",
+      "travel": "Travel & tickets",
+      "ai": "Artificial intelligence",
+      "ecommerce": "E-commerce",
+      "automotive": "Roadside assistance",
+      "foodDelivery": "Food delivery",
+      "entertainment": "Entertainment"
+    },
+    "links": {
+      "website": "Website",
+      "android": "Google Play",
+      "ios": "App Store",
+      "partnerAndroid": "Mechanic app"
+    },
+    "appComingSoon": "Mobile app coming soon"
   },
   "why": {
     "eyebrow": "Why TechOn",
@@ -243,7 +247,7 @@
       },
       "planning": {
         "title": "Planning",
-        "description": "Scope, architecture, timeline and budget agreed in writing — no moving targets later."
+        "description": "Scope, architecture, timeline and budget agreed in writing. No moving targets later."
       },
       "design": {
         "title": "Design",
@@ -270,7 +274,7 @@
   "stack": {
     "eyebrow": "Technology",
     "title": "Proven tools, chosen deliberately.",
-    "lead": "We pick the boring, well-understood option unless there is a real reason not to — and we can tell you exactly what that reason is."
+    "lead": "We pick the boring, well-understood option unless there is a real reason not to, and we can tell you exactly what that reason is."
   },
   "testimonials": {
     "eyebrow": "Clients",
@@ -348,7 +352,7 @@
   "portfolioPage": {
     "eyebrow": "Work",
     "title": "Everything we have built.",
-    "lead": "Mobile applications, AI platforms, web products, business systems and games.",
+    "lead": "Websites, mobile apps and AI products we have shipped, open any of them and see for yourself.",
     "back": "Back to home",
     "ctaTitle": "Have something like this in mind?",
     "ctaLead": "Tell us about it. You will get a real answer, not a brochure.",
@@ -546,9 +550,8 @@
   },
   "team": {
     "eyebrow": "Team",
-    "title": "The people who build it.",
-    "lead": "A small senior team. The engineers you meet at kickoff are the ones who write your code — and who answer the phone years later.",
-    "note": "We are hiring. Roles shown are the disciplines we build with.",
+    "title": "Led by Conrad Bubex.",
+    "lead": "We are a team of 6 software engineers and cybersecurity specialists. The people you meet at kickoff are the ones who write and secure your code, and who answer the phone years later.",
     "roles": {
       "founder": "Founder & Chief Executive Officer",
       "aiEngineer": "AI Engineer",
@@ -557,6 +560,20 @@
       "mobileDeveloper": "Mobile Developer",
       "designer": "UI/UX Designer",
       "projectManager": "Project Manager"
+    },
+    "facts": {
+      "engineers": {
+        "value": "6",
+        "label": "Software engineers and security specialists"
+      },
+      "security": {
+        "value": "Secure",
+        "label": "Cybersecurity built in from day one"
+      },
+      "ownership": {
+        "value": "One team",
+        "label": "From the first sketch to support"
+      }
     }
   },
   "about": {
@@ -572,8 +589,8 @@
     "who": {
       "eyebrow": "Who we are",
       "title": "A software company, not an agency.",
-      "body1": "TechOn is a team of engineers and designers working out of Dar es Salaam, Nairobi and Houston. We build AI platforms, mobile applications and the enterprise systems that businesses run their day on.",
-      "body2": "We do not subcontract, and we do not staff projects with whoever is free. The people in your first meeting are the people who build the thing — and who answer the phone two years later when you want to extend it."
+      "body1": "TechOn is a team of 6 software engineers and cybersecurity specialists working out of Dar es Salaam, Nairobi and Houston. We build AI platforms, mobile applications and the enterprise systems that businesses run their day on.",
+      "body2": "We do not subcontract, and we do not staff projects with whoever is free. The people in your first meeting are the people who build the thing, and who answer the phone two years later when you want to extend it."
     },
     "mission": {
       "eyebrow": "Mission",
@@ -583,7 +600,7 @@
     "vision": {
       "eyebrow": "Vision",
       "title": "African engineering, held to a world standard.",
-      "body": "We want TechOn to be proof that software built in Dar es Salaam competes with software built anywhere — measured on craft, reliability and the quality of the thinking behind it, not on price."
+      "body": "We want TechOn to be proof that software built in Dar es Salaam competes with software built anywhere, measured on craft, reliability and the quality of the thinking behind it, not on price."
     },
     "values": {
       "eyebrow": "Values",
@@ -623,12 +640,12 @@
       "role": "Founder & Chief Executive Officer",
       "bio": "Conrad founded TechOn in 2019 after a decade of building systems for banks, hospitals and logistics operators across East Africa. He still reviews architecture on every project the company takes on.",
       "educationLabel": "Education",
-      "readProfile": "Read full profile",
       "portraitPending": "Portrait coming soon",
       "qualifications": {
         "bachelor": "BSc Computer Engineering",
         "masters": "MSc Cyber Security"
-      }
+      },
+      "followInstagram": "Follow on Instagram"
     },
     "stack": {
       "eyebrow": "Technology",

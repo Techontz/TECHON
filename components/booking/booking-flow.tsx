@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowLeft, ArrowRight, Check, Info } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { useCallback, useId, useRef, useState } from 'react'
+import { useCallback, useEffect, useId, useRef, useState } from 'react'
 
 import { BookingCalendar } from '@/components/booking/booking-calendar'
 import { BookingSummary } from '@/components/booking/booking-summary'
@@ -63,6 +63,17 @@ export function BookingFlow() {
 
   const patch = useCallback((changes: Partial<BookingDraft>) => {
     setDraft((current) => ({ ...current, ...changes }))
+  }, [])
+
+  // An email handed over from elsewhere on the site (NOVA's "Try for free")
+  // pre-fills the contact step. Read after mount so server and client markup
+  // match.
+  useEffect(() => {
+    const email = new URLSearchParams(window.location.search).get('email')
+    // One-off sync from the URL on mount; reading it during render would make
+    // the server and client markup disagree.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (email) setDraft((current) => (current.email ? current : { ...current, email }))
   }, [])
 
   /** Keeps the next stage's heading in view instead of mid-form. */
