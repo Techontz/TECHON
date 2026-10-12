@@ -45,7 +45,9 @@ export function AboutPreview() {
           </div>
         </Reveal>
 
-        <Reveal className="order-1 lg:order-2 lg:justify-self-end">
+        {/* On a phone the Team section just above already shows this portrait
+            full width, so it is left out here rather than repeated. */}
+        <Reveal className="order-1 hidden sm:block lg:order-2 lg:justify-self-end">
           {/* 4:5 matches the source portrait's own 3:4 closely enough that
               object-cover trims edges rather than cropping the subject. */}
           <Portrait

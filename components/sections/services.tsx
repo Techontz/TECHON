@@ -87,7 +87,7 @@ export function Services() {
           if (event.key === 'ArrowRight') go(1)
           if (event.key === 'ArrowLeft') go(-1)
         }}
-        className="relative mt-10 h-[400px] overflow-hidden outline-none [perspective:1400px] sm:mt-12 sm:h-[440px]"
+        className="relative -mx-[var(--gutter)] mt-10 h-[400px] overflow-hidden outline-none [perspective:1400px] sm:mx-0 sm:mt-12 sm:h-[440px]"
       >
         <motion.div
           className="absolute inset-0 cursor-grab touch-pan-y active:cursor-grabbing"
